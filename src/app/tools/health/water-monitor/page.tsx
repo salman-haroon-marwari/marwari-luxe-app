@@ -2,50 +2,6 @@
 
 import Navigation from '../../../../components/Navigation';
 import Footer from '../../../../components/Footer';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Water Intake Monitor Tool | Hydration Tracker | Marwari Luxe',
-  description: 'Monitor your daily water consumption and stay hydrated with our free online water intake monitor tool. Track your hydration progress and achieve your daily water goals.',
-  keywords: ['water monitor', 'hydration tracker', 'water intake', 'health tracker', 'daily water goal', 'wellness tool', 'health monitoring'],
-  openGraph: {
-    title: 'Water Intake Monitor Tool | Hydration Tracker | Marwari Luxe',
-    description: 'Monitor your daily water consumption and stay hydrated with our free online water intake monitor tool.',
-    url: 'https://www.marwariluxe.com/tools/health/water-monitor',
-    siteName: 'Marwari Luxe',
-    images: [
-      {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Marwari Luxe Water Intake Monitor Tool',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Water Intake Monitor Tool | Hydration Tracker | Marwari Luxe',
-    description: 'Monitor your daily water consumption and stay hydrated with our free online water intake monitor tool.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
-    creator: '@marwariluxe',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/health/water-monitor',
-  },
-};
 
 export default function WaterMonitorPage() {
   const updateProgress = (current: number, goal: number) => {

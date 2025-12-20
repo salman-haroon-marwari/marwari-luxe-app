@@ -2,50 +2,6 @@
 
 import Navigation from '../../../../components/Navigation';
 import Footer from '../../../../components/Footer';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Calorie Tracker Tool | Daily Calorie Calculator | Marwari Luxe',
-  description: 'Track your daily calorie intake and calculate your basal metabolic rate with our free online calorie tracker tool. Monitor your nutritional goals and achieve healthy weight management.',
-  keywords: ['calorie tracker', 'calorie calculator', 'BMR calculator', 'TDEE calculator', 'nutrition tracker', 'weight management', 'health tool'],
-  openGraph: {
-    title: 'Calorie Tracker Tool | Daily Calorie Calculator | Marwari Luxe',
-    description: 'Track your daily calorie intake and calculate your basal metabolic rate with our free online calorie tracker tool.',
-    url: 'https://www.marwariluxe.com/tools/health/calorie-tracker',
-    siteName: 'Marwari Luxe',
-    images: [
-      {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Marwari Luxe Calorie Tracker Tool',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Calorie Tracker Tool | Daily Calorie Calculator | Marwari Luxe',
-    description: 'Track your daily calorie intake and calculate your basal metabolic rate with our free online calorie tracker tool.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
-    creator: '@marwariluxe',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/health/calorie-tracker',
-  },
-};
 
 export default function CalorieTrackerPage() {
   const calculateCalories = () => {

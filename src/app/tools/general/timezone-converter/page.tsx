@@ -2,50 +2,6 @@
 
 import Navigation from '../../../../components/Navigation';
 import Footer from '../../../../components/Footer';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Time Zone Converter Tool | World Clock Time Conversion | Marwari Luxe',
-  description: 'Convert time between different time zones around the world with our free online time zone converter tool. Perfect for international meetings, travel planning, and global coordination.',
-  keywords: ['time zone converter', 'world clock', 'timezone conversion', 'international time', 'meeting scheduler', 'travel planning', 'global time converter'],
-  openGraph: {
-    title: 'Time Zone Converter Tool | World Clock Time Conversion | Marwari Luxe',
-    description: 'Convert time between different time zones around the world with our free online time zone converter tool.',
-    url: 'https://www.marwariluxe.com/tools/general/timezone-converter',
-    siteName: 'Marwari Luxe',
-    images: [
-      {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Marwari Luxe Time Zone Converter Tool',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Time Zone Converter Tool | World Clock Time Conversion | Marwari Luxe',
-    description: 'Convert time between different time zones around the world with our free online time zone converter tool.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
-    creator: '@marwariluxe',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/general/timezone-converter',
-  },
-};
 
 export default function TimeZoneConverterPage() {
   const convertTimeZone = () => {

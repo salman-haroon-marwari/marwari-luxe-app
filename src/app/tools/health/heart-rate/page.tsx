@@ -2,50 +2,6 @@
 
 import Navigation from '../../../../components/Navigation';
 import Footer from '../../../../components/Footer';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Heart Rate Monitor Tool | Cardiovascular Health Tracker | Marwari Luxe',
-  description: 'Track your heart rate and monitor cardiovascular health with our free online heart rate monitor tool. Calculate training zones and optimize your fitness workouts.',
-  keywords: ['heart rate monitor', 'cardiovascular health', 'heart rate zones', 'fitness tracker', 'training zones', 'health monitoring', 'wellness tool'],
-  openGraph: {
-    title: 'Heart Rate Monitor Tool | Cardiovascular Health Tracker | Marwari Luxe',
-    description: 'Track your heart rate and monitor cardiovascular health with our free online heart rate monitor tool.',
-    url: 'https://www.marwariluxe.com/tools/health/heart-rate',
-    siteName: 'Marwari Luxe',
-    images: [
-      {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Marwari Luxe Heart Rate Monitor Tool',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Heart Rate Monitor Tool | Cardiovascular Health Tracker | Marwari Luxe',
-    description: 'Track your heart rate and monitor cardiovascular health with our free online heart rate monitor tool.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
-    creator: '@marwariluxe',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/health/heart-rate',
-  },
-};
 
 export default function HeartRatePage() {
   const calculateHeartRateZones = () => {

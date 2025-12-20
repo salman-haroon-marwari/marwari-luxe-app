@@ -2,50 +2,6 @@
 
 import Navigation from '../../../../components/Navigation';
 import Footer from '../../../../components/Footer';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Stress Level Assessment Tool | Mental Health Checker | Marwari Luxe',
-  description: 'Assess your stress levels and receive coping recommendations with our free online stress level assessment tool. Get personalized mental health insights and wellness strategies.',
-  keywords: ['stress assessment', 'mental health', 'stress level', 'wellness tool', 'health assessment', 'anxiety checker', 'stress management'],
-  openGraph: {
-    title: 'Stress Level Assessment Tool | Mental Health Checker | Marwari Luxe',
-    description: 'Assess your stress levels and receive coping recommendations with our free online stress level assessment tool.',
-    url: 'https://www.marwariluxe.com/tools/health/stress-assessment',
-    siteName: 'Marwari Luxe',
-    images: [
-      {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Marwari Luxe Stress Level Assessment Tool',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Stress Level Assessment Tool | Mental Health Checker | Marwari Luxe',
-    description: 'Assess your stress levels and receive coping recommendations with our free online stress level assessment tool.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
-    creator: '@marwariluxe',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/health/stress-assessment',
-  },
-};
 
 export default function StressAssessmentPage() {
   const calculateStressLevel = () => {

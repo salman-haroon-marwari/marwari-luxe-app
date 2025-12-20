@@ -2,50 +2,6 @@
 
 import Navigation from '../../../../components/Navigation';
 import Footer from '../../../../components/Footer';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Text Formatter Tool | Online Text Transformation | Marwari Luxe',
-  description: 'Format and transform text with our free online text formatter tool. Convert to uppercase, lowercase, title case, reverse text, and more with instant results.',
-  keywords: ['text formatter', 'text transformer', 'uppercase converter', 'lowercase converter', 'title case converter', 'text manipulation', 'online text tool'],
-  openGraph: {
-    title: 'Text Formatter Tool | Online Text Transformation | Marwari Luxe',
-    description: 'Format and transform text with our free online text formatter tool. Convert to uppercase, lowercase, title case, and more.',
-    url: 'https://www.marwariluxe.com/tools/general/text-formatter',
-    siteName: 'Marwari Luxe',
-    images: [
-      {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Marwari Luxe Text Formatter Tool',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Text Formatter Tool | Online Text Transformation | Marwari Luxe',
-    description: 'Format and transform text with our free online text formatter tool. Convert to uppercase, lowercase, title case, and more.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
-    creator: '@marwariluxe',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/general/text-formatter',
-  },
-};
 
 export default function TextFormatterPage() {
   const formatText = (formatType: string) => {
