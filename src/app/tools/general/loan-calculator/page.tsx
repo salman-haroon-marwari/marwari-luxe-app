@@ -2,50 +2,6 @@
 
 import Navigation from '../../../../components/Navigation';
 import Footer from '../../../../components/Footer';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Loan Calculator Tool | Mortgage & Personal Loan Estimator | Marwari Luxe',
-  description: 'Calculate loan payments, interest rates, and amortization schedules with our free online loan calculator tool. Perfect for mortgage, auto, and personal loan planning.',
-  keywords: ['loan calculator', 'mortgage calculator', 'payment calculator', 'interest calculator', 'amortization schedule', 'loan estimator', 'financial tool'],
-  openGraph: {
-    title: 'Loan Calculator Tool | Mortgage & Personal Loan Estimator | Marwari Luxe',
-    description: 'Calculate loan payments, interest rates, and amortization schedules with our free online loan calculator tool.',
-    url: 'https://www.marwariluxe.com/tools/general/loan-calculator',
-    siteName: 'Marwari Luxe',
-    images: [
-      {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Marwari Luxe Loan Calculator Tool',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Loan Calculator Tool | Mortgage & Personal Loan Estimator | Marwari Luxe',
-    description: 'Calculate loan payments, interest rates, and amortization schedules with our free online loan calculator tool.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
-    creator: '@marwariluxe',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/general/loan-calculator',
-  },
-};
 
 export default function LoanCalculatorPage() {
   const calculateLoan = () => {

@@ -2,50 +2,6 @@
 
 import Navigation from '../../../../components/Navigation';
 import Footer from '../../../../components/Footer';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Free QR Code Generator Tool | Create QR Codes Online | Marwari Luxe',
-  description: 'Generate custom QR codes for URLs, text, and contact information with our free online QR code generator tool. Download and share your QR codes instantly.',
-  keywords: ['qr code generator', 'create qr code', 'free qr code', 'qr code maker', 'online qr generator', 'qr code tool', 'barcode generator'],
-  openGraph: {
-    title: 'Free QR Code Generator Tool | Create QR Codes Online | Marwari Luxe',
-    description: 'Generate custom QR codes for URLs, text, and contact information with our free online QR code generator tool.',
-    url: 'https://www.marwariluxe.com/tools/general/qr-code-generator',
-    siteName: 'Marwari Luxe',
-    images: [
-      {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Marwari Luxe Free QR Code Generator Tool',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Free QR Code Generator Tool | Create QR Codes Online | Marwari Luxe',
-    description: 'Generate custom QR codes for URLs, text, and contact information with our free online QR code generator tool.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
-    creator: '@marwariluxe',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/general/qr-code-generator',
-  },
-};
 
 export default function QRCodeGeneratorPage() {
   const generateQRCode = () => {

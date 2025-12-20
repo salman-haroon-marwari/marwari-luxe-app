@@ -2,50 +2,6 @@
 
 import Navigation from '../../../../components/Navigation';
 import Footer from '../../../../components/Footer';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Free Password Generator - Create Secure Passwords | Marwari Luxe',
-  description: 'Generate ultra-secure passwords in seconds! Customize length & character types. Protect all your accounts with military-grade encryption. Trusted by 10K+ users. Free online password tool.',
-  keywords: ['password generator', 'secure password', 'random password', 'password security', 'online security', 'password tool', 'account security'],
-  openGraph: {
-    title: 'Free Password Generator - Create Secure Passwords | Marwari Luxe',
-    description: 'Generate ultra-secure passwords in seconds! Customize length & character types. Protect all your accounts with military-grade encryption. Trusted by 10K+ users.',
-    url: 'https://www.marwariluxe.com/tools/general/password-generator',
-    siteName: 'Marwari Luxe',
-    images: [
-      {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Free Password Generator Tool | Secure Password Creation | Marwari Luxe',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Free Password Generator - Create Secure Passwords | Marwari Luxe',
-    description: 'Generate ultra-secure passwords in seconds! Customize length & character types. Protect all your accounts with military-grade encryption.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
-    creator: '@marwariluxe',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/general/password-generator',
-  },
-};
 
 export default function PasswordGeneratorPage() {
   const generatePassword = () => {

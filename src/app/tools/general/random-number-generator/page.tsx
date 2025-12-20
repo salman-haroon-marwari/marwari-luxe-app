@@ -2,50 +2,6 @@
 
 import Navigation from '../../../../components/Navigation';
 import Footer from '../../../../components/Footer';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Random Number Generator Tool | Custom Range Randomizer | Marwari Luxe',
-  description: 'Generate random numbers within custom ranges with our free online random number generator tool. Perfect for contests, giveaways, research, and gaming applications.',
-  keywords: ['random number generator', 'randomizer', 'number generator', 'lottery tool', 'contest tool', 'research tool', 'gaming tool'],
-  openGraph: {
-    title: 'Random Number Generator Tool | Custom Range Randomizer | Marwari Luxe',
-    description: 'Generate random numbers within custom ranges with our free online random number generator tool. Perfect for contests and giveaways.',
-    url: 'https://www.marwariluxe.com/tools/general/random-number-generator',
-    siteName: 'Marwari Luxe',
-    images: [
-      {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Marwari Luxe Random Number Generator Tool',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Random Number Generator Tool | Custom Range Randomizer | Marwari Luxe',
-    description: 'Generate random numbers within custom ranges with our free online random number generator tool. Perfect for contests and giveaways.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
-    creator: '@marwariluxe',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/general/random-number-generator',
-  },
-};
 
 export default function RandomNumberGeneratorPage() {
   const generateRandomNumber = () => {

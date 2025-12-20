@@ -2,50 +2,6 @@
 
 import Navigation from '../../../../components/Navigation';
 import Footer from '../../../../components/Footer';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Free Skincare Quiz - Find Your Perfect Routine | Marwari Luxe',
-  description: 'Take our 2-minute skincare quiz to discover your perfect routine! Get personalized product recommendations based on your unique skin concerns. Trusted by dermatologists.',
-  keywords: ['skincare quiz', 'personalized skincare', 'skin care routine', 'beauty quiz', 'skincare recommendations', 'skin analysis', 'beauty tool'],
-  openGraph: {
-    title: 'Free Skincare Quiz - Find Your Perfect Routine | Marwari Luxe',
-    description: 'Take our 2-minute skincare quiz to discover your perfect routine! Get personalized product recommendations based on your unique skin concerns. Trusted by dermatologists.',
-    url: 'https://www.marwariluxe.com/tools/beauty/skincare-quiz',
-    siteName: 'Marwari Luxe',
-    images: [
-      {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Free Skincare Quiz - Find Your Perfect Routine | Marwari Luxe',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Free Skincare Quiz - Find Your Perfect Routine | Marwari Luxe',
-    description: 'Take our 2-minute skincare quiz to discover your perfect routine! Get personalized product recommendations based on your unique skin concerns.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
-    creator: '@marwariluxe',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/beauty/skincare-quiz',
-  },
-};
 
 export default function SkincareQuizPage() {
   const takeQuiz = () => {
