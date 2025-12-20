@@ -46,6 +46,34 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
   transition: background-color, color var(--transition-normal) ease;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, Opera */
+}
+
+/* Hide scrollbar on mobile devices */
+@media (max-width: 768px) {
+  body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  body::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, Opera */
+  }
+  
+  /* Hide scrollbar for all elements on mobile */
+  * {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  *::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 /* Animation utilities */

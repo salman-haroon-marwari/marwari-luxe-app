@@ -114,7 +114,7 @@ const HeroSlider = () => {
 
   // Fix for image sizing - ensure full screen display with mobile optimization
   return (
-    <div className="relative h-screen w-full overflow-hidden">
+    <div className="relative w-full overflow-hidden border-0 md:border max-w-full pt-[10px] md:pt-0 h-[50vh] md:h-screen">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 w-full h-full">
         <Image
@@ -122,7 +122,7 @@ const HeroSlider = () => {
           alt={currentSlideData.title || ''}
           fill
           priority={currentSlide === 0} // Ensure first slide is prioritized
-          className="object-contain w-full h-full"
+          className="object-contain w-full h-full scale-125 md:scale-100"
           sizes="100vw"
           quality={75}
           fetchPriority={currentSlide === 0 ? "high" : "auto"} // Add fetchpriority for LCP optimization
@@ -134,28 +134,31 @@ const HeroSlider = () => {
           // Add decoding hint for better performance
           decoding="async"
         />
-        <div className="absolute inset-0 bg-black/20" />
+        <div className="absolute inset-0 bg-black/10" />
       </div>
+      
+      {/* Mobile-specific version with border only */}
+      <div className="absolute inset-0 border-2 border-gray-300 rounded-lg md:hidden pointer-events-none"></div>
 
       {/* Content */}
       <div className="relative z-10 flex items-center justify-center h-full w-full px-4 sm:px-6 lg:px-8">
-        <div className="text-center text-white max-w-4xl mx-auto pt-16 md:pt-0">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 mobile-text-3xl">
+        <div className="text-center text-white max-w-4xl mx-auto pt-8 md:pt-0">
+          <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 mobile-text-3xl">
             {currentSlideData.title || ''}
           </h1>
-          <p className="text-base sm:text-lg md:text-xl mb-4 sm:mb-6 text-gray-200 mobile-text-lg px-2">
+          <p className="text-lg sm:text-lg md:text-xl mb-4 sm:mb-6 text-gray-200 mobile-text-lg px-2">
             {currentSlideData.subtitle || ''}
           </p>
-          <div>
+          <div className="">
             {currentSlideData.link ? (
               <Link
                 href={currentSlideData.link}
-                className="mobile-btn bg-white/20 hover:bg-white/30 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 active:scale-95 inline-block backdrop-blur-sm border border-white/30"
+                className="mobile-btn bg-white/20 hover:bg-white/30 text-white px-6 sm:px-6 py-3 sm:py-3 rounded-lg text-lg sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 active:scale-95 inline-block backdrop-blur-sm border border-white/30"
               >
                 {currentSlideData.cta || 'Learn More'}
               </Link>
             ) : (
-              <button className="mobile-btn bg-white/20 hover:bg-white/30 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg text-base sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 active:scale-95 inline-block backdrop-blur-sm border border-white/30">
+              <button className="mobile-btn bg-white/20 hover:bg-white/30 text-white px-6 sm:px-6 py-3 sm:py-3 rounded-lg text-lg sm:text-lg font-semibold transition-all duration-300 transform hover:scale-105 active:scale-95 inline-block backdrop-blur-sm border border-white/30">
                 {currentSlideData.cta || 'Learn More'}
               </button>
             )}

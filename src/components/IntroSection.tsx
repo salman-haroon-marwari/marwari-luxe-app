@@ -4,14 +4,21 @@ import Image from 'next/image';
 
 const IntroSection = () => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-0 bg-white md:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="md:hidden text-center pt-[20px]">
+          <h2 className="text-3xl font-bold text-gray-900">
+            Welcome to <span className="text-purple-600">Marwari Luxe</span>
+          </h2>
+        </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
-          <div className="space-y-6 transition-opacity duration-700 opacity-100">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
-              Welcome to <span className="text-purple-600">Marwari Luxe</span>
-            </h2>
+          <div className="space-y-6 transition-opacity duration-700 opacity-100 pt-0 md:pt-0">
+            <div className="hidden md:block">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+                Welcome to <span className="text-purple-600">Marwari Luxe</span>
+              </h2>
+            </div>
             <p className="text-lg text-gray-600 leading-relaxed">
              At Marwari Luxe, we combine ancient wellness traditions with modern science. We offer premium health supplements, natural beauty products, and smart wellness tools to help you feel and look your best. Our products include high-quality vitamins, organic skincare, anti-aging serums, and health calculators that support your wellness journey.
             </p>
@@ -33,6 +40,7 @@ const IntroSection = () => {
               </div>
             </div>
           </div>
+          
 
           {/* Image/Visual Content */}
           <div className="relative transition-opacity duration-700 opacity-100">

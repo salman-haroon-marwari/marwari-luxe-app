@@ -40,7 +40,7 @@ export default function Navigation() {
         scrolled ? 'bg-white/90 dark:bg-black/90 backdrop-blur-sm py-2 shadow-md' : 'py-4'
       }`}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 w-full max-w-full overflow-x-hidden">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">

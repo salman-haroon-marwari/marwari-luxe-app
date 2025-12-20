@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { seoConfig } from "../config/seo";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,6 +36,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="google-site-verification" content="dzryDgptB67-84_p9NLWotI6TuhQYJC-xqTiEZsrPX0" />
         {/* Google Tag Manager */}
         <script 
           dangerouslySetInnerHTML={{
@@ -56,7 +58,7 @@ export default function RootLayout({
         {/* Google AdSense Auto Ads for better international targeting */}
         <script 
           async 
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR-ADSENSE-ID"
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID}`}
           crossOrigin="anonymous"
         />
       </head>
@@ -73,6 +75,7 @@ export default function RootLayout({
           />
         </noscript>
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
