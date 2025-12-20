@@ -134,12 +134,12 @@ const HeroSlider = () => {
           // Add decoding hint for better performance
           decoding="async"
         />
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/20" />
       </div>
 
       {/* Content */}
       <div className="relative z-10 flex items-center justify-center h-full w-full px-4 sm:px-6 lg:px-8">
-        <div className="text-center text-white max-w-4xl mx-auto">
+        <div className="text-center text-white max-w-4xl mx-auto pt-16 md:pt-0">
           <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 mobile-text-3xl">
             {currentSlideData.title || ''}
           </h1>

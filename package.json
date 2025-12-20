@@ -27,6 +27,7 @@
     "@types/nodemailer": "^7.0.4",
     "@types/react": "19.0.1",
     "@types/react-dom": "19.0.2",
+    "babel-plugin-react-compiler": "^1.0.0",
     "typescript": "^5.9.3"
   }
 }
