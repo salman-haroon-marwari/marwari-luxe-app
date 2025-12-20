@@ -64,7 +64,7 @@ export default function RootLayout({
             `,
           }}
         />
-        <!-- End Google Analytics Verification -->
+        {/* End Google Analytics Verification */}
         {/* Google AdSense */}
         <script 
           async 
