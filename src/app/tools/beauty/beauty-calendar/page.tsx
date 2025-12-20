@@ -1,0 +1,205 @@
+'use client';
+
+import Navigation from '../../../../components/Navigation';
+import Footer from '../../../../components/Footer';
+
+export default function BeautyCalendarPage() {
+  const scheduleTreatment = () => {
+    // Get input values
+    const treatment = (document.getElementById('treatment') as HTMLInputElement).value;
+    const date = (document.getElementById('date') as HTMLInputElement).value;
+    const time = (document.getElementById('time') as HTMLInputElement).value;
+    const notes = (document.getElementById('notes') as HTMLTextAreaElement).value;
+    
+    if (!treatment || !date || !time) {
+      alert('Please fill in all required fields');
+      return;
+    }
+    
+    // In a real app, this would save to a database
+    // For now, we'll just display the scheduled treatment
+    
+    const newAppointment = {
+      id: Date.now(),
+      treatment,
+      date,
+      time,
+      notes
+    };
+    
+    // Display confirmation
+    const confirmationElement = document.querySelector('.confirmation-message');
+    const upcomingAppointments = document.querySelector('.upcoming-appointments');
+    
+    if (confirmationElement && upcomingAppointments) {
+      confirmationElement.innerHTML = `
+        <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg mb-4">
+          <p className="font-bold">Appointment Scheduled!</p>
+          <p>Your ${treatment} is scheduled for ${date} at ${time}.</p>
+        </div>
+      `;
+      
+      // Add to upcoming appointments list
+      const appointmentElement = document.createElement('div');
+      appointmentElement.className = 'flex justify-between items-center p-4 bg-indigo-50 dark:bg-gray-600 rounded-lg mb-2';
+      appointmentElement.innerHTML = `
+        <div>
+          <h4 className="font-bold text-indigo-600 dark:text-indigo-400">${treatment}</h4>
+          <p className="text-sm text-foreground/80">${date} at ${time}</p>
+          ${notes ? `<p className="text-sm text-foreground/70 mt-1">${notes}</p>` : ''}
+        </div>
+        <button 
+          onclick="this.parentElement.remove()" 
+          className="text-red-500 hover:text-red-700"
+        >
+          Cancel
+        </button>
+      `;
+      
+      upcomingAppointments.prepend(appointmentElement);
+      
+      // Clear form
+      (document.getElementById('treatment') as HTMLInputElement).value = '';
+      (document.getElementById('date') as HTMLInputElement).value = '';
+      (document.getElementById('time') as HTMLInputElement).value = '';
+      (document.getElementById('notes') as HTMLTextAreaElement).value = '';
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-background flex flex-col">
+      <Navigation />
+      
+      <main className="flex-grow pt-32 pb-16 px-4">
+        <div className="container mx-auto max-w-4xl">
+          <div className="mb-8 animate-fade-in">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">Beauty Calendar</h1>
+            <p className="text-xl text-foreground/70">
+              Plan and track your beauty treatments and appointments.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Scheduling Form */}
+            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 md:p-8">
+              <div className="flex items-center mb-6">
+                <div className="bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl p-3 mr-4">
+                  <div className="bg-white dark:bg-gray-800 rounded-lg w-12 h-12 flex items-center justify-center">
+                    <img 
+                      src="/tool-icons/beauty-calendar.svg" 
+                      alt="Beauty Calendar" 
+                      className="w-8 h-8 object-contain"
+                    />
+                  </div>
+                </div>
+                <h2 className="text-2xl font-bold text-foreground">Schedule Treatment</h2>
+              </div>
+              
+              <div className="space-y-6">
+                <div>
+                  <label htmlFor="treatment" className="block text-lg font-medium text-foreground mb-2">
+                    Treatment Type
+                  </label>
+                  <select
+                    id="treatment"
+                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent bg-white dark:bg-gray-700 text-foreground"
+                  >
+                    <option value="">Select a treatment</option>
+                    <option value="Facial">Facial</option>
+                    <option value="Massage">Massage</option>
+                    <option value="Manicure">Manicure</option>
+                    <option value="Pedicure">Pedicure</option>
+                    <option value="Waxing">Waxing</option>
+                    <option value="Eyebrow Shaping">Eyebrow Shaping</option>
+                    <option value="Eyelash Extensions">Eyelash Extensions</option>
+                    <option value="Haircut">Haircut</option>
+                    <option value="Hair Coloring">Hair Coloring</option>
+                    <option value="Hair Treatment">Hair Treatment</option>
+                  </select>
+                </div>
+                
+                <div>
+                  <label htmlFor="date" className="block text-lg font-medium text-foreground mb-2">
+                    Date
+                  </label>
+                  <input
+                    type="date"
+                    id="date"
+                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent bg-white dark:bg-gray-700 text-foreground"
+                  />
+                </div>
+                
+                <div>
+                  <label htmlFor="time" className="block text-lg font-medium text-foreground mb-2">
+                    Time
+                  </label>
+                  <input
+                    type="time"
+                    id="time"
+                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent bg-white dark:bg-gray-700 text-foreground"
+                  />
+                </div>
+                
+                <div>
+                  <label htmlFor="notes" className="block text-lg font-medium text-foreground mb-2">
+                    Notes (Optional)
+                  </label>
+                  <textarea
+                    id="notes"
+                    rows={3}
+                    className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent bg-white dark:bg-gray-700 text-foreground"
+                    placeholder="Any special requests or reminders..."
+                  ></textarea>
+                </div>
+                
+                <button 
+                  onClick={scheduleTreatment}
+                  className="w-full px-6 py-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-bold rounded-lg hover:from-indigo-600 hover:to-purple-700 transition-all duration-300 transform hover:-translate-y-0.5 shadow-lg hover:shadow-xl"
+                >
+                  Schedule Appointment
+                </button>
+              </div>
+              
+              <div className="confirmation-message mt-4"></div>
+            </div>
+            
+            {/* Upcoming Appointments */}
+            <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 md:p-8">
+              <div className="flex items-center mb-6">
+                <div className="bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl p-3 mr-4">
+                  <div className="bg-white dark:bg-gray-800 rounded-lg w-12 h-12 flex items-center justify-center">
+                    <img 
+                      src="/tool-icons/beauty-calendar.svg" 
+                      alt="Upcoming Appointments" 
+                      className="w-8 h-8 object-contain"
+                    />
+                  </div>
+                </div>
+                <h2 className="text-2xl font-bold text-foreground">Upcoming Appointments</h2>
+              </div>
+              
+              <div className="upcoming-appointments">
+                <div className="text-center py-8 text-foreground/70">
+                  <p>No appointments scheduled yet.</p>
+                  <p className="mt-2">Schedule your first beauty treatment!</p>
+                </div>
+              </div>
+              
+              <div className="mt-8 bg-indigo-50 dark:bg-gray-700 rounded-xl p-5">
+                <h3 className="font-bold text-lg mb-3 text-indigo-600 dark:text-indigo-400">Beauty Calendar Tips</h3>
+                <ul className="text-foreground/80 space-y-2 text-sm">
+                  <li>• Book regular facials every 4-6 weeks for optimal skin health</li>
+                  <li>• Schedule haircuts every 6-8 weeks to maintain your style</li>
+                  <li>• Plan waxing appointments based on your hair growth cycle</li>
+                  <li>• Book popular time slots in advance to secure your preferred dates</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      
+      <Footer />
+    </div>
+  );
+}
