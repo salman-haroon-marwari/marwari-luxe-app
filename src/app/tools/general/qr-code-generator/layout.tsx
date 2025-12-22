@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free QR Code Generator - Create Custom QR Codes | Marwari Luxe',
     description: 'Generate custom QR codes with our free QR code generator tool. Create QR codes for websites, contacts, Wi-Fi, and more. Scan and share instantly with our easy-to-use tool.',
-    url: 'https://www.marwariluxe.com/tools/general/qr-code-generator',
+    url: 'https://marwariluxe.com/tools/general/qr-code-generator',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Free QR Code Generator Tool | Marwari Luxe',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free QR Code Generator - Create Custom QR Codes | Marwari Luxe',
     description: 'Generate custom QR codes with our free QR code generator tool. Create QR codes for websites, contacts, Wi-Fi, and more.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/general/qr-code-generator',
+    canonical: 'https://marwariluxe.com/tools/general/qr-code-generator',
   },
 };
 

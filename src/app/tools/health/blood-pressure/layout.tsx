@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free Blood Pressure Tracker - Monitor Your Health | Marwari Luxe',
     description: 'Track your blood pressure readings over time. Understand your cardiovascular health with our free blood pressure monitoring tool.',
-    url: 'https://www.marwariluxe.com/tools/health/blood-pressure',
+    url: 'https://marwariluxe.com/tools/health/blood-pressure',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Free Blood Pressure Tracker Tool | Marwari Luxe',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Blood Pressure Tracker - Monitor Your Health | Marwari Luxe',
     description: 'Track your blood pressure readings over time. Understand your cardiovascular health with our free tool.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/health/blood-pressure',
+    canonical: 'https://marwariluxe.com/tools/health/blood-pressure',
   },
 };
 

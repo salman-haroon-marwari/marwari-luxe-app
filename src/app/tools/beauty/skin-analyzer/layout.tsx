@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free Skin Type Analyzer - Find Your Perfect Skincare | Marwari Luxe',
     description: 'Determine your skin type with our free skin analyzer tool. Get personalized skincare recommendations based on your unique skin profile.',
-    url: 'https://www.marwariluxe.com/tools/beauty/skin-analyzer',
+    url: 'https://marwariluxe.com/tools/beauty/skin-analyzer',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Free Skin Type Analyzer Tool | Marwari Luxe',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Skin Type Analyzer - Find Your Perfect Skincare | Marwari Luxe',
     description: 'Determine your skin type with our free skin analyzer tool. Get personalized skincare recommendations.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/beauty/skin-analyzer',
+    canonical: 'https://marwariluxe.com/tools/beauty/skin-analyzer',
   },
 };
 

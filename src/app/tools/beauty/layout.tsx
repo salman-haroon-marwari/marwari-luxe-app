@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Beauty Tools | Skincare Calculators & Analyzers | Marwari Luxe',
     description: 'Discover our collection of free beauty tools including skin type analyzers, skincare quizzes, makeup shade finders, and cosmetic calculators.',
-    url: 'https://www.marwariluxe.com/tools/beauty',
+    url: 'https://marwariluxe.com/tools/beauty',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Marwari Luxe Beauty Tools',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Beauty Tools | Skincare Calculators & Analyzers | Marwari Luxe',
     description: 'Discover our collection of free beauty tools including skin type analyzers, skincare quizzes, makeup shade finders, and cosmetic calculators.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/beauty',
+    canonical: 'https://marwariluxe.com/tools/beauty',
   },
 };
 

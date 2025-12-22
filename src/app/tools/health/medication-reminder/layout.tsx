@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free Medication Reminder - Never Miss a Dose | Marwari Luxe',
     description: 'Stay on track with your medications using our free medication reminder tool. Set custom alerts, track doses, and get notifications to ensure you never miss taking your prescribed medications.',
-    url: 'https://www.marwariluxe.com/tools/health/medication-reminder',
+    url: 'https://marwariluxe.com/tools/health/medication-reminder',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Free Medication Reminder Tool | Marwari Luxe',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Medication Reminder - Never Miss a Dose | Marwari Luxe',
     description: 'Stay on track with your medications using our free medication reminder tool. Set custom alerts and track doses to ensure you never miss taking your prescribed medications.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/health/medication-reminder',
+    canonical: 'https://marwariluxe.com/tools/health/medication-reminder',
   },
 };
 

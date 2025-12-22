@@ -8,11 +8,11 @@ export const metadata = {
   openGraph: {
     title: 'General Productivity Tools & Utilities | Marwari Luxe',
     description: 'Explore our collection of practical productivity tools and utilities including unit converters, password generators, and QR code creators.',
-    url: 'https://www.marwariluxe.com/categories/general',
+    url: 'https://marwariluxe.com/categories/general',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'General Productivity Tools & Utilities | Marwari Luxe',
@@ -25,7 +25,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'General Productivity Tools & Utilities | Marwari Luxe',
     description: 'Explore our collection of practical productivity tools and utilities including unit converters and password generators.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -40,7 +40,7 @@ export const metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/categories/general',
+    canonical: 'https://marwariluxe.com/categories/general',
   },
 };
 

@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free Password Generator - Create Secure Passwords | Marwari Luxe',
     description: 'Generate strong, secure passwords with our free password generator tool. Customize length, characters, and complexity for maximum online security. Protect your accounts from hackers.',
-    url: 'https://www.marwariluxe.com/tools/general/password-generator',
+    url: 'https://marwariluxe.com/tools/general/password-generator',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Free Password Generator Tool | Marwari Luxe',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Password Generator - Create Secure Passwords | Marwari Luxe',
     description: 'Generate strong, secure passwords with our free password generator tool. Customize length, characters, and complexity for maximum online security.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/general/password-generator',
+    canonical: 'https://marwariluxe.com/tools/general/password-generator',
   },
 };
 

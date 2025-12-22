@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free Beauty Calendar - Plan Your Beauty Routine | Marwari Luxe',
     description: 'Organize your beauty appointments, treatments, and routines with our free beauty calendar tool. Never miss a skincare appointment or beauty treatment again.',
-    url: 'https://www.marwariluxe.com/tools/beauty/beauty-calendar',
+    url: 'https://marwariluxe.com/tools/beauty/beauty-calendar',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Free Beauty Calendar Tool | Marwari Luxe',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Beauty Calendar - Plan Your Beauty Routine | Marwari Luxe',
     description: 'Organize your beauty appointments, treatments, and routines with our free beauty calendar tool.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/beauty/beauty-calendar',
+    canonical: 'https://marwariluxe.com/tools/beauty/beauty-calendar',
   },
 };
 

@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free Currency Exchange Converter - Real-Time Rates | Marwari Luxe',
     description: 'Convert currencies instantly with our free currency exchange tool. Get real-time exchange rates for 20+ global currencies.',
-    url: 'https://www.marwariluxe.com/tools/general/currency-exchange',
+    url: 'https://marwariluxe.com/tools/general/currency-exchange',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Free Currency Exchange Converter Tool | Marwari Luxe',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Currency Exchange Converter - Real-Time Rates | Marwari Luxe',
     description: 'Convert currencies instantly with our free currency exchange tool. Get real-time exchange rates for 20+ global currencies.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/general/currency-exchange',
+    canonical: 'https://marwariluxe.com/tools/general/currency-exchange',
   },
 };
 

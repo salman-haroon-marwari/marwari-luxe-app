@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free Heart Rate Monitor - Track Your Pulse & BPM | Marwari Luxe',
     description: 'Monitor your heart rate with our free heart rate tracker tool. Track your resting heart rate, active heart rate, and recovery rate. Perfect for fitness enthusiasts and health-conscious individuals.',
-    url: 'https://www.marwariluxe.com/tools/health/heart-rate',
+    url: 'https://marwariluxe.com/tools/health/heart-rate',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Free Heart Rate Monitor Tool | Marwari Luxe',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Heart Rate Monitor - Track Your Pulse & BPM | Marwari Luxe',
     description: 'Monitor your heart rate with our free heart rate tracker tool. Track your resting heart rate, active heart rate, and recovery rate.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/health/heart-rate',
+    canonical: 'https://marwariluxe.com/tools/health/heart-rate',
   },
 };
 

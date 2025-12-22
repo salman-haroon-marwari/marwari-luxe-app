@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free Makeup Shade Finder - Perfect Foundation Match | Marwari Luxe',
     description: 'Find your perfect foundation shade with our free makeup shade finder tool. Get personalized recommendations based on your skin tone and undertone. Never buy the wrong foundation shade again.',
-    url: 'https://www.marwariluxe.com/tools/beauty/makeup-shade-finder',
+    url: 'https://marwariluxe.com/tools/beauty/makeup-shade-finder',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Free Makeup Shade Finder Tool | Marwari Luxe',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Makeup Shade Finder - Perfect Foundation Match | Marwari Luxe',
     description: 'Find your perfect foundation shade with our free makeup shade finder tool. Get personalized recommendations based on your skin tone and undertone.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/beauty/makeup-shade-finder',
+    canonical: 'https://marwariluxe.com/tools/beauty/makeup-shade-finder',
   },
 };
 

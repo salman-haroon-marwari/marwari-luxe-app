@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free Skincare Quiz - Find Your Perfect Routine | Marwari Luxe',
     description: 'Take our free skincare quiz to discover your ideal skincare routine. Get personalized product recommendations based on your skin type, concerns, and goals. Perfect for beginners and skincare enthusiasts.',
-    url: 'https://www.marwariluxe.com/tools/beauty/skincare-quiz',
+    url: 'https://marwariluxe.com/tools/beauty/skincare-quiz',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Free Skincare Quiz Tool | Marwari Luxe',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Skincare Quiz - Find Your Perfect Routine | Marwari Luxe',
     description: 'Take our free skincare quiz to discover your ideal skincare routine. Get personalized product recommendations based on your skin type, concerns, and goals.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/beauty/skincare-quiz',
+    canonical: 'https://marwariluxe.com/tools/beauty/skincare-quiz',
   },
 };
 

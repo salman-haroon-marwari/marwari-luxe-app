@@ -10,11 +10,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free Health, Wellness & Beauty Tools | Marwari Luxe',
     description: 'Access our collection of free interactive tools for health tracking, beauty assessments, and wellness planning.',
-    url: 'https://www.marwariluxe.com/tools',
+    url: 'https://marwariluxe.com/tools',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Marwari Luxe Free Health, Wellness & Beauty Tools',
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Health, Wellness & Beauty Tools | Marwari Luxe',
     description: 'Access our collection of free interactive tools for health tracking, beauty assessments, and wellness planning.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools',
+    canonical: 'https://marwariluxe.com/tools'
   },
 };
 

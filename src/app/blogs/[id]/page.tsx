@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     openGraph: {
       title: `${blogPost.title} | Marwari Luxe`,
       description: blogPost.excerpt,
-      url: `https://www.marwariluxe.com/blogs/${id}`,
+      url: `https://marwariluxe.com/blogs/${id}`,
       siteName: 'Marwari Luxe',
       images: [
         {
@@ -56,7 +56,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
       },
     },
     alternates: {
-      canonical: `https://www.marwariluxe.com/blogs/${id}`,
+      canonical: `https://marwariluxe.com/blogs/${id}`,
     },
   };
 }

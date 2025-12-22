@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free Cosmetic Ingredient Checker - Safe Beauty Products | Marwari Luxe',
     description: 'Check cosmetic product ingredients for allergens and harmful substances. Get instant analysis of potentially concerning ingredients and safer alternatives.',
-    url: 'https://www.marwariluxe.com/tools/beauty/ingredient-checker',
+    url: 'https://marwariluxe.com/tools/beauty/ingredient-checker',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Free Cosmetic Ingredient Checker Tool | Marwari Luxe',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Cosmetic Ingredient Checker - Safe Beauty Products | Marwari Luxe',
     description: 'Check cosmetic product ingredients for allergens and harmful substances. Get instant analysis and safer alternatives.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/beauty/ingredient-checker',
+    canonical: 'https://marwariluxe.com/tools/beauty/ingredient-checker',
   },
 };
 

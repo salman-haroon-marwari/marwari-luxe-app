@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.marwariluxe.com/sitemap.xml
+Sitemap: https://marwariluxe.com/sitemap.xml
 
 # Allow all crawlers to access all content for international indexing
 User-agent: Googlebot
@@ -28,4 +28,4 @@ User-agent: *
 Crawl-delay: 10
 
 # Host directive for international targeting
-Host: www.marwariluxe.com
+Host: marwariluxe.com

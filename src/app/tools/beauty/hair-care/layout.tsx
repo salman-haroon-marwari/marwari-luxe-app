@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free Hair Care Guide - Healthy Hair Tips & Routines | Marwari Luxe',
     description: 'Get personalized hair care advice with our free hair care guide tool. Discover routines for your hair type, learn about hair products, and get tips for healthier, stronger hair.',
-    url: 'https://www.marwariluxe.com/tools/beauty/hair-care',
+    url: 'https://marwariluxe.com/tools/beauty/hair-care',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Free Hair Care Guide Tool | Marwari Luxe',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Hair Care Guide - Healthy Hair Tips & Routines | Marwari Luxe',
     description: 'Get personalized hair care advice with our free hair care guide tool. Discover routines for your hair type and get tips for healthier hair.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/beauty/hair-care',
+    canonical: 'https://marwariluxe.com/tools/beauty/hair-care',
   },
 };
 

@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
       title: 'Product Not Found | Marwari Luxe',
       description: 'Product not found',
       alternates: {
-        canonical: 'https://www.marwariluxe.com/products/not-found',
+        canonical: 'https://marwariluxe.com/products/not-found',
       },
     };
   }
@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
     openGraph: {
       title: `${product.name} | Marwari Luxe`,
       description: product.detailedDescription || product.description,
-      url: `https://www.marwariluxe.com/products/${product.id}`,
+      url: `https://marwariluxe.com/products/${product.id}`,
       siteName: 'Marwari Luxe',
       images: [
         {
@@ -57,7 +57,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
       },
     },
     alternates: {
-      canonical: `https://www.marwariluxe.com/products/${product.id}`,
+      canonical: `https://marwariluxe.com/products/${product.id}`,
     },
   };
 }

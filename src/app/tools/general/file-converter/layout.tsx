@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free File Converter - Convert Documents & Media Files | Marwari Luxe',
     description: 'Convert between different file formats with our free file converter tool. Support for documents, images, audio, and video files. Fast and secure file conversion online.',
-    url: 'https://www.marwariluxe.com/tools/general/file-converter',
+    url: 'https://marwariluxe.com/tools/general/file-converter',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Free File Converter Tool | Marwari Luxe',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free File Converter - Convert Documents & Media Files | Marwari Luxe',
     description: 'Convert between different file formats with our free file converter tool. Support for documents, images, audio, and video files.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/general/file-converter',
+    canonical: 'https://marwariluxe.com/tools/general/file-converter',
   },
 };
 

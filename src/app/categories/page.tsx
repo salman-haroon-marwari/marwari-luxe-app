@@ -11,11 +11,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Shop by Category | Health, Wellness & Beauty Products | Marwari Luxe',
     description: 'Browse our premium products organized by category. Find health supplements, wellness tools, luxury skincare, and beauty essentials.',
-    url: 'https://www.marwariluxe.com/categories',
+    url: 'https://marwariluxe.com/categories',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Marwari Luxe Shop by Category',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Shop by Category | Health, Wellness & Beauty Products | Marwari Luxe',
     description: 'Browse our premium products organized by category. Find health supplements, wellness tools, luxury skincare, and beauty essentials.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/categories',
+    canonical: 'https://marwariluxe.com/categories',
   },
 };
 

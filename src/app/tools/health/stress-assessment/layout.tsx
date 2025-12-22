@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free Stress Assessment - Check Your Stress Levels | Marwari Luxe',
     description: 'Assess your stress levels with our free stress assessment tool. Get personalized insights into your stress patterns and receive recommendations for stress management techniques. Take control of your mental wellness today.',
-    url: 'https://www.marwariluxe.com/tools/health/stress-assessment',
+    url: 'https://marwariluxe.com/tools/health/stress-assessment',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Free Stress Assessment Tool | Marwari Luxe',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Stress Assessment - Check Your Stress Levels | Marwari Luxe',
     description: 'Assess your stress levels with our free stress assessment tool. Get personalized insights into your stress patterns and receive recommendations for stress management techniques.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/health/stress-assessment',
+    canonical: 'https://marwariluxe.com/tools/health/stress-assessment',
   },
 };
 

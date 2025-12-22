@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Health & Wellness Blog | Expert Articles & Beauty Tips | Marwari Luxe',
     description: 'Explore our expert blog for the latest health research, wellness tips, beauty advice, and evidence-based articles.',
-    url: 'https://www.marwariluxe.com/blogs',
+    url: 'https://marwariluxe.com/blogs',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Marwari Luxe Health & Wellness Blog',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Health & Wellness Blog | Expert Articles & Beauty Tips | Marwari Luxe',
     description: 'Explore our expert blog for the latest health research, wellness tips, beauty advice, and evidence-based articles.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/blogs',
+    canonical: 'https://marwariluxe.com/blogs',
   },
 };
 

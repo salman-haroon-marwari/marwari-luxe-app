@@ -11,11 +11,11 @@ export const metadata = {
   openGraph: {
     title: 'Health & Wellness Products | Premium Supplements & Tools | Marwari Luxe',
     description: 'Explore our premium health and wellness products including natural supplements, vitamins, and advanced health tools for optimal wellbeing.',
-    url: 'https://www.marwariluxe.com/categories/health-wellness',
+    url: 'https://marwariluxe.com/categories/health-wellness',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Health & Wellness Products | Premium Supplements & Tools | Marwari Luxe',
@@ -28,7 +28,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Health & Wellness Products | Premium Supplements & Tools | Marwari Luxe',
     description: 'Explore our premium health and wellness products including natural supplements and advanced health tools.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -43,7 +43,7 @@ export const metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/categories/health-wellness',
+    canonical: 'https://marwariluxe.com/categories/health-wellness',
   },
 };
 

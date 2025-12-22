@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free Water Intake Tracker - Stay Hydrated Daily | Marwari Luxe',
     description: 'Track your daily water consumption with our free hydration tracker tool. Stay properly hydrated and improve your health with personalized water intake goals.',
-    url: 'https://www.marwariluxe.com/tools/health/water-monitor',
+    url: 'https://marwariluxe.com/tools/health/water-monitor',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Free Water Intake Tracker Tool | Marwari Luxe',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Water Intake Tracker - Stay Hydrated Daily | Marwari Luxe',
     description: 'Track your daily water consumption with our free hydration tracker tool. Stay properly hydrated and improve your health.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/health/water-monitor',
+    canonical: 'https://marwariluxe.com/tools/health/water-monitor',
   },
 };
 

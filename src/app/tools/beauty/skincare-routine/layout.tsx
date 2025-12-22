@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free Skincare Routine Builder - Custom Daily Regimen | Marwari Luxe',
     description: 'Build your perfect daily skincare routine with our free routine builder tool. Get step-by-step guidance tailored to your skin type and concerns. Create morning and evening regimens for healthy, glowing skin.',
-    url: 'https://www.marwariluxe.com/tools/beauty/skincare-routine',
+    url: 'https://marwariluxe.com/tools/beauty/skincare-routine',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Free Skincare Routine Builder Tool | Marwari Luxe',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Skincare Routine Builder - Custom Daily Regimen | Marwari Luxe',
     description: 'Build your perfect daily skincare routine with our free routine builder tool. Get step-by-step guidance tailored to your skin type and concerns.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/beauty/skincare-routine',
+    canonical: 'https://marwariluxe.com/tools/beauty/skincare-routine',
   },
 };
 

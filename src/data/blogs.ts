@@ -237,15 +237,15 @@ category: "Health",
       title: "Fibremaxxing Diet: Why Fiber is the Hottest Health Trend in 2025",
       description: "Discover the Fibremaxxing Diet trend of 2025. Learn how maximizing fiber intake can boost gut health, aid weight loss, and increase energy naturally through this science-backed approach.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,q_auto:good,dpr_auto,c_fill,g_auto,w_auto/v1761864930/Marwari-luxe_dnwxfa.jpg",
-      url: "https://www.marwariluxe.com/blogs/health-blog-001"
+      url: "https://marwariluxe.com/blogs/health-blog-001"
     },
     lsiKeywords: ["high fiber diet", "fiber benefits", "gut health 2025", "natural weight loss", "plant based nutrition", "digestive health", "dietary fiber sources", "fiber for weight management", "prebiotic foods", "soluble fiber benefits"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/health-blog-001",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/health-blog-001&text=Fibremaxxing%20Diet:%20Why%20Fiber%20is%20the%20Hottest%20Health%20Trend%20in%202025",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/health-blog-001&title=Fibremaxxing%20Diet:%20Why%20Fiber%20is%20the%20Hottest%20Health%20Trend%20in%202025",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/health-blog-001&title=Fibremaxxing%20Diet:%20Why%20Fiber%20is%20the%20Hottest%20Health%20Trend%20in%202025",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/health-blog-001&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,q_auto:good,dpr_auto,c_fill,g_auto,w_auto/v1761864930/Marwari-luxe_dnwxfa.jpg&description=Fibremaxxing%20Diet:%20Why%20Fiber%20is%20the%20Hottest%20Health%20Trend%20in%202025"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/health-blog-001",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/health-blog-001&text=Fibremaxxing%20Diet:%20Why%20Fiber%20is%20the%20Hottest%20Health%20Trend%20in%202025",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/health-blog-001&title=Fibremaxxing%20Diet:%20Why%20Fiber%20is%20the%20Hottest%20Health%20Trend%20in%202025",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/health-blog-001&title=Fibremaxxing%20Diet:%20Why%20Fiber%20is%20the%20Hottest%20Health%20Trend%20in%202025",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/health-blog-001&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,q_auto:good,dpr_auto,c_fill,g_auto,w_auto/v1761864930/Marwari-luxe_dnwxfa.jpg&description=Fibremaxxing%20Diet:%20Why%20Fiber%20is%20the%20Hottest%20Health%20Trend%20in%202025"
     },
     featuredProductIds: ['health-011', 'health-015']
   },
@@ -525,15 +525,15 @@ Discover the top 7 AI-powered health and fitness tools transforming the way we t
       title: "Top 7 AI-Powered Health Tools That Make Fitness Smarter 2025.",
       description: "Discover the top 7 AI-powered health tools transforming fitness in 2025. From smart wearables to AI diet planners, learn how technology makes wellness smarter and more personalized.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863551/blog2-3_vldipi.png",
-      url: "https://www.marwariluxe.com/blogs/health-blog-002"
+      url: "https://marwariluxe.com/blogs/health-blog-002"
     },
     lsiKeywords: ["ai health tools 2025", "fitness technology", "smart wearables", "health tracking", "personalized fitness", "ai diet planners", "wellness technology", "fitness apps", "health monitoring", "smart fitness devices"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/health-blog-002",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/health-blog-002&text=Top%207%20AI-Powered%20Health%20Tools%20That%20Make%20Fitness%20Smarter%202025.",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/health-blog-002&title=Top%207%20AI-Powered%20Health%20Tools%20That%20Make%20Fitness%20Smarter%202025.",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/health-blog-002&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863551/blog2-3_vldipi.png&description=Top%207%20AI-Powered%20Health%20Tools%20That%20Make%20Fitness%20Smarter%202025.",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/health-blog-002&title=Top%207%20AI-Powered%20Health%20Tools%20That%20Make%20Fitness%20Smarter%202025."
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/health-blog-002",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/health-blog-002&text=Top%207%20AI-Powered%20Health%20Tools%20That%20Make%20Fitness%20Smarter%202025.",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/health-blog-002&title=Top%207%20AI-Powered%20Health%20Tools%20That%20Make%20Fitness%20Smarter%202025.",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/health-blog-002&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863551/blog2-3_vldipi.png&description=Top%207%20AI-Powered%20Health%20Tools%20That%20Make%20Fitness%20Smarter%202025.",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/health-blog-002&title=Top%207%20AI-Powered%20Health%20Tools%20That%20Make%20Fitness%20Smarter%202025."
     }
   },
   {
@@ -1383,15 +1383,15 @@ Discover the top 7 AI-powered health and fitness tools transforming the way we t
         title: "Top 10 Home Remedies to Boost Your Immune System Naturally",
         description: "Discover the top 10 natural home remedies that strengthen your immune system without medicine. From ginger and turmeric to probiotics and zinc-rich foods, these science-backed methods help your body fight infections, boost energy, and prevent seasonal flu naturally.",
         image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864119/blog21-1_uojszl.png",
-        url: "https://www.marwariluxe.com/blogs/evergreen-health-001"
+        url: "https://marwariluxe.com/blogs/evergreen-health-001"
       },
       lsiKeywords: ["immune system boosters", "natural immunity remedies", "home remedies for cold", "ginger for immunity", "turmeric benefits", "garlic health benefits", "honey and lemon for flu", "green tea antioxidants", "probiotics for immunity", "vitamin c foods", "zinc for immune system", "ayurvedic immunity remedies"],
       shareButtons: {
-        facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/evergreen-health-001",
-        twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/evergreen-health-001&text=Top%2010%20Home%20Remedies%20to%20Boost%20Your%20Immune%20System%20Naturally",
-        linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/evergreen-health-001&title=Top%2010%20Home%20Remedies%20to%20Boost%20Your%20Immune%20System%20Naturally",
-        pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/evergreen-health-001&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864119/blog21-1_uojszl.png&description=Top%2010%20Home%20Remedies%20to%20Boost%20Your%20Immune%20System%20Naturally",
-        instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/evergreen-health-001&title=Top%2010%20Home%20Remedies%20to%20Boost%20Your%20Immune%20System%20Naturally"
+        facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/evergreen-health-001",
+        twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/evergreen-health-001&text=Top%2010%20Home%20Remedies%20to%20Boost%20Your%20Immune%20System%20Naturally",
+        linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/evergreen-health-001&title=Top%2010%20Home%20Remedies%20to%20Boost%20Your%20Immune%20System%20Naturally",
+        pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/evergreen-health-001&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864119/blog21-1_uojszl.png&description=Top%2010%20Home%20Remedies%20to%20Boost%20Your%20Immune%20System%20Naturally",
+        instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/evergreen-health-001&title=Top%2010%20Home%20Remedies%20to%20Boost%20Your%20Immune%20System%20Naturally"
       }
     },
     {
@@ -1611,15 +1611,15 @@ Discover the top 7 AI-powered health and fitness tools transforming the way we t
         title: "Ashwagandha Benefits: Ancient Ayurvedic Herb for Modern Health & Stress Relief",
         description: "Ashwagandha is an ancient adaptogenic herb known for lowering stress, improving sleep, boosting energy, and supporting hormonal balance. Backed by Ayurveda and modern research, it offers a natural path to better mental, physical, and emotional health.",
         image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864133/blog22-1_uaopea.png",
-        url: "https://www.marwariluxe.com/blogs/evergreen-health-002"
+        url: "https://marwariluxe.com/blogs/evergreen-health-002"
       },
       lsiKeywords: ["ashwagandha benefits", "adaptogenic herbs", "stress relief herbs", "natural sleep aids", "hormonal balance supplements", "ayurvedic medicine", "cortisol reduction", "anxiety relief herbs", "energy boosting herbs", "immune system support"],
       shareButtons: {
-        facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/evergreen-health-002",
-        twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/evergreen-health-002&text=Ashwagandha%20Benefits:%20Ancient%20Ayurvedic%20Herb%20for%20Modern%20Health%20%26%20Stress%20Relief",
-        linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/evergreen-health-002&title=Ashwagandha%20Benefits:%20Ancient%20Ayurvedic%20Herb%20for%20Modern%20Health%20%26%20Stress%20Relief",
-        pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/evergreen-health-002&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864133/blog22-1_uaopea.png&description=Ashwagandha%20Benefits:%20Ancient%20Ayurvedic%20Herb%20for%20Modern%20Health%20%26%20Stress%20Relief",
-        instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/evergreen-health-002"
+        facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/evergreen-health-002",
+        twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/evergreen-health-002&text=Ashwagandha%20Benefits:%20Ancient%20Ayurvedic%20Herb%20for%20Modern%20Health%20%26%20Stress%20Relief",
+        linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/evergreen-health-002&title=Ashwagandha%20Benefits:%20Ancient%20Ayurvedic%20Herb%20for%20Modern%20Health%20%26%20Stress%20Relief",
+        pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/evergreen-health-002&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864133/blog22-1_uaopea.png&description=Ashwagandha%20Benefits:%20Ancient%20Ayurvedic%20Herb%20for%20Modern%20Health%20%26%20Stress%20Relief",
+        instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/evergreen-health-002"
       }
     },
   {
@@ -1840,15 +1840,15 @@ Discover why Sleep Therapy and the “bed-rotting” trend are redefining self-c
       title: "Sleep Therapy 2025: How Bed-Rotting Became the New Self-Care",
       description: "Discover how Sleep Therapy and bed-rotting became the hottest self-care trend of 2025. Learn how mindful rest can heal your body, restore focus, and redefine productivity in our always-on world.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863570/blog3-2_pabxj0.png",
-      url: "https://www.marwariluxe.com/blogs/health-blog-003"
+      url: "https://marwariluxe.com/blogs/health-blog-003"
     },
     lsiKeywords: ["sleep therapy 2025", "bed rotting trend", "mental health rest", "self care routine", "burnout recovery", "mindful rest", "sleep quality improvement", "digital detox", "stress reduction", "wellness movement"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/health-blog-003",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/health-blog-003&text=Sleep%20Therapy%202025:%20How%20Bed-Rotting%20Became%20the%20New%20Self-Care",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/health-blog-003&title=Sleep%20Therapy%202025:%20How%20Bed-Rotting%20Became%20the%20New%20Self-Care",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/health-blog-003&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863570/blog3-2_pabxj0.png&description=Sleep%20Therapy%202025:%20How%20Bed-Rotting%20Became%20the%20New%20Self-Care",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/health-blog-003&title=Sleep%20Therapy%202025:%20How%20Bed-Rotting%20Became%20the%20New%20Self-Care"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/health-blog-003",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/health-blog-003&text=Sleep%20Therapy%202025:%20How%20Bed-Rotting%20Became%20the%20New%20Self-Care",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/health-blog-003&title=Sleep%20Therapy%202025:%20How%20Bed-Rotting%20Became%20the%20New%20Self-Care",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/health-blog-003&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863570/blog3-2_pabxj0.png&description=Sleep%20Therapy%202025:%20How%20Bed-Rotting%20Became%20the%20New%20Self-Care",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/health-blog-003&title=Sleep%20Therapy%202025:%20How%20Bed-Rotting%20Became%20the%20New%20Self-Care"
     },
     featuredProductIds: ['health-011', 'health-015']
   },
@@ -2110,15 +2110,15 @@ Discover why Sleep Therapy and the “bed-rotting” trend are redefining self-c
       title: "Plant-Based Protein: Best Alternatives to Meat in Modern Diets",
       description: "Discover the best plant-based protein sources to replace meat in your diet. Learn how to build muscle, stay healthy, and enjoy flavorful meals without animal products in 2025.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863622/blog4-1_egmwb4.png",
-      url: "https://www.marwariluxe.com/blogs/health-blog-004"
+      url: "https://marwariluxe.com/blogs/health-blog-004"
     },
     lsiKeywords: ["plant based protein sources", "vegan protein alternatives", "meat substitutes 2025", "healthy plant proteins", "vegetarian diet benefits", "complete proteins vegan", "high protein vegetarian foods", "sustainable eating", "ethical eating", "flexitarian diet"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/health-blog-004",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/health-blog-004&text=Plant-Based%20Protein:%20Best%20Alternatives%20to%20Meat%20in%20Modern%20Diets",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/health-blog-004&title=Plant-Based%20Protein:%20Best%20Alternatives%20to%20Meat%20in%20Modern%20Diets",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/health-blog-004&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863622/blog4-1_egmwb4.png&description=Plant-Based%20Protein:%20Best%20Alternatives%20to%20Meat%20in%20Modern%20Diets",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/health-blog-004&title=Plant-Based%20Protein:%20Best%20Alternatives%20to%20Meat%20in%20Modern%20Diets"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/health-blog-004",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/health-blog-004&text=Plant-Based%20Protein:%20Best%20Alternatives%20to%20Meat%20in%20Modern%20Diets",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/health-blog-004&title=Plant-Based%20Protein:%20Best%20Alternatives%20to%20Meat%20in%20Modern%20Diets",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/health-blog-004&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863622/blog4-1_egmwb4.png&description=Plant-Based%20Protein:%20Best%20Alternatives%20to%20Meat%20in%20Modern%20Diets",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/health-blog-004&title=Plant-Based%20Protein:%20Best%20Alternatives%20to%20Meat%20in%20Modern%20Diets"
     },
     featuredProductIds: ['health-011', 'health-015']
   },
@@ -2339,15 +2339,15 @@ Discover the best heart-health gadgets of 2025 — from AI-powered smartwatches 
       title: "Heart Health 2025: Smart Gadgets to Track Your Cardiovascular Fitness",
       description: "Discover the best heart-health gadgets of 2025 — from AI-powered smartwatches to ECG sensors — to monitor and improve your cardiovascular fitness and prevent heart disease.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863669/blog5-1_bbartz.png",
-      url: "https://www.marwariluxe.com/blogs/health-blog-005"
+      url: "https://marwariluxe.com/blogs/health-blog-005"
     },
     lsiKeywords: ["heart health 2025", "cardiovascular fitness", "smart heart devices", "ECG monitoring", "AI health wearables", "fitness tracking gadgets", "preventive heart care", "heart rate monitoring", "blood oxygen tracking", "stress management devices"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/health-blog-005",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/health-blog-005&text=Heart%20Health%202025:%20Smart%20Gadgets%20to%20Track%20Your%20Cardiovascular%20Fitness",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/health-blog-005&title=Heart%20Health%202025:%20Smart%20Gadgets%20to%20Track%20Your%20Cardiovascular%20Fitness",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/health-blog-005&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863669/blog5-1_bbartz.png&description=Heart%20Health%202025:%20Smart%20Gadgets%20to%20Track%20Your%20Cardiovascular%20Fitness",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/health-blog-005&title=Heart%20Health%202025:%20Smart%20Gadgets%20to%20Track%20Your%20Cardiovascular%20Fitness"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/health-blog-005",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/health-blog-005&text=Heart%20Health%202025:%20Smart%20Gadgets%20to%20Track%20Your%20Cardiovascular%20Fitness",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/health-blog-005&title=Heart%20Health%202025:%20Smart%20Gadgets%20to%20Track%20Your%20Cardiovascular%20Fitness",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/health-blog-005&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863669/blog5-1_bbartz.png&description=Heart%20Health%202025:%20Smart%20Gadgets%20to%20Track%20Your%20Cardiovascular%20Fitness",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/health-blog-005&title=Heart%20Health%202025:%20Smart%20Gadgets%20to%20Track%20Your%20Cardiovascular%20Fitness"
     },
     featuredProductIds: ['health-011', 'health-015']
   },
@@ -2558,15 +2558,15 @@ Ultimately, boosting immunity in 2025 isn’t a one-time effort; it’s a lifest
       title: "Top 10 Immune-Boosting Foods for a Stronger Lifestyle",
       description: "Discover the top 10 immune-boosting foods for 2025 that strengthen your body's natural defenses. Learn how proper nutrition can enhance immunity, reduce illness risk, and improve overall health.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863686/blog6-1_qytlct.png",
-      url: "https://www.marwariluxe.com/blogs/health-blog-006"
+      url: "https://marwariluxe.com/blogs/health-blog-006"
     },
     lsiKeywords: ["immune boosting foods 2025", "strengthen immune system", "vitamin c foods", "antioxidant rich foods", "gut health immunity", "natural immunity boosters", "healthy immune system", "immune system nutrition", "probiotic foods", "anti inflammatory diet"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/health-blog-006",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/health-blog-006&text=Top%2010%20Immune-Boosting%20Foods%20for%20a%20Stronger%20Lifestyle",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/health-blog-006&title=Top%2010%20Immune-Boosting%20Foods%20for%20a%20Stronger%20Lifestyle",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/health-blog-006&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863686/blog6-1_qytlct.png&description=Top%2010%20Immune-Boosting%20Foods%20for%20a%20Stronger%20Lifestyle",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/health-blog-006&title=Top%2010%20Immune-Boosting%20Foods%20for%20a%20Stronger%20Lifestyle"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/health-blog-006",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/health-blog-006&text=Top%2010%20Immune-Boosting%20Foods%20for%20a%20Stronger%20Lifestyle",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/health-blog-006&title=Top%2010%20Immune-Boosting%20Foods%20for%20a%20Stronger%20Lifestyle",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/health-blog-006&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863686/blog6-1_qytlct.png&description=Top%2010%20Immune-Boosting%20Foods%20for%20a%20Stronger%20Lifestyle",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/health-blog-006&title=Top%2010%20Immune-Boosting%20Foods%20for%20a%20Stronger%20Lifestyle"
     },
     featuredProductIds: ['health-011', 'health-015']
   },
@@ -2909,15 +2909,15 @@ In short, Intermittent Fasting 2.0 is not about deprivation — it’s about met
       title: "Intermittent Fasting 2.0: New Scientific Research in 2025",
       description: "Discover how Intermittent Fasting 2.0 is reshaping health and longevity in 2025. Learn how smart fasting schedules, personalized nutrition, and AI-driven tools are transforming weight loss, metabolism, and overall wellness.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863700/blog7-5_hvgdbx.png",
-      url: "https://www.marwariluxe.com/blogs/health-blog-007"
+      url: "https://marwariluxe.com/blogs/health-blog-007"
     },
     lsiKeywords: ["intermittent fasting 2025", "ai fasting tools", "metabolic flexibility", "fasting benefits", "weight loss fasting", "smart fasting", "circadian rhythm fasting", "fasting research 2025", "autophagy benefits", "fasting for longevity"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/health-blog-007",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/health-blog-007&text=Intermittent%20Fasting%202.0:%20New%20Scientific%20Research%20in%202025",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/health-blog-007&title=Intermittent%20Fasting%202.0:%20New%20Scientific%20Research%20in%202025",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/health-blog-007&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863700/blog7-5_hvgdbx.png&description=Intermittent%20Fasting%202.0:%20New%20Scientific%20Research%20in%202025",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/health-blog-007&title=Intermittent%20Fasting%202.0:%20New%20Scientific%20Research%20in%202025"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/health-blog-007",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/health-blog-007&text=Intermittent%20Fasting%202.0:%20New%20Scientific%20Research%20in%202025",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/health-blog-007&title=Intermittent%20Fasting%202.0:%20New%20Scientific%20Research%20in%202025",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/health-blog-007&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863700/blog7-5_hvgdbx.png&description=Intermittent%20Fasting%202.0:%20New%20Scientific%20Research%20in%202025",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/health-blog-007&title=Intermittent%20Fasting%202.0:%20New%20Scientific%20Research%20in%202025"
     },
     featuredProductIds: ['health-011', 'health-015']
   },
@@ -3312,15 +3312,15 @@ Discover how your gut directly affects your mood, memory, and focus. Learn why a
       title: "Why Gut Health is the Key to Brain Health?",
       description: "Discover how your gut directly affects your mood, memory, and focus. Learn why a healthy gut is essential for optimal brain performance and mental health in 2025.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863710/blog8-2_ddehob.png",
-      url: "https://www.marwariluxe.com/blogs/health-blog-008"
+      url: "https://marwariluxe.com/blogs/health-blog-008"
     },
     lsiKeywords: ["gut brain connection 2025", "microbiome mental health", "probiotics for anxiety", "serotonin production gut", "gut inflammation brain", "digestive health mood", "brain fog gut health", "gut bacteria diversity", "neurotransmitters gut", "mental clarity digestion"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/health-blog-008",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/health-blog-008&text=Why%20Gut%20Health%20is%20the%20Key%20to%20Brain%20Health?",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/health-blog-008&title=Why%20Gut%20Health%20is%20the%20Key%20to%20Brain%20Health?",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/health-blog-008&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863710/blog8-2_ddehob.png&description=Why%20Gut%20Health%20is%20the%20Key%20to%20Brain%20Health?",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/health-blog-008&title=Why%20Gut%20Health%20is%20the%20Key%20to%20Brain%20Health?"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/health-blog-008",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/health-blog-008&text=Why%20Gut%20Health%20is%20the%20Key%20to%20Brain%20Health?",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/health-blog-008&title=Why%20Gut%20Health%20is%20the%20Key%20to%20Brain%20Health?",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/health-blog-008&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863710/blog8-2_ddehob.png&description=Why%20Gut%20Health%20is%20the%20Key%20to%20Brain%20Health?",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/health-blog-008&title=Why%20Gut%20Health%20is%20the%20Key%20to%20Brain%20Health?"
     },
     featuredProductIds: ['health-011', 'health-015']
   },
@@ -3613,15 +3613,15 @@ Smart hydration tools, best water intake apps 2025, AI water tracker, hydration 
       title: "Hydration Hacks: Smart Water Intake Tools You Must Try",
       description: "Stay hydrated smarter in 2025! Discover the latest AI-powered hydration tools, smart bottles, and water-tracking apps that help you maintain perfect hydration levels every day.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863720/blog9-1_qyplw5.png",
-      url: "https://www.marwariluxe.com/blogs/health-blog-009"
+      url: "https://marwariluxe.com/blogs/health-blog-009"
     },
     lsiKeywords: ["smart hydration 2025", "ai water tracking", "hydration apps", "water intake tools", "smart water bottles", "dehydration prevention", "health tech hydration", "personalized hydration", "uv water bottle", "electrolyte balance"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/health-blog-009",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/health-blog-009&text=Hydration%20Hacks:%20Smart%20Water%20Intake%20Tools%20You%20Must%20Try",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/health-blog-009&title=Hydration%20Hacks:%20Smart%20Water%20Intake%20Tools%20You%20Must%20Try",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/health-blog-009&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863720/blog9-1_qyplw5.png&description=Hydration%20Hacks:%20Smart%20Water%20Intake%20Tools%20You%20Must%20Try",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/health-blog-009&title=Hydration%20Hacks:%20Smart%20Water%20Intake%20Tools%20You%20Must%20Try"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/health-blog-009",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/health-blog-009&text=Hydration%20Hacks:%20Smart%20Water%20Intake%20Tools%20You%20Must%20Try",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/health-blog-009&title=Hydration%20Hacks:%20Smart%20Water%20Intake%20Tools%20You%20Must%20Try",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/health-blog-009&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863720/blog9-1_qyplw5.png&description=Hydration%20Hacks:%20Smart%20Water%20Intake%20Tools%20You%20Must%20Try",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/health-blog-009&title=Hydration%20Hacks:%20Smart%20Water%20Intake%20Tools%20You%20Must%20Try"
     },
     featuredProductIds: ['health-011', 'health-015']
   },
@@ -4034,15 +4034,15 @@ mental health apps 2025, best therapy apps USA, UK wellness apps, AI therapy too
       title: "Mental Health Apps That Are Changing Lives in USA & UK",
       description: "Discover the top AI-powered mental health apps of 2025 helping people in the USA and UK manage anxiety, depression, focus, and emotional balance. Learn how these apps are transforming therapy.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863728/blog10-1_odom6j.png",
-      url: "https://www.marwariluxe.com/blogs/health-blog-010"
+      url: "https://marwariluxe.com/blogs/health-blog-010"
     },
     lsiKeywords: ["mental health apps 2025", "ai therapy tools", "digital counseling usa", "uk wellness apps", "anxiety depression apps", "mental fitness technology", "emotional health support", "therapy chatbots", "mindfulness apps", "stress management tools"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/health-blog-010",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/health-blog-010&text=Mental%20Health%20Apps%20That%20Are%20Changing%20Lives%20in%20USA%20%26%20UK",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/health-blog-010&title=Mental%20Health%20Apps%20That%20Are%20Changing%20Lives%20in%20USA%20%26%20UK",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/health-blog-010&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863728/blog10-1_odom6j.png&description=Mental%20Health%20Apps%20That%20Are%20Changing%20Lives%20in%20USA%20%26%20UK",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/health-blog-010&title=Mental%20Health%20Apps%20That%20Are%20Changing%20Lives%20in%20USA%20%26%20UK"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/health-blog-010",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/health-blog-010&text=Mental%20Health%20Apps%20That%20Are%20Changing%20Lives%20in%20USA%20%26%20UK",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/health-blog-010&title=Mental%20Health%20Apps%20That%20Are%20Changing%20Lives%20in%20USA%20%26%20UK",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/health-blog-010&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863728/blog10-1_odom6j.png&description=Mental%20Health%20Apps%20That%20Are%20Changing%20Lives%20in%20USA%20%26%20UK",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/health-blog-010&title=Mental%20Health%20Apps%20That%20Are%20Changing%20Lives%20in%20USA%20%26%20UK"
     },
     featuredProductIds: ['health-011', 'health-015']
   },
@@ -4395,15 +4395,15 @@ exosome skincare, anti-aging 2025, skincare innovation, exosome facial, anti-agi
       title: "Exosome Skincare: The Future of Anti-Aging Treatments",
       description: "Discover how exosome skincare is redefining anti-aging treatments in 2025. Learn how this groundbreaking skincare innovation boosts cell repair, collagen production, and youthful glow naturally.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863762/blog11-11_u2g1a0.png",
-      url: "https://www.marwariluxe.com/blogs/beauty-blog-001"
+      url: "https://marwariluxe.com/blogs/beauty-blog-001"
     },
     lsiKeywords: ["exosome skincare 2025", "anti aging technology", "cellular repair treatment", "collagen booster skincare", "skincare innovation", "beauty tech trends", "anti aging facial", "stem cell skincare", "regenerative beauty", "future of skincare"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/beauty-blog-001",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/beauty-blog-001&text=Exosome%20Skincare:%20The%20Future%20of%20Anti-Aging%20Treatments",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/beauty-blog-001&title=Exosome%20Skincare:%20The%20Future%20of%20Anti-Aging%20Treatments",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/beauty-blog-001&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863762/blog11-11_u2g1a0.png&description=Exosome%20Skincare:%20The%20Future%20of%20Anti-Aging%20Treatments",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/beauty-blog-001&title=Exosome%20Skincare:%20The%20Future%20of%20Anti-Aging%20Treatments"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/beauty-blog-001",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/beauty-blog-001&text=Exosome%20Skincare:%20The%20Future%20of%20Anti-Aging%20Treatments",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/beauty-blog-001&title=Exosome%20Skincare:%20The%20Future%20of%20Anti-Aging%20Treatments",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/beauty-blog-001&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863762/blog11-11_u2g1a0.png&description=Exosome%20Skincare:%20The%20Future%20of%20Anti-Aging%20Treatments",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/beauty-blog-001&title=Exosome%20Skincare:%20The%20Future%20of%20Anti-Aging%20Treatments"
     },
     featuredProductIds: ['beauty-00', 'beauty-00']
   },
@@ -4846,15 +4846,15 @@ vegan collagen, cruelty-free skincare, plant-based collagen, vegan beauty trend 
       title: "Vegan Collagen: Why It’s Replacing Animal-Based Beauty Products",
       description: "Discover why vegan collagen is taking over the beauty industry in 2025. Learn how this cruelty-free skincare innovation boosts skin elasticity, supports anti-aging, and replaces traditional animal-based collagen naturally.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863767/blog12-1_e6ozy3.png",
-      url: "https://www.marwariluxe.com/blogs/beauty-blog-002"
+      url: "https://marwariluxe.com/blogs/beauty-blog-002"
     },
     lsiKeywords: ["vegan collagen 2025", "cruelty free skincare", "plant based collagen", "anti aging vegan products", "sustainable beauty", "collagen alternatives", "ethical skincare", "vegan beauty trend", "clean beauty collagen", "biotech skincare"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/beauty-blog-002",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/beauty-blog-002&text=Vegan%20Collagen:%20Why%20It%E2%80%99s%20Replacing%20Animal-Based%20Beauty%20Products",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/beauty-blog-002&title=Vegan%20Collagen:%20Why%20It%E2%80%99s%20Replacing%20Animal-Based%20Beauty%20Products",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/beauty-blog-002&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863767/blog12-1_e6ozy3.png&description=Vegan%20Collagen:%20Why%20It%E2%80%99s%20Replacing%20Animal-Based%20Beauty%20Products",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/beauty-blog-002&title=Vegan%20Collagen:%20Why%20It%E2%80%99s%20Replacing%20Animal-Based%20Beauty%20Products"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/beauty-blog-002",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/beauty-blog-002&text=Vegan%20Collagen:%20Why%20It%E2%80%99s%20Replacing%20Animal-Based%20Beauty%20Products",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/beauty-blog-002&title=Vegan%20Collagen:%20Why%20It%E2%80%99s%20Replacing%20Animal-Based%20Beauty%20Products",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/beauty-blog-002&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863767/blog12-1_e6ozy3.png&description=Vegan%20Collagen:%20Why%20It%E2%80%99s%20Replacing%20Animal-Based%20Beauty%20Products",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/beauty-blog-002&title=Vegan%20Collagen:%20Why%20It%E2%80%99s%20Replacing%20Animal-Based%20Beauty%20Products"
     },
     featuredProductIds: ['beauty-003', 'beauty-004']
   },
@@ -5209,15 +5209,15 @@ Discover the 2025 beauty trend battle — Clean Girl Aesthetic vs Latte Makeup. 
       title: "Clean Girl Aesthetic vs Latte Makeup: 2025's Biggest Beauty Trend Battle",
       description: "The Clean Girl Aesthetic and Latte Makeup are shaping 2025's beauty scene. One is all about fresh, natural glow; the other celebrates warmth and soft glam. Here's how to pick the trend that matches your vibe.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863783/blog13-1_xna2ll.png",
-      url: "https://www.marwariluxe.com/blogs/beauty-blog-003"
+      url: "https://marwariluxe.com/blogs/beauty-blog-003"
     },
     lsiKeywords: ["clean girl aesthetic 2025", "latte makeup trend", "beauty trends 2025", "minimalist makeup", "warm makeup looks", "natural beauty", "bronzed makeup", "makeup tutorial", "skincare first beauty", "effortless makeup"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/beauty-blog-003",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/beauty-blog-003&text=Clean%20Girl%20Aesthetic%20vs%20Latte%20Makeup:%202025's%20Biggest%20Beauty%20Trend%20Battle",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/beauty-blog-003&title=Clean%20Girl%20Aesthetic%20vs%20Latte%20Makeup:%202025's%20Biggest%20Beauty%20Trend%20Battle",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/beauty-blog-003&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863783/blog13-1_xna2ll.png&description=Clean%20Girl%20Aesthetic%20vs%20Latte%20Makeup:%202025's%20Biggest%20Beauty%20Trend%20Battle",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/beauty-blog-003&title=Clean%20Girl%20Aesthetic%20vs%20Latte%20Makeup:%202025's%20Biggest%20Beauty%20Trend%20Battle"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/beauty-blog-003",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/beauty-blog-003&text=Clean%20Girl%20Aesthetic%20vs%20Latte%20Makeup:%202025's%20Biggest%20Beauty%20Trend%20Battle",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/beauty-blog-003&title=Clean%20Girl%20Aesthetic%20vs%20Latte%20Makeup:%202025's%20Biggest%20Beauty%20Trend%20Battle",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/beauty-blog-003&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863783/blog13-1_xna2ll.png&description=Clean%20Girl%20Aesthetic%20vs%20Latte%20Makeup:%202025's%20Biggest%20Beauty%20Trend%20Battle",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/beauty-blog-003&title=Clean%20Girl%20Aesthetic%20vs%20Latte%20Makeup:%202025's%20Biggest%20Beauty%20Trend%20Battle"
     },
     featuredProductIds: ['beauty-005', 'beauty-006']
   },
@@ -5541,15 +5541,15 @@ Discover the 2025 booty beauty trend — from firming creams to self-love. Learn
       title: "Booty Beauty Products That Actually Work: 2025's Wellness Obsession",
       description: "Booty beauty has taken over 2025 as the hottest self-care trend. This guide breaks down what's inside booty beauty products, how to build a routine, and why it's really about confidence and body positivity.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863794/blog14-1_nmaodv.png",
-      url: "https://www.marwariluxe.com/blogs/beauty-blog-004"
+      url: "https://marwariluxe.com/blogs/beauty-blog-004"
     },
     lsiKeywords: ["booty beauty 2025", "butt skincare routine", "body positivity", "firming creams", "exfoliating scrubs", "self care trends", "wellness obsession", "body confidence", "skincare for buttocks", "2025 beauty trends"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/beauty-blog-004",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/beauty-blog-004&text=Booty%20Beauty%20Products%20That%20Actually%20Work:%202025's%20Wellness%20Obsession",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/beauty-blog-004&title=Booty%20Beauty%20Products%20That%20Actually%20Work:%202025's%20Wellness%20Obsession",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/beauty-blog-004&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863794/blog14-1_nmaodv.png&description=Booty%20Beauty%20Products%20That%20Actually%20Work:%202025's%20Wellness%20Obsession",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/beauty-blog-004&title=Booty%20Beauty%20Products%20That%20Actually%20Work:%202025's%20Wellness%20Obsession"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/beauty-blog-004",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/beauty-blog-004&text=Booty%20Beauty%20Products%20That%20Actually%20Work:%202025's%20Wellness%20Obsession",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/beauty-blog-004&title=Booty%20Beauty%20Products%20That%20Actually%20Work:%202025's%20Wellness%20Obsession",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/beauty-blog-004&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863794/blog14-1_nmaodv.png&description=Booty%20Beauty%20Products%20That%20Actually%20Work:%202025's%20Wellness%20Obsession",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/beauty-blog-004&title=Booty%20Beauty%20Products%20That%20Actually%20Work:%202025's%20Wellness%20Obsession"
     },
     featuredProductIds: ['beauty-007', 'beauty-008']
   },
@@ -5769,15 +5769,15 @@ Discover the top 10 free AI beauty tools transforming skincare and makeup in 202
       title: "Top 10 AI Beauty Tools Redefining Makeup and Skincare in 2025",
       description: "Step into the future of beauty with smart, AI-powered tools that understand your skin. From a skin type analyzer to a foundation shade finder, explore 10 free beauty tools that bring data-driven skincare and makeup to your fingertips.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863839/blog16-6_k8wz9i.png",
-      url: "https://www.marwariluxe.com/blogs/beauty-blog-005"
+      url: "https://marwariluxe.com/blogs/beauty-blog-005"
     },
     lsiKeywords: ["ai beauty tools 2025", "skincare technology", "makeup technology", "smart beauty devices", "foundation shade finder", "skin type analyzer", "skincare routine builder", "beauty apps", "digital cosmetics", "personalized beauty"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/beauty-blog-005",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/beauty-blog-005&text=Top%2010%20AI%20Beauty%20Tools%20Redefining%20Makeup%20and%20Skincare%20in%202025",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/beauty-blog-005&title=Top%2010%20AI%20Beauty%20Tools%20Redefining%20Makeup%20and%20Skincare%20in%202025",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/beauty-blog-005&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863839/blog16-6_k8wz9i.png&description=Top%2010%20AI%20Beauty%20Tools%20Redefining%20Makeup%20and%20Skincare%20in%202025",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/beauty-blog-005&title=Top%2010%20AI%20Beauty%20Tools%20Redefining%20Makeup%20and%20Skincare%20in%202025"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/beauty-blog-005",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/beauty-blog-005&text=Top%2010%20AI%20Beauty%20Tools%20Redefining%20Makeup%20and%20Skincare%20in%202025",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/beauty-blog-005&title=Top%2010%20AI%20Beauty%20Tools%20Redefining%20Makeup%20and%20Skincare%20in%202025",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/beauty-blog-005&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863839/blog16-6_k8wz9i.png&description=Top%2010%20AI%20Beauty%20Tools%20Redefining%20Makeup%20and%20Skincare%20in%202025",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/beauty-blog-005&title=Top%2010%20AI%20Beauty%20Tools%20Redefining%20Makeup%20and%20Skincare%20in%202025"
     },
     featuredProductIds: ['beauty-007', 'beauty-008']
   },
@@ -5998,15 +5998,15 @@ Discover the top 10 free AI beauty tools transforming skincare and makeup in 202
       title: "Top 10 AI Beauty Tools Redefining Makeup and Skincare in 2025.",
       description: "Step into the future of beauty with smart, AI-powered tools that understand your skin. From a skin type analyzer to a foundation shade finder, explore 10 free beauty tools that bring data-driven skincare and makeup to your fingertips.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863839/blog16-6_k8wz9i.png",
-      url: "https://www.marwariluxe.com/blogs/beauty-blog-006"
+      url: "https://marwariluxe.com/blogs/beauty-blog-006"
     },
     lsiKeywords: ["ai beauty tools 2025", "skin type analyzer", "foundation shade finder", "skincare routine builder", "ai makeup tools", "digital beauty tools", "skin analysis app", "beauty technology trends"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/beauty-blog-006",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/beauty-blog-006&text=Top%2010%20AI%20Beauty%20Tools%20Redefining%20Makeup%20and%20Skincare%20in%202025.",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/beauty-blog-006&title=Top%2010%20AI%20Beauty%20Tools%20Redefining%20Makeup%20and%20Skincare%20in%202025.",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/beauty-blog-006&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863839/blog16-6_k8wz9i.png&description=Top%2010%20AI%20Beauty%20Tools%20Redefining%20Makeup%20and%20Skincare%20in%202025.",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/beauty-blog-006&title=Top%2010%20AI%20Beauty%20Tools%20Redefining%20Makeup%20and%20Skincare%20in%202025."
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/beauty-blog-006",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/beauty-blog-006&text=Top%2010%20AI%20Beauty%20Tools%20Redefining%20Makeup%20and%20Skincare%20in%202025.",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/beauty-blog-006&title=Top%2010%20AI%20Beauty%20Tools%20Redefining%20Makeup%20and%20Skincare%20in%202025.",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/beauty-blog-006&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863839/blog16-6_k8wz9i.png&description=Top%2010%20AI%20Beauty%20Tools%20Redefining%20Makeup%20and%20Skincare%20in%202025.",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/beauty-blog-006&title=Top%2010%20AI%20Beauty%20Tools%20Redefining%20Makeup%20and%20Skincare%20in%202025."
     },
     featuredProductIds: ['beauty-007', 'beauty-008']
   },
@@ -6302,15 +6302,15 @@ Discover the Korean glass skin secrets taking over 2025. Learn how to achieve a 
       title: "The Rise of Glass Skin: Korean Beauty Secrets Dominating 2025.",
       description: "The glass skin trend isn’t slowing down in 2025 — it’s evolving. From hydrating Korean skincare routines to AI beauty tools that personalize your glow, here’s how to achieve that dewy, flawless look everyone’s talking about.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863840/blog17-1_fqamca.png",
-      url: "https://www.marwariluxe.com/blogs/beauty-blog-007"
+      url: "https://marwariluxe.com/blogs/beauty-blog-007"
     },
     lsiKeywords: ["glass skin 2025", "Korean beauty secrets", "K-beauty routine", "hydrated skin", "dewy complexion", "skincare routine", "glass skin glow", "Korean skincare"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/beauty-blog-007",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/beauty-blog-007&text=The%20Rise%20of%20Glass%20Skin:%20Korean%20Beauty%20Secrets%20Dominating%202025.",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/beauty-blog-007&title=The%20Rise%20of%20Glass%20Skin:%20Korean%20Beauty%20Secrets%20Dominating%202025.",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/beauty-blog-007&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863840/blog17-1_fqamca.png&description=The%20Rise%20of%20Glass%20Skin:%20Korean%20Beauty%20Secrets%20Dominating%202025.",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/beauty-blog-007&title=The%20Rise%20of%20Glass%20Skin:%20Korean%20Beauty%20Secrets%20Dominating%202025."
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/beauty-blog-007",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/beauty-blog-007&text=The%20Rise%20of%20Glass%20Skin:%20Korean%20Beauty%20Secrets%20Dominating%202025.",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/beauty-blog-007&title=The%20Rise%20of%20Glass%20Skin:%20Korean%20Beauty%20Secrets%20Dominating%202025.",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/beauty-blog-007&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863840/blog17-1_fqamca.png&description=The%20Rise%20of%20Glass%20Skin:%20Korean%20Beauty%20Secrets%20Dominating%202025.",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/beauty-blog-007&title=The%20Rise%20of%20Glass%20Skin:%20Korean%20Beauty%20Secrets%20Dominating%202025."
     },
     featuredProductIds: ['beauty-007', 'beauty-008']
   },
@@ -6628,15 +6628,15 @@ Discover the best zero-waste skincare brands of 2025. Explore refillable, plasti
       title: "Sustainable Beauty: Zero-Waste Skincare Products",
       description: "Sustainability isn’t a trend anymore — it’s the new standard. In this guide, we explore the rise of zero-waste skincare and how eco-friendly beauty brands are changing the game in 2025.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863881/blog18-1_flcjtg.png",
-      url: "https://www.marwariluxe.com/blogs/beauty-blog-008"
+      url: "https://marwariluxe.com/blogs/beauty-blog-008"
     },
     lsiKeywords: ["zero-waste skincare 2025", "eco-friendly beauty", "sustainable skincare brands", "plastic-free beauty", "refillable skincare", "green beauty products", "sustainable beauty routine", "eco-conscious skincare"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/beauty-blog-008",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/beauty-blog-008&text=Sustainable%20Beauty:%20Zero-Waste%20Skincare%20Products",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/beauty-blog-008&title=Sustainable%20Beauty:%20Zero-Waste%20Skincare%20Products",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/beauty-blog-008&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863881/blog18-1_flcjtg.png&description=Sustainable%20Beauty:%20Zero-Waste%20Skincare%20Products",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/beauty-blog-008&title=Sustainable%20Beauty:%20Zero-Waste%20Skincare%20Products"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/beauty-blog-008",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/beauty-blog-008&text=Sustainable%20Beauty:%20Zero-Waste%20Skincare%20Products",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/beauty-blog-008&title=Sustainable%20Beauty:%20Zero-Waste%20Skincare%20Products",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/beauty-blog-008&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863881/blog18-1_flcjtg.png&description=Sustainable%20Beauty:%20Zero-Waste%20Skincare%20Products",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/beauty-blog-008&title=Sustainable%20Beauty:%20Zero-Waste%20Skincare%20Products"
     },
     featuredProductIds: ['beauty-007', 'beauty-008']
   },
@@ -6924,15 +6924,15 @@ Discover 7 science-backed beauty sleep secrets that boost collagen, reduce wrink
       title: "7 Scientific Beauty Sleep Secrets for Youthful, Glowing Skin.",
       description: "Want glowing, youthful skin without expensive treatments? This guide reveals 7 proven beauty sleep hacks backed by science — including the best positions, products, and nighttime habits for real results.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863890/blog19-1_gr6gfb.png",
-      url: "https://www.marwariluxe.com/blogs/beauty-blog-009"
+      url: "https://marwariluxe.com/blogs/beauty-blog-009"
     },
     lsiKeywords: ["beauty sleep secrets", "skin regeneration during sleep", "collagen production sleep", "best sleep position for skin", "nighttime skincare routine", "anti-aging sleep habits", "skin repair while sleeping", "beauty sleep hacks 2025"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/beauty-blog-009",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/beauty-blog-009&text=7%20Scientific%20Beauty%20Sleep%20Secrets%20for%20Youthful,%20Glowing%20Skin.",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/beauty-blog-009&title=7%20Scientific%20Beauty%20Sleep%20Secrets%20for%20Youthful,%20Glowing%20Skin.",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/beauty-blog-009&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863890/blog19-1_gr6gfb.png&description=7%20Scientific%20Beauty%20Sleep%20Secrets%20for%20Youthful,%20Glowing%20Skin.",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/beauty-blog-009&title=7%20Scientific%20Beauty%20Sleep%20Secrets%20for%20Youthful,%20Glowing%20Skin."
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/beauty-blog-009",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/beauty-blog-009&text=7%20Scientific%20Beauty%20Sleep%20Secrets%20for%20Youthful,%20Glowing%20Skin.",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/beauty-blog-009&title=7%20Scientific%20Beauty%20Sleep%20Secrets%20for%20Youthful,%20Glowing%20Skin.",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/beauty-blog-009&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863890/blog19-1_gr6gfb.png&description=7%20Scientific%20Beauty%20Sleep%20Secrets%20for%20Youthful,%20Glowing%20Skin.",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/beauty-blog-009&title=7%20Scientific%20Beauty%20Sleep%20Secrets%20for%20Youthful,%20Glowing%20Skin."
     },
     featuredProductIds: ['beauty-007', 'beauty-008']
   },
@@ -7225,15 +7225,15 @@ Discover how minimalist beauty is changing skincare and makeup in 2025. Learn wh
       title: "Less Is More: The Rise of Minimalist Skincare and Effortless Makeup",
       description: "Minimalist beauty isn’t about doing less — it’s about doing what matters. This guide breaks down how fewer products, cleaner formulas, and mindful routines can transform your skin and makeup game.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864110/blog20-4_pntq4y.png",
-      url: "https://www.marwariluxe.com/blogs/beauty-blog-010"
+      url: "https://marwariluxe.com/blogs/beauty-blog-010"
     },
     lsiKeywords: ["minimalist beauty 2025", "simple skincare routine", "effortless makeup", "clean beauty brands", "sustainable beauty", "minimalist makeup", "skincare routine", "beauty trends"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/beauty-blog-010",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/beauty-blog-010&text=Less%20Is%20More:%20The%20Rise%20of%20Minimalist%20Skincare%20and%20Effortless%20Makeup",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/beauty-blog-010&title=Less%20Is%20More:%20The%20Rise%20of%20Minimalist%20Skincare%20and%20Effortless%20Makeup",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/beauty-blog-010&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864110/blog20-4_pntq4y.png&description=Less%20Is%20More:%20The%20Rise%20of%20Minimalist%20Skincare%20and%20Effortless%20Makeup",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/beauty-blog-010&title=Less%20Is%20More:%20The%20Rise%20of%20Minimalist%20Skincare%20and%20Effortless%20Makeup"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/beauty-blog-010",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/beauty-blog-010&text=Less%20Is%20More:%20The%20Rise%20of%20Minimalist%20Skincare%20and%20Effortless%20Makeup",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/beauty-blog-010&title=Less%20Is%20More:%20The%20Rise%20of%20Minimalist%20Skincare%20and%20Effortless%20Makeup",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/beauty-blog-010&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864110/blog20-4_pntq4y.png&description=Less%20Is%20More:%20The%20Rise%20of%20Minimalist%20Skincare%20and%20Effortless%20Makeup",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/beauty-blog-010&title=Less%20Is%20More:%20The%20Rise%20of%20Minimalist%20Skincare%20and%20Effortless%20Makeup"
     },
     featuredProductIds: ['beauty-007', 'beauty-008']
   },
@@ -7444,15 +7444,15 @@ Learn 10 simple daily habits that boost fitness, increase energy, improve sleep,
       title: "Simple Daily Habits to Stay Fit for Life",
       description: "Discover easy daily habits that help you stay fit, energetic, and healthy for life. From smart eating and daily movement to better sleep and motivation, these simple changes fit any lifestyle.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864144/blog23-1_zqjpxe.png",
-      url: "https://www.marwariluxe.com/blogs/evergreen-health-003"
+      url: "https://marwariluxe.com/blogs/evergreen-health-003"
     },
     lsiKeywords: ["daily fitness habits", "stay fit naturally", "healthy lifestyle habits", "exercise without gym", "simple fitness routine", "daily movement", "fitness for busy people", "long term fitness"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/evergreen-health-003",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/evergreen-health-003&text=Simple%20Daily%20Habits%20to%20Stay%20Fit%20for%20Life",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/evergreen-health-003&title=Simple%20Daily%20Habits%20to%20Stay%20Fit%20for%20Life",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/evergreen-health-003&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864144/blog23-1_zqjpxe.png&description=Simple%20Daily%20Habits%20to%20Stay%20Fit%20for%20Life",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/evergreen-health-003&title=Simple%20Daily%20Habits%20to%20Stay%20Fit%20for%20Life"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/evergreen-health-003",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/evergreen-health-003&text=Simple%20Daily%20Habits%20to%20Stay%20Fit%20for%20Life",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/evergreen-health-003&title=Simple%20Daily%20Habits%20to%20Stay%20Fit%20for%20Life",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/evergreen-health-003&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864144/blog23-1_zqjpxe.png&description=Simple%20Daily%20Habits%20to%20Stay%20Fit%20for%20Life",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/evergreen-health-003&title=Simple%20Daily%20Habits%20to%20Stay%20Fit%20for%20Life"
     }
   },
   {
@@ -7564,15 +7564,15 @@ Learn how to maintain heart health at any age with simple, science-backed tips. 
       title: "How to Maintain Heart Health at Any Age: Tips to Prevent Heart Disease and Stay Active",
       description: "Your heart deserves consistent care, not perfection. Learn practical ways to protect your heart — from smart eating and stress control to daily movement and better sleep.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864191/blog24-1_tywj7n.png",
-      url: "https://www.marwariluxe.com/blogs/evergreen-health-004"
+      url: "https://marwariluxe.com/blogs/evergreen-health-004"
     },
     lsiKeywords: ["heart health tips", "prevent heart disease", "cardiovascular health", "heart healthy diet", "exercise for heart health", "stress and heart health", "heart health at any age", "maintain heart health"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/evergreen-health-004",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/evergreen-health-004&text=How%20to%20Maintain%20Heart%20Health%20at%20Any%20Age:%20Tips%20to%20Prevent%20Heart%20Disease%20and%20Stay%20Active",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/evergreen-health-004&title=How%20to%20Maintain%20Heart%20Health%20at%20Any%20Age:%20Tips%20to%20Prevent%20Heart%20Disease%20and%20Stay%20Active",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/evergreen-health-004&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864191/blog24-1_tywj7n.png&description=How%20to%20Maintain%20Heart%20Health%20at%20Any%20Age:%20Tips%20to%20Prevent%20Heart%20Disease%20and%20Stay%20Active",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/evergreen-health-004&title=How%20to%20Maintain%20Heart%20Health%20at%20Any%20Age:%20Tips%20to%20Prevent%20Heart%20Disease%20and%20Stay%20Active"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/evergreen-health-004",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/evergreen-health-004&text=How%20to%20Maintain%20Heart%20Health%20at%20Any%20Age:%20Tips%20to%20Prevent%20Heart%20Disease%20and%20Stay%20Active",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/evergreen-health-004&title=How%20to%20Maintain%20Heart%20Health%20at%20Any%20Age:%20Tips%20to%20Prevent%20Heart%20Disease%20and%20Stay%20Active",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/evergreen-health-004&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864191/blog24-1_tywj7n.png&description=How%20to%20Maintain%20Heart%20Health%20at%20Any%20Age:%20Tips%20to%20Prevent%20Heart%20Disease%20and%20Stay%20Active",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/evergreen-health-004&title=How%20to%20Maintain%20Heart%20Health%20at%20Any%20Age:%20Tips%20to%20Prevent%20Heart%20Disease%20and%20Stay%20Active"
     }
   },
   {
@@ -7893,15 +7893,15 @@ Stay healthy and energized by understanding the importance of hydration. Discove
       title: "The Importance of Hydration: How Water Impacts Your Health and Energy Levels",
       description: "Hydration is more than just drinking water — it’s a foundation for your body’s health, energy, and focus. Learn how proper water intake supports your brain, skin, and digestion while preventing fatigue and dehydration.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864737/blog25-1_pn5ogw.png",
-      url: "https://www.marwariluxe.com/blogs/evergreen-health-005"
+      url: "https://marwariluxe.com/blogs/evergreen-health-005"
     },
     lsiKeywords: ["hydration benefits", "water intake", "energy levels", "skin health", "digestion", "brain function", "daily water consumption", "dehydration symptoms"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/evergreen-health-005",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/evergreen-health-005&text=The%20Importance%20of%20Hydration:%20How%20Water%20Impacts%20Your%20Health%20and%20Energy%20Levels",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/evergreen-health-005&title=The%20Importance%20of%20Hydration:%20How%20Water%20Impacts%20Your%20Health%20and%20Energy%20Levels",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/evergreen-health-005&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864737/blog25-1_pn5ogw.png&description=The%20Importance%20of%20Hydration:%20How%20Water%20Impacts%20Your%20Health%20and%20Energy%20Levels",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/evergreen-health-005&title=The%20Importance%20of%20Hydration:%20How%20Water%20Impacts%20Your%20Health%20and%20Energy%20Levels"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/evergreen-health-005",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/evergreen-health-005&text=The%20Importance%20of%20Hydration:%20How%20Water%20Impacts%20Your%20Health%20and%20Energy%20Levels",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/evergreen-health-005&title=The%20Importance%20of%20Hydration:%20How%20Water%20Impacts%20Your%20Health%20and%20Energy%20Levels",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/evergreen-health-005&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864737/blog25-1_pn5ogw.png&description=The%20Importance%20of%20Hydration:%20How%20Water%20Impacts%20Your%20Health%20and%20Energy%20Levels",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/evergreen-health-005&title=The%20Importance%20of%20Hydration:%20How%20Water%20Impacts%20Your%20Health%20and%20Energy%20Levels"
     }
   },
   {
@@ -8182,15 +8182,15 @@ Discover the ultimate hair care guide for all hair types. Learn expert tips on d
       title: "The Complete Hair Care Guide for All Hair Types",
       description: "Want strong, healthy hair for every hair type? This guide shares expert tips on daily care, nutrition, natural remedies, and avoiding common mistakes. Maintain shiny, manageable hair and boost confidence naturally.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864917/blog30-1_vvfdud.png",
-      url: "https://www.marwariluxe.com/blogs/evergreen-beauty-005"
+      url: "https://marwariluxe.com/blogs/evergreen-beauty-005"
     },
     lsiKeywords: ["hair care tips", "hair types", "hair health", "natural hair remedies", "hair growth", "hair nutrition", "hair damage prevention", "scalp health"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/evergreen-beauty-005",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/evergreen-beauty-005&text=The%20Complete%20Hair%20Care%20Guide%20for%20All%20Hair%20Types",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/evergreen-beauty-005&title=The%20Complete%20Hair%20Care%20Guide%20for%20All%20Hair%20Types",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/evergreen-beauty-005&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864917/blog30-1_vvfdud.png&description=The%20Complete%20Hair%20Care%20Guide%20for%20All%20Hair%20Types",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/evergreen-beauty-005&title=The%20Complete%20Hair%20Care%20Guide%20for%20All%20Hair%20Types"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/evergreen-beauty-005",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/evergreen-beauty-005&text=The%20Complete%20Hair%20Care%20Guide%20for%20All%20Hair%20Types",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/evergreen-beauty-005&title=The%20Complete%20Hair%20Care%20Guide%20for%20All%20Hair%20Types",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/evergreen-beauty-005&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864917/blog30-1_vvfdud.png&description=The%20Complete%20Hair%20Care%20Guide%20for%20All%20Hair%20Types",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/evergreen-beauty-005&title=The%20Complete%20Hair%20Care%20Guide%20for%20All%20Hair%20Types"
     }
   },
   {
@@ -8436,15 +8436,15 @@ Discover effective anti-aging tips to maintain youthful, radiant skin. Learn abo
       title: "Top Anti-Aging Tips That Really Work for Youthful Skin",
       description: "Want youthful skin that lasts? This guide shares proven anti-aging tips, including daily skincare routines, nutrition, hydration, lifestyle habits, and professional treatments. Avoid common mistakes and maintain healthy, radiant, and wrinkle-free skin naturally.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864891/blog29-1_orfxve.png",
-      url: "https://www.marwariluxe.com/blogs/evergreen-beauty-004"
+      url: "https://marwariluxe.com/blogs/evergreen-beauty-004"
     },
     lsiKeywords: ["anti-aging tips", "skincare routine", "skin health", "nutrition for skin", "lifestyle habits", "professional treatments", "sunscreen importance", "collagen production"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/evergreen-beauty-004",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/evergreen-beauty-004&text=Top%20Anti-Aging%20Tips%20That%20Really%20Work%20for%20Youthful%20Skin",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/evergreen-beauty-004&title=Top%20Anti-Aging%20Tips%20That%20Really%20Work%20for%20Youthful%20Skin",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/evergreen-beauty-004&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864891/blog29-1_orfxve.png&description=Top%20Anti-Aging%20Tips%20That%20Really%20Work%20for%20Youthful%20Skin",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/evergreen-beauty-004&title=Top%20Anti-Aging%20Tips%20That%20Really%20Work%20for%20Youthful%20Skin"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/evergreen-beauty-004",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/evergreen-beauty-004&text=Top%20Anti-Aging%20Tips%20That%20Really%20Work%20for%20Youthful%20Skin",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/evergreen-beauty-004&title=Top%20Anti-Aging%20Tips%20That%20Really%20Work%20for%20Youthful%20Skin",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/evergreen-beauty-004&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864891/blog29-1_orfxve.png&description=Top%20Anti-Aging%20Tips%20That%20Really%20Work%20for%20Youthful%20Skin",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/evergreen-beauty-004&title=Top%20Anti-Aging%20Tips%20That%20Really%20Work%20for%20Youthful%20Skin"
     }
   },
   {
@@ -8690,15 +8690,15 @@ Learn how to choose the perfect foundation shade for your skin tone and underton
       title: "Foundation Shade Guide: Find the Perfect Match for Your Skin",
       description: "Finding the right foundation shade can transform your makeup look. This guide explains skin tones, undertones, foundation types, testing techniques, and pro tips to help you achieve a seamless, natural finish that enhances your skin and boosts confidence.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864870/blog28-1_qeuuh8.png",
-      url: "https://www.marwariluxe.com/blogs/evergreen-beauty-003"
+      url: "https://marwariluxe.com/blogs/evergreen-beauty-003"
     },
     lsiKeywords: ["foundation shade", "skin tone", "undertone", "makeup application", "beauty tips", "cosmetics", "foundation matching", "makeup guide"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/evergreen-beauty-003",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/evergreen-beauty-003&text=Foundation%20Shade%20Guide:%20Find%20the%20Perfect%20Match%20for%20Your%20Skin",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/evergreen-beauty-003&title=Foundation%20Shade%20Guide:%20Find%20the%20Perfect%20Match%20for%20Your%20Skin",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/evergreen-beauty-003&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864870/blog28-1_qeuuh8.png&description=Foundation%20Shade%20Guide:%20Find%20the%20Perfect%20Match%20for%20Your%20Skin",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/evergreen-beauty-003&title=Foundation%20Shade%20Guide:%20Find%20the%20Perfect%20Match%20for%20Your%20Skin"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/evergreen-beauty-003",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/evergreen-beauty-003&text=Foundation%20Shade%20Guide:%20Find%20the%20Perfect%20Match%20for%20Your%20Skin",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/evergreen-beauty-003&title=Foundation%20Shade%20Guide:%20Find%20the%20Perfect%20Match%20for%20Your%20Skin",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/evergreen-beauty-003&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864870/blog28-1_qeuuh8.png&description=Foundation%20Shade%20Guide:%20Find%20the%20Perfect%20Match%20for%20Your%20Skin",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/evergreen-beauty-003&title=Foundation%20Shade%20Guide:%20Find%20the%20Perfect%20Match%20for%20Your%20Skin"
     }
   },
   {
@@ -9024,15 +9024,15 @@ Discover the top 10 natural oils for glowing, healthy skin. Learn how coconut, a
       title: "Top 10 Natural Oils for Glowing, Healthy Skin",
       description: "Unlock the secret to radiant, healthy skin with natural oils. From hydration to anti-aging benefits, explore the top 10 oils—including coconut, argan, jojoba, and rosehip—and learn how to use them for glowing, nourished, and balanced skin every day.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864820/blog27-1_wl8rgn.png",
-      url: "https://www.marwariluxe.com/blogs/evergreen-beauty-002"
+      url: "https://marwariluxe.com/blogs/evergreen-beauty-002"
     },
     lsiKeywords: ["natural oils", "skincare", "skin health", "hydration", "anti-aging", "coconut oil", "argan oil", "jojoba oil", "rosehip oil", "beauty tips"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/evergreen-beauty-002",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/evergreen-beauty-002&text=Top%2010%20Natural%20Oils%20for%20Glowing,%20Healthy%20Skin",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/evergreen-beauty-002&title=Top%2010%20Natural%20Oils%20for%20Glowing,%20Healthy%20Skin",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/evergreen-beauty-002&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864820/blog27-1_wl8rgn.png&description=Top%2010%20Natural%20Oils%20for%20Glowing,%20Healthy%20Skin",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/evergreen-beauty-002&title=Top%2010%20Natural%20Oils%20for%20Glowing,%20Healthy%20Skin"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/evergreen-beauty-002",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/evergreen-beauty-002&text=Top%2010%20Natural%20Oils%20for%20Glowing,%20Healthy%20Skin",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/evergreen-beauty-002&title=Top%2010%20Natural%20Oils%20for%20Glowing,%20Healthy%20Skin",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/evergreen-beauty-002&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864820/blog27-1_wl8rgn.png&description=Top%2010%20Natural%20Oils%20for%20Glowing,%20Healthy%20Skin",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/evergreen-beauty-002&title=Top%2010%20Natural%20Oils%20for%20Glowing,%20Healthy%20Skin"
     }
   },
   {
@@ -9521,15 +9521,15 @@ Discover the 10 common skincare mistakes that damage your skin and learn how to 
       title: "10 Common Skincare Mistakes That Damage Your Skin — and How to Avoid Them.",
       description: "Avoid common skincare mistakes that can harm your skin. From over-cleansing and skipping sunscreen to ignoring hydration, this guide helps you build a smarter, consistent routine for healthy, radiant skin.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864752/blog26-1_dkthn6.png",
-      url: "https://www.marwariluxe.com/blogs/evergreen-beauty-001"
+      url: "https://marwariluxe.com/blogs/evergreen-beauty-001"
     },
     lsiKeywords: ["skincare mistakes", "skin health 2025", "sunscreen importance", "hydration benefits", "exfoliation tips", "skin type care", "makeup removal", "skincare routine", "active ingredients", "skin barrier"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/evergreen-beauty-001",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/evergreen-beauty-001&text=10%20Common%20Skincare%20Mistakes%20That%20Damage%20Your%20Skin%20%E2%80%94%20and%20How%20to%20Avoid%20Them.",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/evergreen-beauty-001&title=10%20Common%20Skincare%20Mistakes%20That%20Damage%20Your%20Skin%20%E2%80%94%20and%20How%20to%20Avoid%20Them.",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/evergreen-beauty-001&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864752/blog26-1_dkthn6.png&description=10%20Common%20Skincare%20Mistakes%20That%20Damage%20Your%20Skin%20%E2%80%94%20and%20How%20to%20Avoid%20Them.",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/evergreen-beauty-001&title=10%20Common%20Skincare%20Mistakes%20That%20Damage%20Your%20Skin%20%E2%80%94%20and%20How%20to%20Avoid%20Them."
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/evergreen-beauty-001",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/evergreen-beauty-001&text=10%20Common%20Skincare%20Mistakes%20That%20Damage%20Your%20Skin%20%E2%80%94%20and%20How%20to%20Avoid%20Them.",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/evergreen-beauty-001&title=10%20Common%20Skincare%20Mistakes%20That%20Damage%20Your%20Skin%20%E2%80%94%20and%20How%20to%20Avoid%20Them.",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/evergreen-beauty-001&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864752/blog26-1_dkthn6.png&description=10%20Common%20Skincare%20Mistakes%20That%20Damage%20Your%20Skin%20%E2%80%94%20and%20How%20to%20Avoid%20Them.",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/evergreen-beauty-001&title=10%20Common%20Skincare%20Mistakes%20That%20Damage%20Your%20Skin%20%E2%80%94%20and%20How%20to%20Avoid%20Them."
     }
   },
   {
@@ -9605,15 +9605,15 @@ Discover the 10 common skincare mistakes that damage your skin and learn how to 
       title: "Waterless Skincare & Minimalist Beauty: The Future of Conscious Beauty in 2026",
       description: "Discover the future of beauty with waterless skincare and minimalist routines. Learn how concentrated, eco-friendly products simplify your regimen, nourish your skin, and support sustainability. Try 7 must-have products in 2026 for radiant, healthy skin.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,v1762857789,q_auto:good/blogb-1_utllwn.png",
-      url: "https://www.marwariluxe.com/blogs/custom-beauty-001"
+      url: "https://marwariluxe.com/blogs/custom-beauty-001"
     },
     lsiKeywords: ["waterless skincare", "minimalist beauty", "eco-friendly beauty", "sustainable skincare", "skincare trends 2026", "conscious beauty", "zero waste beauty", "solid skincare products", "green beauty", "natural skincare"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/custom-beauty-001",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/custom-beauty-001&text=Waterless%20Skincare%20%26%20Minimalist%20Beauty:%20The%20Future%20of%20Conscious%20Beauty%20in%202026",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/custom-beauty-001&title=Waterless%20Skincare%20%26%20Minimalist%20Beauty:%20The%20Future%20of%20Conscious%20Beauty%20in%202026",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/custom-beauty-001&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,v1762857789,q_auto:good/blogb-1_utllwn.png&description=Waterless%20Skincare%20%26%20Minimalist%20Beauty:%20The%20Future%20of%20Conscious%20Beauty%20in%202026",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/custom-beauty-001&title=Waterless%20Skincare%20%26%20Minimalist%20Beauty:%20The%20Future%20of%20Conscious%20Beauty%20in%202026"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/custom-beauty-001",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/custom-beauty-001&text=Waterless%20Skincare%20%26%20Minimalist%20Beauty:%20The%20Future%20of%20Conscious%20Beauty%20in%202026",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/custom-beauty-001&title=Waterless%20Skincare%20%26%20Minimalist%20Beauty:%20The%20Future%20of%20Conscious%20Beauty%20in%202026",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/custom-beauty-001&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,v1762857789,q_auto:good/blogb-1_utllwn.png&description=Waterless%20Skincare%20%26%20Minimalist%20Beauty:%20The%20Future%20of%20Conscious%20Beauty%20in%202026",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/custom-beauty-001&title=Waterless%20Skincare%20%26%20Minimalist%20Beauty:%20The%20Future%20of%20Conscious%20Beauty%20in%202026"
     }
   },
   {
@@ -9671,15 +9671,15 @@ Discover the 10 common skincare mistakes that damage your skin and learn how to 
       title: "Monochrome Makeup Looks: Master the 2026 Beauty Trend",
       description: "Discover the simplicity of monochrome makeup—one color, endless possibilities. Learn how to choose the right shade for your skin tone, master daily looks, and find top 2026 product picks that simplify your beauty routine while keeping it modern and radiant.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1762858256/blogb-2_qnyvv6.png",
-      url: "https://www.marwariluxe.com/blogs/custom-beauty-002"
+      url: "https://marwariluxe.com/blogs/custom-beauty-002"
     },
     lsiKeywords: ["monochrome makeup", "makeup trends 2026", "single color makeup", "skin tone makeup", "easy makeup looks", "minimalist makeup", "beauty tutorial", "daily makeup", "makeup for beginners", "cohesive makeup look"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/custom-beauty-002",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/custom-beauty-002&text=Monochrome%20Makeup%20Looks:%20Master%20the%202026%20Beauty%20Trend",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/custom-beauty-002&title=Monochrome%20Makeup%20Looks:%20Master%20the%202026%20Beauty%20Trend",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/custom-beauty-002&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,v1762858256,q_auto:good/blogb-2_qnyvv6.png&description=Monochrome%20Makeup%20Looks:%20Master%20the%202026%20Beauty%20Trend",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/custom-beauty-002&title=Monochrome%20Makeup%20Looks:%20Master%20the%202026%20Beauty%20Trend"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/custom-beauty-002",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/custom-beauty-002&text=Monochrome%20Makeup%20Looks:%20Master%20the%202026%20Beauty%20Trend",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/custom-beauty-002&title=Monochrome%20Makeup%20Looks:%20Master%20the%202026%20Beauty%20Trend",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/custom-beauty-002&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,v1762858256,q_auto:good/blogb-2_qnyvv6.png&description=Monochrome%20Makeup%20Looks:%20Master%20the%202026%20Beauty%20Trend",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/custom-beauty-002&title=Monochrome%20Makeup%20Looks:%20Master%20the%202026%20Beauty%20Trend"
     }
   },
   {
@@ -9716,15 +9716,15 @@ Discover the 10 common skincare mistakes that damage your skin and learn how to 
       title: "Sustainable & Eco-Friendly Beauty: Top 10 Brands to Try in 2026",
       description: "Discover the top 10 sustainable beauty brands of 2025 revolutionizing skincare and makeup. Learn how to make eco-conscious swaps, choose ethical products, and embrace a cleaner, greener beauty routine that supports your skin and the planet effortlessly.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1762858786/blogb-3_bq9zlh.png",
-      url: "https://www.marwariluxe.com/blogs/custom-beauty-003"
+      url: "https://marwariluxe.com/blogs/custom-beauty-003"
     },
     lsiKeywords: ["sustainable beauty", "eco-friendly beauty", "clean beauty brands", "zero waste beauty", "vegan skincare", "ethical cosmetics", "green beauty 2026", "conscious beauty", "sustainable skincare", "refillable beauty products"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/custom-beauty-003",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/custom-beauty-003&text=Sustainable%20%26%20Eco-Friendly%20Beauty:%20Top%2010%20Brands%20to%20Try%20in%202026",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/custom-beauty-003&title=Sustainable%20%26%20Eco-Friendly%20Beauty:%20Top%2010%20Brands%20to%20Try%20in%202026",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/custom-beauty-003&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,v1762858786,q_auto:good/blogb-3_bq9zlh.png&description=Sustainable%20%26%20Eco-Friendly%20Beauty:%20Top%2010%20Brands%20to%20Try%20in%202026",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/custom-beauty-003&title=Sustainable%20%26%20Eco-Friendly%20Beauty:%20Top%2010%20Brands%20to%20Try%20in%202026"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/custom-beauty-003",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/custom-beauty-003&text=Sustainable%20%26%20Eco-Friendly%20Beauty:%20Top%2010%20Brands%20to%20Try%20in%202026",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/custom-beauty-003&title=Sustainable%20%26%20Eco-Friendly%20Beauty:%20Top%2010%20Brands%20to%20Try%20in%202026",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/custom-beauty-003&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,v1762858786,q_auto:good/blogb-3_bq9zlh.png&description=Sustainable%20%26%20Eco-Friendly%20Beauty:%20Top%2010%20Brands%20to%20Try%20in%202026",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/custom-beauty-003&title=Sustainable%20%26%20Eco-Friendly%20Beauty:%20Top%2010%20Brands%20to%20Try%20in%202026"
     }
   },
   {
@@ -9785,15 +9785,15 @@ Discover the 10 common skincare mistakes that damage your skin and learn how to 
       title: "K-Beauty Trends 2026: 7 Revolutionary Skincare Innovations You Need to Try",
       description: "Discover 2026's most exciting K-beauty trends—from glass skin to fermented skincare and smart devices. Learn how Korean innovations are redefining beauty with science-backed solutions for healthier, radiant skin.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1762859782/blogb-4_rytecg.png",
-      url: "https://www.marwariluxe.com/blogs/custom-beauty-004"
+      url: "https://marwariluxe.com/blogs/custom-beauty-004"
     },
     lsiKeywords: ["k-beauty trends 2026", "korean skincare", "glass skin", "fermented skincare", "microbiome friendly", "sustainable beauty", "smart skincare devices", "customizable skincare", "k beauty innovations", "skincare routine"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/custom-beauty-004",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/custom-beauty-004&text=K-Beauty%20Trends%202026:%207%20Revolutionary%20Skincare%20Innovations%20You%20Need%20to%20Try",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/custom-beauty-004&title=K-Beauty%20Trends%202026:%207%20Revolutionary%20Skincare%20Innovations%20You%20Need%20to%20Try",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/custom-beauty-004&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,v1762859782,q_auto:good/blogb-4_rytecg.png&description=K-Beauty%20Trends%202026:%207%20Revolutionary%20Skincare%20Innovations%20You%20Need%20to%20Try",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/custom-beauty-004&title=K-Beauty%20Trends%202026:%207%20Revolutionary%20Skincare%20Innovations%20You%20Need%20to%20Try"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/custom-beauty-004",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/custom-beauty-004&text=K-Beauty%20Trends%202026:%207%20Revolutionary%20Skincare%20Innovations%20You%20Need%20to%20Try",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/custom-beauty-004&title=K-Beauty%20Trends%202026:%207%20Revolutionary%20Skincare%20Innovations%20You%20Need%20to%20Try",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/custom-beauty-004&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,v1762859782,q_auto:good/blogb-4_rytecg.png&description=K-Beauty%20Trends%202026:%207%20Revolutionary%20Skincare%20Innovations%20You%20Need%20to%20Try",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/custom-beauty-004&title=K-Beauty%20Trends%202026:%207%20Revolutionary%20Skincare%20Innovations%20You%20Need%20to%20Try"
     }
   },
   {
@@ -9859,15 +9859,15 @@ Discover the 10 common skincare mistakes that damage your skin and learn how to 
       title: "Beyond Retinol: 8 Anti-Aging Powerhouses That Deliver Real Results",
       description: "Discover 8 powerful anti-aging alternatives to retinol that deliver real results without irritation. Learn about peptides, bakuchiol, niacinamide, and other innovative skincare ingredients for youthful, radiant skin.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1762860104/blogb-5_pmytov.png",
-      url: "https://www.marwariluxe.com/blogs/custom-beauty-005"
+      url: "https://marwariluxe.com/blogs/custom-beauty-005"
     },
     lsiKeywords: ["anti-aging skincare", "retinol alternatives", "peptides for skin", "bakuchiol benefits", "niacinamide for aging", "growth factors skincare", "antioxidants for wrinkles", "gentle anti-aging", "skincare ingredients 2026", "collagen boosting"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/custom-beauty-005",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/custom-beauty-005&text=Beyond%20Retinol:%208%20Anti-Aging%20Powerhouses%20That%20Deliver%20Real%20Results",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/custom-beauty-005&title=Beyond%20Retinol:%208%20Anti-Aging%20Powerhouses%20That%20Deliver%20Real%20Results",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/custom-beauty-005&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,v1762860104,q_auto:good/blogb-5_pmytov.png&description=Beyond%20Retinol:%208%20Anti-Aging%20Powerhouses%20That%20Deliver%20Real%20Results",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/custom-beauty-005&title=Beyond%20Retinol:%208%20Anti-Aging%20Powerhouses%20That%20Deliver%20Real%20Results"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/custom-beauty-005",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/custom-beauty-005&text=Beyond%20Retinol:%208%20Anti-Aging%20Powerhouses%20That%20Deliver%20Real%20Results",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/custom-beauty-005&title=Beyond%20Retinol:%208%20Anti-Aging%20Powerhouses%20That%20Deliver%20Real%20Results",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/custom-beauty-005&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,v1762860104,q_auto:good/blogb-5_pmytov.png&description=Beyond%20Retinol:%208%20Anti-Aging%20Powerhouses%20That%20Deliver%20Real%20Results",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/custom-beauty-005&title=Beyond%20Retinol:%208%20Anti-Aging%20Powerhouses%20That%20Deliver%20Real%20Results"
     }
   },
   {
@@ -9928,15 +9928,15 @@ Discover the 10 common skincare mistakes that damage your skin and learn how to 
       title: "Makeup Mastery for Mature Skin: 7 Flattering Techniques for 2026",
       description: "Discover 7 flattering makeup techniques for mature skin in 2026. Learn skincare-first approaches, hydrating foundation techniques, strategic color placement, and more for age-appropriate beauty.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1762860508/blogb-6_sz2n1w.png",
-      url: "https://www.marwariluxe.com/blogs/custom-beauty-006"
+      url: "https://marwariluxe.com/blogs/custom-beauty-006"
     },
     lsiKeywords: ["makeup for mature skin", "anti-aging makeup", "foundation techniques", "color placement", "highlighting contouring", "eye makeup", "lip care", "skincare first", "beauty tips 2026", "age appropriate makeup"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/custom-beauty-006",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/custom-beauty-006&text=Makeup%20Mastery%20for%20Mature%20Skin:%207%20Flattering%20Techniques%20for%202026",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/custom-beauty-006&title=Makeup%20Mastery%20for%20Mature%20Skin:%207%20Flattering%20Techniques%20for%202026",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/custom-beauty-006&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,v1762860508,q_auto:good/blogb-6_sz2n1w.png&description=Makeup%20Mastery%20for%20Mature%20Skin:%207%20Flattering%20Techniques%20for%202026",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/custom-beauty-006&title=Makeup%20Mastery%20for%20Mature%20Skin:%207%20Flattering%20Techniques%20for%202026"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/custom-beauty-006",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/custom-beauty-006&text=Makeup%20Mastery%20for%20Mature%20Skin:%207%20Flattering%20Techniques%20for%202026",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/custom-beauty-006&title=Makeup%20Mastery%20for%20Mature%20Skin:%207%20Flattering%20Techniques%20for%202026",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/custom-beauty-006&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,v1762860508,q_auto:good/blogb-6_sz2n1w.png&description=Makeup%20Mastery%20for%20Mature%20Skin:%207%20Flattering%20Techniques%20for%202026",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/custom-beauty-006&title=Makeup%20Mastery%20for%20Mature%20Skin:%207%20Flattering%20Techniques%20for%202026"
     }
   },
   {
@@ -9995,15 +9995,15 @@ Discover the 10 common skincare mistakes that damage your skin and learn how to 
       title: "Always Bloated After Meals? 7 Proven Ways to Fix Your Gut Naturally",
       description: "Always bloated after meals? Discover 7 proven ways to fix your gut naturally. Learn about probiotics, digestion-friendly foods, and lifestyle changes for better gut health.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1762805385/blog-1_uwxwim.png",
-      url: "https://www.marwariluxe.com/blogs/custom-health-001"
+      url: "https://marwariluxe.com/blogs/custom-health-001"
     },
     lsiKeywords: ["gut health", "digestion problems", "bloating remedies", "probiotics benefits", "digestive disorders", "natural digestion aids", "gut bacteria", "healthy gut foods", "digestive wellness", "intestinal health"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/custom-health-001",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/custom-health-001&text=Always%20Bloated%20After%20Meals?%207%20Proven%20Ways%20to%20Fix%20Your%20Gut%20Naturally",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/custom-health-001&title=Always%20Bloated%20After%20Meals?%207%20Proven%20Ways%20to%20Fix%20Your%20Gut%20Naturally",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/custom-health-001&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,v1762805385,q_auto:good/blog-1_uwxwim.png&description=Always%20Bloated%20After%20Meals?%207%20Proven%20Ways%20to%20Fix%20Your%20Gut%20Naturally",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/custom-health-001&title=Always%20Bloated%20After%20Meals?%207%20Proven%20Ways%20to%20Fix%20Your%20Gut%20Naturally"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/custom-health-001",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/custom-health-001&text=Always%20Bloated%20After%20Meals?%207%20Proven%20Ways%20to%20Fix%20Your%20Gut%20Naturally",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/custom-health-001&title=Always%20Bloated%20After%20Meals?%207%20Proven%20Ways%20to%20Fix%20Your%20Gut%20Naturally",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/custom-health-001&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,v1762805385,q_auto:good/blog-1_uwxwim.png&description=Always%20Bloated%20After%20Meals?%207%20Proven%20Ways%20to%20Fix%20Your%20Gut%20Naturally",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/custom-health-001&title=Always%20Bloated%20After%20Meals?%207%20Proven%20Ways%20to%20Fix%20Your%20Gut%20Naturally"
     }
   },
   {
@@ -10046,15 +10046,15 @@ Discover the 10 common skincare mistakes that damage your skin and learn how to 
       title: "Heart Health Issues – High Blood Pressure & Cholesterol",
       description: "Learn about heart health, blood pressure, and cholesterol management. Discover natural ways to lower blood pressure and improve cholesterol profiles without medication.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1762812134/blog-2_lviexx.png",
-      url: "https://www.marwariluxe.com/blogs/custom-health-002"
+      url: "https://marwariluxe.com/blogs/custom-health-002"
     },
     lsiKeywords: ["heart health", "blood pressure management", "cholesterol control", "cardiovascular disease prevention", "DASH diet", "natural blood pressure remedies", "heart healthy foods", "exercise for heart health", "stress and heart health", "preventive cardiology"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/custom-health-002",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/custom-health-002&text=Heart%20Health%20Issues%20%E2%80%93%20High%20Blood%20Pressure%20%26%20Cholesterol",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/custom-health-002&title=Heart%20Health%20Issues%20%E2%80%93%20High%20Blood%20Pressure%20%26%20Cholesterol",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/custom-health-002&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,v1762812134,q_auto:good/blog-2_lviexx.png&description=Heart%20Health%20Issues%20%E2%80%93%20High%20Blood%20Pressure%20%26%20Cholesterol",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/custom-health-002&title=Heart%20Health%20Issues%20%E2%80%93%20High%20Blood%20Pressure%20%26%20Cholesterol"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/custom-health-002",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/custom-health-002&text=Heart%20Health%20Issues%20%E2%80%93%20High%20Blood%20Pressure%20%26%20Cholesterol",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/custom-health-002&title=Heart%20Health%20Issues%20%E2%80%93%20High%20Blood%20Pressure%20%26%20Cholesterol",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/custom-health-002&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,v1762812134,q_auto:good/blog-2_lviexx.png&description=Heart%20Health%20Issues%20%E2%80%93%20High%20Blood%20Pressure%20%26%20Cholesterol",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/custom-health-002&title=Heart%20Health%20Issues%20%E2%80%93%20High%20Blood%20Pressure%20%26%20Cholesterol"
     }
   },
   {
@@ -10097,15 +10097,15 @@ Discover the 10 common skincare mistakes that damage your skin and learn how to 
       title: "Sleep Disorders – Insomnia & Restless Nights",
       description: "Struggling with sleepless nights? Learn about insomnia and sleep disorders, create the perfect sleep environment, and discover natural techniques to reset your body clock.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1762814682/blog-3_xmvsmn.png",
-      url: "https://www.marwariluxe.com/blogs/custom-health-003"
+      url: "https://marwariluxe.com/blogs/custom-health-003"
     },
     lsiKeywords: ["sleep disorders", "insomnia treatment", "sleep hygiene", "body clock reset", "sleep environment", "relaxation techniques", "sleep quality improvement", "sleepless nights", "sleep cycle regulation", "professional sleep help"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/custom-health-003",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/custom-health-003&text=Sleep%20Disorders%20%E2%80%93%20Insomnia%20%26%20Restless%20Nights",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/custom-health-003&title=Sleep%20Disorders%20%E2%80%93%20Insomnia%20%26%20Restless%20Nights",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/custom-health-003&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,v1762814682,q_auto:good/blog-3_xmvsmn.png&description=Sleep%20Disorders%20%E2%80%93%20Insomnia%20%26%20Restless%20Nights",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/custom-health-003&title=Sleep%20Disorders%20%E2%80%93%20Insomnia%20%26%20Restless%20Nights"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/custom-health-003",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/custom-health-003&text=Sleep%20Disorders%20%E2%80%93%20Insomnia%20%26%20Restless%20Nights",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/custom-health-003&title=Sleep%20Disorders%20%E2%80%93%20Insomnia%20%26%20Restless%20Nights",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/custom-health-003&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,v1762814682,q_auto:good/blog-3_xmvsmn.png&description=Sleep%20Disorders%20%E2%80%93%20Insomnia%20%26%20Restless%20Nights",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/custom-health-003&title=Sleep%20Disorders%20%E2%80%93%20Insomnia%20%26%20Restless%20Nights"
     }
   },
   {
@@ -10148,15 +10148,15 @@ Discover the 10 common skincare mistakes that damage your skin and learn how to 
       title: "Hormonal Imbalance – Fatigue, Mood Swings, and Weight Gain",
       description: "Feeling drained and moody? Learn about hormonal imbalance symptoms and discover 9 natural ways to balance your hormones for better energy, mood, and weight management.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1762816421/blog-4_gjtcpo.png",
-      url: "https://www.marwariluxe.com/blogs/custom-health-004"
+      url: "https://marwariluxe.com/blogs/custom-health-004"
     },
     lsiKeywords: ["hormonal imbalance", "hormone balance", "fatigue causes", "mood swings", "weight gain hormones", "thyroid health", "cortisol management", "estrogen balance", "testosterone levels", "endocrine system"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/custom-health-004",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/custom-health-004&text=Hormonal%20Imbalance%20%E2%80%93%20Fatigue%2C%20Mood%20Swings%2C%20and%20Weight%20Gain",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/custom-health-004&title=Hormonal%20Imbalance%20%E2%80%93%20Fatigue%2C%20Mood%20Swings%2C%20and%20Weight%20Gain",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/custom-health-004&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,v1762816421,q_auto:good/blog-4_gjtcpo.png&description=Hormonal%20Imbalance%20%E2%80%93%20Fatigue%2C%20Mood%20Swings%2C%20and%20Weight%20Gain",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/custom-health-004&title=Hormonal%20Imbalance%20%E2%80%93%20Fatigue%2C%20Mood%20Swings%2C%20and%20Weight%20Gain"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/custom-health-004",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/custom-health-004&text=Hormonal%20Imbalance%20%E2%80%93%20Fatigue%2C%20Mood%20Swings%2C%20and%20Weight%20Gain",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/custom-health-004&title=Hormonal%20Imbalance%20%E2%80%93%20Fatigue%2C%20Mood%20Swings%2C%20and%20Weight%20Gain",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/custom-health-004&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,v1762816421,q_auto:good/blog-4_gjtcpo.png&description=Hormonal%20Imbalance%20%E2%80%93%20Fatigue%2C%20Mood%20Swings%2C%20and%20Weight%20Gain",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/custom-health-004&title=Hormonal%20Imbalance%20%E2%80%93%20Fatigue%2C%20Mood%20Swings%2C%20and%20Weight%20Gain"
     }
   },
   {
@@ -10199,15 +10199,15 @@ Discover the 10 common skincare mistakes that damage your skin and learn how to 
       title: "Mental Health Problems – Stress & Anxiety",
       description: "Struggling with stress and anxiety? Learn natural techniques to manage mental health, including mindfulness, exercise, nutrition, and building a strong support network.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1762817815/blog-5_e7i150.png",
-      url: "https://www.marwariluxe.com/blogs/custom-health-005"
+      url: "https://marwariluxe.com/blogs/custom-health-005"
     },
     lsiKeywords: ["mental health", "stress management", "anxiety relief", "mindfulness techniques", "meditation benefits", "exercise for mental health", "nutrition and mood", "social support", "wellness strategies", "self-care practices"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/custom-health-005",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/custom-health-005&text=Mental%20Health%20Problems%20%E2%80%93%20Stress%20%26%20Anxiety",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/custom-health-005&title=Mental%20Health%20Problems%20%E2%80%93%20Stress%20%26%20Anxiety",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/custom-health-005&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,v1762817815,q_auto:good/blog-5_e7i150.png&description=Mental%20Health%20Problems%20%E2%80%93%20Stress%20%26%20Anxiety",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/custom-health-005&title=Mental%20Health%20Problems%20%E2%80%93%20Stress%20%26%20Anxiety"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/custom-health-005",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/custom-health-005&text=Mental%20Health%20Problems%20%E2%80%93%20Stress%20%26%20Anxiety",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/custom-health-005&title=Mental%20Health%20Problems%20%E2%80%93%20Stress%20%26%20Anxiety",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/custom-health-005&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,v1762817815,q_auto:good/blog-5_e7i150.png&description=Mental%20Health%20Problems%20%E2%80%93%20Stress%20%26%20Anxiety",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/custom-health-005&title=Mental%20Health%20Problems%20%E2%80%93%20Stress%20%26%20Anxiety"
     }
   },
   {
@@ -10253,15 +10253,15 @@ Discover the 10 common skincare mistakes that damage your skin and learn how to 
       title: "Immunity Weakness – Frequent Colds & Fatigue",
       description: "Feeling run-down and frequently getting sick? Discover 6 daily habits to naturally boost your immune system including nutrition, exercise, sleep, stress management, hydration, and lifestyle adjustments.",
       image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1762818516/blog-6_sataw7.png",
-      url: "https://www.marwariluxe.com/blogs/custom-health-006"
+      url: "https://marwariluxe.com/blogs/custom-health-006"
     },
     lsiKeywords: ["immune system", "boost immunity", "frequent colds", "fatigue remedies", "nutrition for immunity", "exercise and immunity", "sleep for immune health", "stress management", "hydration benefits", "natural wellness"],
     shareButtons: {
-      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://www.marwariluxe.com/blogs/custom-health-006",
-      twitter: "https://twitter.com/intent/tweet?url=https://www.marwariluxe.com/blogs/custom-health-006&text=Immunity%20Weakness%20%E2%80%93%20Frequent%20Colds%20%26%20Fatigue",
-      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/custom-health-006&title=Immunity%20Weakness%20%E2%80%93%20Frequent%20Colds%20%26%20Fatigue",
-      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://www.marwariluxe.com/blogs/custom-health-006&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,v1762818516,q_auto:good/blog-6_sataw7.png&description=Immunity%20Weakness%20%E2%80%93%20Frequent%20Colds%20%26%20Fatigue",
-      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://www.marwariluxe.com/blogs/custom-health-006&title=Immunity%20Weakness%20%E2%80%93%20Frequent%20Colds%20%26%20Fatigue"
+      facebook: "https://www.facebook.com/sharer/sharer.php?u=https://marwariluxe.com/blogs/custom-health-006",
+      twitter: "https://twitter.com/intent/tweet?url=https://marwariluxe.com/blogs/custom-health-006&text=Immunity%20Weakness%20%E2%80%93%20Frequent%20Colds%20%26%20Fatigue",
+      linkedin: "https://www.linkedin.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/custom-health-006&title=Immunity%20Weakness%20%E2%80%93%20Frequent%20Colds%20%26%20Fatigue",
+      pinterest: "https://www.pinterest.com/pin/create/button/?url=https://marwariluxe.com/blogs/custom-health-006&media=https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,v1762818516,q_auto:good/blog-6_sataw7.png&description=Immunity%20Weakness%20%E2%80%93%20Frequent%20Colds%20%26%20Fatigue",
+      instagram: "https://www.instagram.com/shareArticle?mini=true&url=https://marwariluxe.com/blogs/custom-health-006&title=Immunity%20Weakness%20%E2%80%93%20Frequent%20Colds%20%26%20Fatigue"
     }
   }
 ];

@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free Sleep Tracker - Monitor Your Sleep Quality | Marwari Luxe',
     description: 'Track your sleep patterns with our free sleep tracker tool. Monitor sleep duration, quality, and cycles to improve your rest and overall health. Get insights into your sleep habits and recommendations for better rest.',
-    url: 'https://www.marwariluxe.com/tools/health/sleep-tracker',
+    url: 'https://marwariluxe.com/tools/health/sleep-tracker',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Free Sleep Tracker Tool | Marwari Luxe',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Sleep Tracker - Monitor Your Sleep Quality | Marwari Luxe',
     description: 'Track your sleep patterns with our free sleep tracker tool. Monitor sleep duration, quality, and cycles to improve your rest and overall health.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/health/sleep-tracker',
+    canonical: 'https://marwariluxe.com/tools/health/sleep-tracker',
   },
 };
 

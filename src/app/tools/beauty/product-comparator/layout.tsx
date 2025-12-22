@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free Beauty Product Comparator - Compare Cosmetics & Skincare | Marwari Luxe',
     description: 'Compare beauty products side-by-side with our free product comparator tool. Analyze ingredients, prices, reviews, and benefits to make informed purchasing decisions for your beauty routine.',
-    url: 'https://www.marwariluxe.com/tools/beauty/product-comparator',
+    url: 'https://marwariluxe.com/tools/beauty/product-comparator',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Free Beauty Product Comparator Tool | Marwari Luxe',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Beauty Product Comparator - Compare Cosmetics & Skincare | Marwari Luxe',
     description: 'Compare beauty products side-by-side with our free product comparator tool. Analyze ingredients, prices, reviews, and benefits to make informed purchasing decisions.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/beauty/product-comparator',
+    canonical: 'https://marwariluxe.com/tools/beauty/product-comparator',
   },
 };
 

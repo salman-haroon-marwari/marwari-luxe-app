@@ -11,11 +11,11 @@ export const metadata = {
   openGraph: {
     title: 'About Marwari Luxe - Trusted Health & Beauty Experts',
     description: 'Meet the team behind Marwari Luxe! Discover our story, values & mission. Trusted by 10K+ customers worldwide. Combining Ayurvedic wisdom with modern science.',
-    url: 'https://www.marwariluxe.com/about',
+    url: 'https://marwariluxe.com/about',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'About Marwari Luxe - Premium Health & Beauty Experts',
@@ -28,7 +28,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'About Marwari Luxe - Trusted Health & Beauty Experts',
     description: 'Meet the team behind Marwari Luxe! Discover our story, values & mission. Trusted by 10K+ customers worldwide.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -43,7 +43,7 @@ export const metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/about',
+    canonical: 'https://marwariluxe.com/about',
   },
 };
 

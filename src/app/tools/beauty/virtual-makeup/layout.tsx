@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free Virtual Makeup Try-On - Test Looks Online | Marwari Luxe',
     description: 'Try on makeup virtually with our free virtual makeup tool. Test different looks, colors, and styles without applying any products. Perfect for experimenting with new makeup trends and finding your signature look.',
-    url: 'https://www.marwariluxe.com/tools/beauty/virtual-makeup',
+    url: 'https://marwariluxe.com/tools/beauty/virtual-makeup',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Free Virtual Makeup Try-On Tool | Marwari Luxe',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Virtual Makeup Try-On - Test Looks Online | Marwari Luxe',
     description: 'Try on makeup virtually with our free virtual makeup tool. Test different looks, colors, and styles without applying any products.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/beauty/virtual-makeup',
+    canonical: 'https://marwariluxe.com/tools/beauty/virtual-makeup',
   },
 };
 

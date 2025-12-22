@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free Text Formatter - Format & Transform Text Online | Marwari Luxe',
     description: 'Format and transform text with our free text formatter tool. Convert case, remove extra spaces, count words, and more. Perfect for writers, developers, and content creators.',
-    url: 'https://www.marwariluxe.com/tools/general/text-formatter',
+    url: 'https://marwariluxe.com/tools/general/text-formatter',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Free Text Formatter Tool | Marwari Luxe',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Text Formatter - Format & Transform Text Online | Marwari Luxe',
     description: 'Format and transform text with our free text formatter tool. Convert case, remove extra spaces, count words, and more.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/general/text-formatter',
+    canonical: 'https://marwariluxe.com/tools/general/text-formatter',
   },
 };
 

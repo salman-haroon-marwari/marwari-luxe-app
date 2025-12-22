@@ -2,8 +2,8 @@
 export const siteConfig = {
   name: "Marwari Luxe",
   description: "Premium health, wellness, and beauty products for a luxurious lifestyle. Available worldwide including Canada, UK, Australia, and Europe.",
-  url: "https://www.marwariluxe.com",
-  ogImage: "https://www.marwariluxe.com/og-image.jpg",
+  url: "https://marwariluxe.com",
+  ogImage: "https://marwariluxe.com/og-image.jpg"
   links: {
     twitter: "https://twitter.com/marwariluxe",
     instagram: "https://instagram.com/marwariluxe",
@@ -12,7 +12,7 @@ export const siteConfig = {
 };
 
 export const seoConfig = {
-  metadataBase: new URL("https://www.marwariluxe.com"),
+  metadataBase: new URL("https://marwariluxe.com"),
   title: {
     default: "Marwari Luxe - Premium Health, Wellness & Beauty Products | Worldwide Shipping",
     template: "%s | Marwari Luxe",
@@ -40,7 +40,7 @@ export const seoConfig = {
   authors: [
     {
       name: "Marwari Luxe",
-      url: "https://www.marwariluxe.com",
+      url: "https://marwariluxe.com",
     },
   ],
   creator: "Marwari Luxe",
@@ -128,8 +128,8 @@ export const structuredData = {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Marwari Luxe",
-    "url": "https://www.marwariluxe.com",
-    "logo": "https://www.marwariluxe.com/logo.png",
+    "url": "https://marwariluxe.com",
+    "logo": "https://marwariluxe.com/logo.png",
     "sameAs": [
       "https://www.facebook.com/marwariluxe",
       "https://www.instagram.com/marwariluxe",
@@ -170,10 +170,10 @@ export const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "Marwari Luxe",
-    "url": "https://www.marwariluxe.com",
+    "url": "https://marwariluxe.com",
     "potentialAction": {
       "@type": "SearchAction",
-      "target": "https://www.marwariluxe.com/search?q={search_term_string}",
+      "target": "https://marwariluxe.com/search?q={search_term_string}",
       "query-input": "required name=search_term_string"
     }
   }

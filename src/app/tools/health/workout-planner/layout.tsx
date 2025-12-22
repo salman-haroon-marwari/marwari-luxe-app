@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free Workout Planner - Create Custom Fitness Routines | Marwari Luxe',
     description: 'Plan your workouts with our free fitness planner tool. Create custom exercise routines, track your progress, and achieve your fitness goals with personalized workout plans.',
-    url: 'https://www.marwariluxe.com/tools/health/workout-planner',
+    url: 'https://marwariluxe.com/tools/health/workout-planner',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Free Workout Planner Tool | Marwari Luxe',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Workout Planner - Create Custom Fitness Routines | Marwari Luxe',
     description: 'Plan your workouts with our free fitness planner tool. Create custom exercise routines and achieve your fitness goals.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/health/workout-planner',
+    canonical: 'https://marwariluxe.com/tools/health/workout-planner',
   },
 };
 

@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free Step Counter - Track Your Daily Steps | Marwari Luxe',
     description: 'Count your daily steps with our free step counter tool. Set goals, track progress, and monitor your activity levels to stay fit and healthy. Perfect for fitness enthusiasts and anyone looking to increase their daily movement.',
-    url: 'https://www.marwariluxe.com/tools/health/step-counter',
+    url: 'https://marwariluxe.com/tools/health/step-counter',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Free Step Counter Tool | Marwari Luxe',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Step Counter - Track Your Daily Steps | Marwari Luxe',
     description: 'Count your daily steps with our free step counter tool. Set goals, track progress, and monitor your activity levels to stay fit and healthy.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/health/step-counter',
+    canonical: 'https://marwariluxe.com/tools/health/step-counter',
   },
 };
 

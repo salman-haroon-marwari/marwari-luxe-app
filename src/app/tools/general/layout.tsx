@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'General Tools | Utility Calculators & Converters | Marwari Luxe',
     description: 'Access our collection of free general tools including unit converters, password generators, QR code creators, and utility calculators.',
-    url: 'https://www.marwariluxe.com/tools/general',
+    url: 'https://marwariluxe.com/tools/general',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Marwari Luxe General Tools',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'General Tools | Utility Calculators & Converters | Marwari Luxe',
     description: 'Access our collection of free general tools including unit converters, password generators, QR code creators, and utility calculators.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/general',
+    canonical: 'https://marwariluxe.com/tools/general',
   },
 };
 

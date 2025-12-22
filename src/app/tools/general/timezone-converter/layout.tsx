@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free Timezone Converter - Convert Time Zones Instantly | Marwari Luxe',
     description: 'Convert between different time zones with our free timezone converter tool. Perfect for international meetings, travel planning, and coordinating with global teams. Get accurate time differences.',
-    url: 'https://www.marwariluxe.com/tools/general/timezone-converter',
+    url: 'https://marwariluxe.com/tools/general/timezone-converter',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Free Timezone Converter Tool | Marwari Luxe',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Timezone Converter - Convert Time Zones Instantly | Marwari Luxe',
     description: 'Convert between different time zones with our free timezone converter tool. Perfect for international meetings, travel planning, and coordinating with global teams.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/general/timezone-converter',
+    canonical: 'https://marwariluxe.com/tools/general/timezone-converter',
   },
 };
 

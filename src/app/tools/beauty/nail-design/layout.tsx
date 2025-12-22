@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free Nail Design Ideas - Creative Nail Art Inspiration | Marwari Luxe',
     description: 'Get creative nail design ideas with our free nail art inspiration tool. Discover trending designs, seasonal patterns, and personalized recommendations for your next manicure.',
-    url: 'https://www.marwariluxe.com/tools/beauty/nail-design',
+    url: 'https://marwariluxe.com/tools/beauty/nail-design',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Free Nail Design Ideas Tool | Marwari Luxe',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Nail Design Ideas - Creative Nail Art Inspiration | Marwari Luxe',
     description: 'Get creative nail design ideas with our free nail art inspiration tool. Discover trending designs and personalized recommendations for your next manicure.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/beauty/nail-design',
+    canonical: 'https://marwariluxe.com/tools/beauty/nail-design',
   },
 };
 

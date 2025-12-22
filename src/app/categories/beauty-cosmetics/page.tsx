@@ -10,11 +10,11 @@ export const metadata = {
   openGraph: {
     title: 'Beauty & Cosmetics Products | Luxury Skincare & Makeup | Marwari Luxe',
     description: 'Explore our luxury beauty and cosmetics collection featuring premium skincare, organic makeup, and professional beauty tools for radiant skin.',
-    url: 'https://www.marwariluxe.com/categories/beauty-cosmetics',
+    url: 'https://marwariluxe.com/categories/beauty-cosmetics',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Beauty & Cosmetics Products | Luxury Skincare & Makeup | Marwari Luxe',
@@ -27,7 +27,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Beauty & Cosmetics Products | Luxury Skincare & Makeup | Marwari Luxe',
     description: 'Explore our luxury beauty and cosmetics collection featuring premium skincare and organic makeup.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -42,7 +42,7 @@ export const metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/categories/beauty-cosmetics',
+    canonical: 'https://marwariluxe.com/categories/beauty-cosmetics',
   },
 };
 

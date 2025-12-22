@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Premium Health & Beauty Products | Marwari Luxe',
     description: 'Discover our curated collection of premium health, wellness, and beauty products. Shop luxury skincare, natural supplements, and organic beauty items.',
-    url: 'https://www.marwariluxe.com/products',
+    url: 'https://marwariluxe.com/products',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Marwari Luxe Premium Health & Beauty Products',
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Premium Health & Beauty Products | Marwari Luxe',
     description: 'Discover our curated collection of premium health, wellness, and beauty products.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/products',
+    canonical: 'https://marwariluxe.com/products'
   },
 };
 

@@ -199,7 +199,7 @@ Dynamic sitemap generation includes:
 ```
 User-agent: *
 Allow: /
-Sitemap: https://www.marwariluxe.com/sitemap.xml
+Sitemap: https://marwariluxe.com/sitemap.xml
 
 Disallow: /admin/
 Disallow: /internal/

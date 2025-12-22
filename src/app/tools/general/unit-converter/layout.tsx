@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free Unit Converter - Instant Measurement Conversion | Marwari Luxe',
     description: 'Convert measurements instantly! Support for length, weight, volume & temperature. Used by 10K+ professionals daily. Accurate conversions for cooking, travel & work.',
-    url: 'https://www.marwariluxe.com/tools/general/unit-converter',
+    url: 'https://marwariluxe.com/tools/general/unit-converter',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Free Unit Converter Tool | Measurement Conversion | Marwari Luxe',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Unit Converter - Instant Measurement Conversion | Marwari Luxe',
     description: 'Convert measurements instantly! Support for length, weight, volume & temperature. Used by 10K+ professionals daily.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/general/unit-converter',
+    canonical: 'https://marwariluxe.com/tools/general/unit-converter',
   },
 };
 

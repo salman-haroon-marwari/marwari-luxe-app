@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Health Tools | Wellness Calculators & Trackers | Marwari Luxe',
     description: 'Access our collection of free health tools including BMI calculators, medication trackers, calorie counters, and wellness assessment tools.',
-    url: 'https://www.marwariluxe.com/tools/health',
+    url: 'https://marwariluxe.com/tools/health',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Marwari Luxe Health Tools',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Health Tools | Wellness Calculators & Trackers | Marwari Luxe',
     description: 'Access our collection of free health tools including BMI calculators, medication trackers, calorie counters, and wellness assessment tools.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/health',
+    canonical: 'https://marwariluxe.com/tools/health',
   },
 };
 

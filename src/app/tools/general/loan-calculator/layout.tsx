@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free Loan Calculator - Calculate EMIs & Interest | Marwari Luxe',
     description: 'Calculate loan EMIs, interest, and total repayment amounts with our free loan calculator tool. Compare different loan options and make informed financial decisions.',
-    url: 'https://www.marwariluxe.com/tools/general/loan-calculator',
+    url: 'https://marwariluxe.com/tools/general/loan-calculator',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Free Loan Calculator Tool | Marwari Luxe',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Loan Calculator - Calculate EMIs & Interest | Marwari Luxe',
     description: 'Calculate loan EMIs, interest, and total repayment amounts with our free loan calculator tool. Compare different loan options.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/general/loan-calculator',
+    canonical: 'https://marwariluxe.com/tools/general/loan-calculator',
   },
 };
 

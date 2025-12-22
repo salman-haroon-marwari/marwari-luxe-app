@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free Random Number Generator - Pick Numbers Instantly | Marwari Luxe',
     description: 'Generate random numbers with our free random number generator tool. Perfect for contests, giveaways, lotteries, and games. Customize range and quantity for your specific needs.',
-    url: 'https://www.marwariluxe.com/tools/general/random-number-generator',
+    url: 'https://marwariluxe.com/tools/general/random-number-generator',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Free Random Number Generator Tool | Marwari Luxe',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Random Number Generator - Pick Numbers Instantly | Marwari Luxe',
     description: 'Generate random numbers with our free random number generator tool. Perfect for contests, giveaways, lotteries, and games.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/general/random-number-generator',
+    canonical: 'https://marwariluxe.com/tools/general/random-number-generator',
   },
 };
 

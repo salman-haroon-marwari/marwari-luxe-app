@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Free Calorie Tracker - Count Calories & Lose Weight | Marwari Luxe',
     description: 'Track your daily calorie intake with our free calorie counter tool. Achieve your weight loss goals with accurate nutrition tracking.',
-    url: 'https://www.marwariluxe.com/tools/health/calorie-tracker',
+    url: 'https://marwariluxe.com/tools/health/calorie-tracker',
     siteName: 'Marwari Luxe',
     images: [
       {
-        url: 'https://www.marwariluxe.com/og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
         alt: 'Free Calorie Tracker Tool | Marwari Luxe',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Free Calorie Tracker - Count Calories & Lose Weight | Marwari Luxe',
     description: 'Track your daily calorie intake with our free calorie counter tool. Achieve your weight loss goals.',
-    images: ['https://www.marwariluxe.com/og-image.jpg'],
+    images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
   },
   robots: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.marwariluxe.com/tools/health/calorie-tracker',
+    canonical: 'https://marwariluxe.com/tools/health/calorie-tracker',
   },
 };
 
