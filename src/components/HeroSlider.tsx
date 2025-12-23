@@ -124,7 +124,7 @@ const HeroSlider = () => {
           priority={currentSlide === 0} // Ensure first slide is prioritized
           className="object-contain w-full h-full scale-125 md:scale-100"
           sizes="100vw"
-          quality={75}
+          quality={85}
           fetchPriority={currentSlide === 0 ? "high" : "auto"} // Add fetchpriority for LCP optimization
           // Optimize image delivery
           loading="eager"
@@ -133,6 +133,9 @@ const HeroSlider = () => {
           blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
           // Add decoding hint for better performance
           decoding="async"
+          style={{
+            objectFit: 'cover',
+          }}
         />
         <div className="absolute inset-0 bg-black/10" />
       </div>

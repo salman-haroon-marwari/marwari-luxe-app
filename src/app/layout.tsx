@@ -36,6 +36,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="preconnect" href="https://res.cloudinary.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.google-analytics.com" />
+        <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
         <meta name="google-site-verification" content="dzryDgptB67-84_p9NLWotI6TuhQYJC-xqTiEZsrPX0" />
         <meta name="google-adsense-account" content="ca-pub-3211943691118692" />
         {/* Google Tag Manager */}

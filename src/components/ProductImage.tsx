@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 interface ProductImageProps {
   src: string;
@@ -23,13 +24,16 @@ export default function ProductImage({ src, alt, width, height, className }: Pro
   };
 
   return (
-    <img
+    <Image
       src={imageSrc}
       alt={alt}
       width={width}
       height={height}
       className={className}
       onError={handleError}
+      loading="lazy"
+      quality={75}
+      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
     />
   );
 }

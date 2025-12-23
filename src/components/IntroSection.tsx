@@ -51,9 +51,12 @@ const IntroSection = () => {
                   alt="Wellness Products"
                   fill
                   className="rounded-lg shadow-lg object-cover"
-                  sizes="(max-width: 768px) 50vw, 25vw"
-                  quality={75}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  quality={80}
                   loading="lazy"
+                  style={{
+                    objectFit: 'cover',
+                  }}
                 />
                 <div className="absolute inset-0 bg-purple-600/20 rounded-lg"></div>
               </div>
@@ -63,9 +66,12 @@ const IntroSection = () => {
                   alt="Beauty Products"
                   fill
                   className="rounded-lg shadow-lg object-cover"
-                  sizes="(max-width: 768px) 50vw, 25vw"
-                  quality={75}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  quality={80}
                   loading="lazy"
+                  style={{
+                    objectFit: 'cover',
+                  }}
                 />
                 <div className="absolute inset-0 bg-pink-600/20 rounded-lg"></div>
               </div>
@@ -75,9 +81,12 @@ const IntroSection = () => {
                   alt="Traditional Heritage"
                   fill
                   className="rounded-lg shadow-lg object-cover"
-                  sizes="(max-width: 768px) 50vw, 25vw"
-                  quality={75}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  quality={80}
                   loading="lazy"
+                  style={{
+                    objectFit: 'cover',
+                  }}
                 />
                 <div className="absolute inset-0 bg-orange-600/20 rounded-lg"></div>
               </div>
@@ -87,9 +96,12 @@ const IntroSection = () => {
                   alt="Modern Innovation"
                   fill
                   className="rounded-lg shadow-lg object-cover"
-                  sizes="(max-width: 768px) 50vw, 25vw"
-                  quality={75}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  quality={80}
                   loading="lazy"
+                  style={{
+                    objectFit: 'cover',
+                  }}
                 />
                 <div className="absolute inset-0 bg-blue-600/20 rounded-lg"></div>
               </div>
