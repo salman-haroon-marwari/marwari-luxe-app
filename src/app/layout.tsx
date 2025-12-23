@@ -37,6 +37,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="google-site-verification" content="dzryDgptB67-84_p9NLWotI6TuhQYJC-xqTiEZsrPX0" />
+        <meta name="google-adsense-account" content="ca-pub-3211943691118692" />
         {/* Google Tag Manager */}
         <script dangerouslySetInnerHTML={{
           __html: `
