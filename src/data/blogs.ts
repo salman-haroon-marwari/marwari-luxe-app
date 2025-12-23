@@ -73,7 +73,7 @@ The philosophy behind this diet is simple: more fiber equals better health outco
 
 In short, the fibremaxxing diet isn’t a fad that cuts you off from foods you enjoy. It’s a science-backed, lifestyle-based approach to eating that adds more variety, more nutrients, and more balance to your meals. By rethinking your food choices through the lens of fiber, you can create lasting changes that improve both short-term energy and long-term wellness.
 
-![High Fiber Foods](https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864930,q_auto:good/Marwari-luxe_dnwxfa.jpg)
+![High Fiber Foods](https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864930/Marwari-luxe_dnwxfa.jpg)
 
 <h1 style="font-weight: 900;">Why Fibremaxxing is Dominating Health Trends in 2025</h1>
 
