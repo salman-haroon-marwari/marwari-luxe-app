@@ -27,5 +27,5 @@ Disallow: /api/
 User-agent: *
 Crawl-delay: 10
 
-# Host directive for international targeting
-Host: marwariluxe.com
+# Preferred domain (legacy directive, not actively used by Google)
+# Host: marwariluxe.com
