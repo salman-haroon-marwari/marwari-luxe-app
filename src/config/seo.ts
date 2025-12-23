@@ -3,7 +3,7 @@ export const siteConfig = {
   name: "Marwari Luxe",
   description: "Premium health, wellness, and beauty products for a luxurious lifestyle. Available worldwide including Canada, UK, Australia, and Europe.",
   url: "https://marwariluxe.com",
-  ogImage: "https://marwariluxe.com/marwari logo.png"
+  ogImage: "https://marwariluxe.com/marwari%20logo.png"
   links: {
     twitter: "https://twitter.com/marwariluxe",
     instagram: "https://instagram.com/marwariluxe",
