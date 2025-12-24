@@ -81,6 +81,49 @@ export default function RootLayout({
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3211943691118692"
           crossOrigin="anonymous"
         />
+        
+        {/* Organization Schema for Google Logo Display */}
+        <script 
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Marwari Luxe",
+              "url": "https://marwariluxe.com",
+              "logo": "https://marwariluxe.com/marwari%20logo.png",
+              "sameAs": [
+                "https://www.facebook.com/marwariluxe",
+                "https://www.instagram.com/marwariluxe",
+                "https://twitter.com/marwariluxe",
+                "https://www.pinterest.com/marwariluxe",
+                "https://www.youtube.com/marwariluxe"
+              ],
+              "description": "Premium luxury health, beauty, wellness, tools, and blogs platform"
+            })
+          }}
+        />
+        
+        {/* Website Schema for Search Action */}
+        <script 
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Marwari Luxe",
+              "url": "https://marwariluxe.com",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://marwariluxe.com/search?q={search_term_string}"
+                },
+                "query-input": "required name=search_term_string"
+              }
+            })
+          }}
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
