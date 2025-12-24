@@ -1,6 +1,5 @@
 User-agent: *
 Allow: /
-Sitemap: https://marwariluxe.com/sitemap.xml
 
 # Allow all crawlers to access all content for international indexing
 User-agent: Googlebot
@@ -23,9 +22,7 @@ Disallow: /admin/
 Disallow: /internal/
 Disallow: /api/
 
-# Crawl delay for budget crawlers
-User-agent: *
-Crawl-delay: 10
+Sitemap: https://marwariluxe.com/sitemap.xml
 
 # Preferred domain (legacy directive, not actively used by Google)
 # Host: marwariluxe.com
