@@ -39,8 +39,9 @@ export default function Navigation() {
       className={`fixed w-full z-50 transition-all duration-300 ${
         scrolled ? 'bg-white/90 dark:bg-black/90 backdrop-blur-sm py-2 shadow-md' : 'py-4'
       }`}
+      role="banner"
     >
-      <div className="container mx-auto px-4 w-full max-w-full overflow-x-hidden">
+      <div className="container mx-auto px-4 w-full max-w-full overflow-x-hidden overflow-y-hidden">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
@@ -100,7 +101,7 @@ export default function Navigation() {
               {/* Dropdown Menu */}
               {isCategoriesOpen && (
                 <div 
-                  className="absolute left-0 mt-2 w-48 bg-white dark:bg-black rounded-md shadow-lg py-2 z-50 border border-gray-200 dark:border-gray-700"
+                  className="absolute left-0 mt-2 w-48 bg-white dark:bg-black rounded-md shadow-xl py-2 z-50 border border-gray-200 dark:border-gray-700 min-w-max"
                   onMouseEnter={() => {
                     if (categoriesTimeoutRef.current) {
                       clearTimeout(categoriesTimeoutRef.current);
@@ -115,14 +116,14 @@ export default function Navigation() {
                 >
                   <Link 
                     href="/categories/health-wellness"
-                    className="block px-4 py-2 text-foreground hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                    className="block px-4 py-2 text-foreground hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors whitespace-nowrap"
                     onClick={() => setIsCategoriesOpen(false)}
                   >
                     Health & Wellness
                   </Link>
                   <Link 
                     href="/categories/beauty-cosmetics"
-                    className="block px-4 py-2 text-foreground hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                    className="block px-4 py-2 text-foreground hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors whitespace-nowrap"
                     onClick={() => setIsCategoriesOpen(false)}
                   >
                     Beauty & Cosmetics
@@ -181,7 +182,7 @@ export default function Navigation() {
               {/* Dropdown Menu */}
               {isToolsOpen && (
                 <div 
-                  className="absolute left-0 mt-2 w-48 bg-white dark:bg-black rounded-md shadow-lg py-2 z-50 border border-gray-200 dark:border-gray-700"
+                  className="absolute left-0 mt-2 w-48 bg-white dark:bg-black rounded-md shadow-xl py-2 z-50 border border-gray-200 dark:border-gray-700 min-w-max"
                   onMouseEnter={() => {
                     if (toolsTimeoutRef.current) {
                       clearTimeout(toolsTimeoutRef.current);
@@ -196,21 +197,21 @@ export default function Navigation() {
                 >
                   <Link 
                     href="/tools/health"
-                    className="block px-4 py-2 text-foreground hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                    className="block px-4 py-2 text-foreground hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors whitespace-nowrap"
                     onClick={() => setIsToolsOpen(false)}
                   >
                     Health Tools
                   </Link>
                   <Link 
                     href="/tools/beauty"
-                    className="block px-4 py-2 text-foreground hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                    className="block px-4 py-2 text-foreground hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors whitespace-nowrap"
                     onClick={() => setIsToolsOpen(false)}
                   >
                     Beauty Tools
                   </Link>
                   <Link 
                     href="/tools/general"
-                    className="block px-4 py-2 text-foreground hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                    className="block px-4 py-2 text-foreground hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors whitespace-nowrap"
                     onClick={() => setIsToolsOpen(false)}
                   >
                     General Tools
@@ -292,10 +293,10 @@ export default function Navigation() {
               </button>
               
               {isCategoriesOpen && (
-                <div className="pl-4 mt-2 space-y-2">
+                <div className="pl-4 mt-2 space-y-2 bg-white/90 dark:bg-black/90 rounded-lg p-2">
                   <Link 
                     href="/categories/health-wellness"
-                    className="block py-2 text-foreground hover:text-primary transition-colors duration-300"
+                    className="block py-2 text-foreground hover:text-primary transition-colors duration-300 whitespace-nowrap"
                     onClick={() => {
                       setIsCategoriesOpen(false);
                       setIsMenuOpen(false);
@@ -305,7 +306,7 @@ export default function Navigation() {
                   </Link>
                   <Link 
                     href="/categories/beauty-cosmetics"
-                    className="block py-2 text-foreground hover:text-primary transition-colors duration-300"
+                    className="block py-2 text-foreground hover:text-primary transition-colors duration-300 whitespace-nowrap"
                     onClick={() => {
                       setIsCategoriesOpen(false);
                       setIsMenuOpen(false);
@@ -353,10 +354,10 @@ export default function Navigation() {
               </button>
               
               {isToolsOpen && (
-                <div className="pl-4 mt-2 space-y-2">
+                <div className="pl-4 mt-2 space-y-2 bg-white/90 dark:bg-black/90 rounded-lg p-2">
                   <Link 
                     href="/tools/health"
-                    className="block py-2 text-foreground hover:text-primary transition-colors duration-300"
+                    className="block py-2 text-foreground hover:text-primary transition-colors duration-300 whitespace-nowrap"
                     onClick={() => {
                       setIsToolsOpen(false);
                       setIsMenuOpen(false);
@@ -366,7 +367,7 @@ export default function Navigation() {
                   </Link>
                   <Link 
                     href="/tools/beauty"
-                    className="block py-2 text-foreground hover:text-primary transition-colors duration-300"
+                    className="block py-2 text-foreground hover:text-primary transition-colors duration-300 whitespace-nowrap"
                     onClick={() => {
                       setIsToolsOpen(false);
                       setIsMenuOpen(false);
@@ -376,7 +377,7 @@ export default function Navigation() {
                   </Link>
                   <Link 
                     href="/tools/general"
-                    className="block py-2 text-foreground hover:text-primary transition-colors duration-300"
+                    className="block py-2 text-foreground hover:text-primary transition-colors duration-300 whitespace-nowrap"
                     onClick={() => {
                       setIsToolsOpen(false);
                       setIsMenuOpen(false);
