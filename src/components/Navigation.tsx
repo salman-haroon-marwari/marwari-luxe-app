@@ -6,8 +6,10 @@ import Image from 'next/image';
 
 const navItems = [
   { name: 'Home', href: '/' },
+  { name: 'Categories', href: '/categories' },
   { name: 'Products', href: '/products' },
   { name: 'Blogs', href: '/blogs' },
+  { name: 'Tools', href: '/tools' },
   { name: 'Contact', href: '/contact' },
 ];
 
@@ -279,15 +281,18 @@ export default function Navigation() {
         {/* Mobile Navigation */}
         <div 
           className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-            isMenuOpen ? 'max-h-96 opacity-100 mt-4' : 'max-h-0 opacity-0'
+            isMenuOpen ? 'max-h-screen opacity-100 mt-4' : 'max-h-0 opacity-0'
           }`}
+          aria-label="Mobile Navigation"
+          role="navigation"
         >
-          <nav className="pb-4">
+          <nav className="pb-4" role="menubar">
             {/* Home Link */}
             <Link
               href="/"
               className="block py-3 font-semibold text-lg text-foreground hover:text-primary transition-colors duration-300"
               onClick={() => setIsMenuOpen(false)}
+              role="menuitem"
             >
               Home
             </Link>
@@ -297,6 +302,9 @@ export default function Navigation() {
               <button
                 className="flex justify-between items-center w-full py-3 font-semibold text-lg text-foreground hover:text-primary transition-colors duration-300"
                 onClick={() => setIsCategoriesOpen(!isCategoriesOpen)}
+                aria-expanded={isCategoriesOpen}
+                aria-haspopup="true"
+                role="menuitem"
               >
                 <span>Categories</span>
                 <svg 
@@ -310,7 +318,7 @@ export default function Navigation() {
               </button>
               
               {isCategoriesOpen && (
-                <div className="pl-4 mt-2 space-y-2 bg-white/90 dark:bg-black/90 rounded-lg p-2">
+                <div className="pl-4 mt-2 space-y-2 bg-white/90 dark:bg-black/90 rounded-lg p-2" role="menu">
                   <Link 
                     href="/categories/health-wellness"
                     className="block py-2 text-foreground hover:text-primary transition-colors duration-300 whitespace-nowrap"
@@ -318,6 +326,7 @@ export default function Navigation() {
                       setIsCategoriesOpen(false);
                       setIsMenuOpen(false);
                     }}
+                    role="menuitem"
                   >
                     Health & Wellness
                   </Link>
@@ -328,6 +337,7 @@ export default function Navigation() {
                       setIsCategoriesOpen(false);
                       setIsMenuOpen(false);
                     }}
+                    role="menuitem"
                   >
                     Beauty & Cosmetics
                   </Link>
@@ -340,6 +350,7 @@ export default function Navigation() {
               href="/products"
               className="block py-3 font-semibold text-lg text-foreground hover:text-primary transition-colors duration-300"
               onClick={() => setIsMenuOpen(false)}
+              role="menuitem"
             >
               Products
             </Link>
@@ -349,6 +360,7 @@ export default function Navigation() {
               href="/blogs"
               className="block py-3 font-semibold text-lg text-foreground hover:text-primary transition-colors duration-300"
               onClick={() => setIsMenuOpen(false)}
+              role="menuitem"
             >
               Blogs
             </Link>
@@ -358,6 +370,9 @@ export default function Navigation() {
               <button
                 className="flex justify-between items-center w-full py-3 font-semibold text-lg text-foreground hover:text-primary transition-colors duration-300"
                 onClick={() => setIsToolsOpen(!isToolsOpen)}
+                aria-expanded={isToolsOpen}
+                aria-haspopup="true"
+                role="menuitem"
               >
                 <span>Tools</span>
                 <svg 
@@ -371,7 +386,7 @@ export default function Navigation() {
               </button>
               
               {isToolsOpen && (
-                <div className="pl-4 mt-2 space-y-2 bg-white/90 dark:bg-black/90 rounded-lg p-2">
+                <div className="pl-4 mt-2 space-y-2 bg-white/90 dark:bg-black/90 rounded-lg p-2" role="menu">
                   <Link 
                     href="/tools/health"
                     className="block py-2 text-foreground hover:text-primary transition-colors duration-300 whitespace-nowrap"
@@ -379,6 +394,7 @@ export default function Navigation() {
                       setIsToolsOpen(false);
                       setIsMenuOpen(false);
                     }}
+                    role="menuitem"
                   >
                     Health Tools
                   </Link>
@@ -389,6 +405,7 @@ export default function Navigation() {
                       setIsToolsOpen(false);
                       setIsMenuOpen(false);
                     }}
+                    role="menuitem"
                   >
                     Beauty Tools
                   </Link>
@@ -399,6 +416,7 @@ export default function Navigation() {
                       setIsToolsOpen(false);
                       setIsMenuOpen(false);
                     }}
+                    role="menuitem"
                   >
                     General Tools
                   </Link>
@@ -411,6 +429,7 @@ export default function Navigation() {
               href="/contact"
               className="block py-3 font-semibold text-lg text-foreground hover:text-primary transition-colors duration-300"
               onClick={() => setIsMenuOpen(false)}
+              role="menuitem"
             >
               Contact
             </Link>
@@ -420,6 +439,7 @@ export default function Navigation() {
               href="/social-media"
               className="flex items-center px-4 py-2 my-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl w-full justify-center"
               onClick={() => setIsMenuOpen(false)}
+              role="menuitem"
             >
               <svg 
                 className="w-5 h-5 mr-2"
