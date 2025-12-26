@@ -4,6 +4,9 @@ import Footer from '../../components/Footer';
 export const metadata = {
   title: 'Legal | Marwari Luxe',
   description: 'Legal information, terms of service, and privacy policy for Marwari Luxe.',
+  alternates: {
+    canonical: 'https://marwariluxe.com/legal',
+  },
 };
 
 export default function LegalPage() {
@@ -22,26 +25,20 @@ export default function LegalPage() {
     },
     {
       id: 3,
-      title: 'Return Policy',
-      description: 'Information about returning products purchased from Marwari Luxe.',
-      url: '/legal/returns',
+      title: 'Refund Policy',
+      description: 'Information about our refund and return policies.',
+      url: '/legal/refund-policy',
     },
     {
       id: 4,
-      title: 'Shipping Policy',
-      description: 'Details about our shipping methods, costs, and delivery times.',
-      url: '/legal/shipping',
-    },
-    {
-      id: 5,
       title: 'Cookie Policy',
       description: 'How we use cookies and tracking technologies on our website.',
       url: '/legal/cookies',
     },
     {
-      id: 6,
-      title: 'Accessibility Statement',
-      description: 'Our commitment to making our website accessible to all users.',
+      id: 5,
+      title: 'Disclaimer',
+      description: 'Important disclaimer regarding the use of our website, products, and services.',
       url: '/legal/disclaimer',
     },
   ];
