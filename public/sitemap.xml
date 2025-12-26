@@ -80,14 +80,13 @@
     <loc>https://marwariluxe.com/legal/terms</loc>
     <lastmod>2025-12-22</lastmod>
     <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://marwariluxe.com/legal/refund-policy</loc>
+  </url><url>
+    <loc>https://marwariluxe.com/legal/faq</loc>
     <lastmod>2025-12-22</lastmod>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://marwariluxe.com/legal/shipping</loc>
+    <loc>https://marwariluxe.com/legal/refund-policy</loc>
     <lastmod>2025-12-22</lastmod>
     <priority>0.3</priority>
   </url>
@@ -97,27 +96,7 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://marwariluxe.com/legal/cookies</loc>
-    <lastmod>2025-12-22</lastmod>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://marwariluxe.com/careers</loc>
-    <lastmod>2025-12-26</lastmod>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://marwariluxe.com/community</loc>
-    <lastmod>2025-12-26</lastmod>
-    <priority>0.4</priority>
-  </url>
-  <url>
     <loc>https://marwariluxe.com/social-media</loc>
-    <lastmod>2025-12-26</lastmod>
-    <priority>0.4</priority>
-  </url>
-  <url>
-    <loc>https://marwariluxe.com/guides</loc>
     <lastmod>2025-12-26</lastmod>
     <priority>0.4</priority>
   </url>
