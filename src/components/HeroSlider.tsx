@@ -11,7 +11,7 @@ const HeroSlider = () => {
   const slides = [
     {
       id: 1,
-      title: '(Premium) Health Supplements & Wellness Products',
+      title: 'Premium Health Supplements & Wellness Products',
       subtitle: 'Discover scientifically-backed vitamins, minerals & supplements that transform your daily wellness routine. Shop 25+ premium products.',
       image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,q_auto,w_1600,dpr_auto,c_fill,g_auto/v1762817015/1_pllyfb.png',
       cta: 'Shop Health Supplements',
@@ -114,7 +114,7 @@ const HeroSlider = () => {
 
   // Fix for image sizing - ensure full screen display with mobile optimization
   return (
-    <div className="relative w-full overflow-hidden border-0 md:border max-w-full pt-[10px] md:pt-0 h-[50vh] md:h-screen">
+    <div className="relative w-full overflow-hidden border-0 md:border pt-[10px] md:pt-0 h-[50vh] md:h-screen w-full md:w-full lg:w-full xl:w-full 2xl:w-full">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 w-full h-full">
         <Image
@@ -122,7 +122,7 @@ const HeroSlider = () => {
           alt={currentSlideData.title || ''}
           fill
           priority={currentSlide === 0} // Ensure first slide is prioritized
-          className="object-contain w-full h-full scale-125 md:scale-100"
+          className="object-cover w-full h-full"
           sizes="100vw"
           quality={85}
           fetchPriority={currentSlide === 0 ? "high" : "auto"} // Add fetchpriority for LCP optimization
@@ -145,7 +145,7 @@ const HeroSlider = () => {
 
       {/* Content */}
       <div className="relative z-10 flex items-center justify-center h-full w-full px-4 sm:px-6 lg:px-8">
-        <div className="text-center text-white max-w-4xl mx-auto pt-8 md:pt-0">
+        <div className="text-center text-white w-full mx-auto pt-4 md:pt-0">
           <h1 className="text-3xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-3 sm:mb-4 mobile-text-3xl">
             {currentSlideData.title || ''}
           </h1>

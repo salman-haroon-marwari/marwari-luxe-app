@@ -61,7 +61,7 @@ export default function Home() {
       <main className="flex-grow">
         {/* Hero Section */}
         <section className="pt-0 pb-0 px-0 bg-none md:bg-gradient-to-br md:from-primary/5 md:to-secondary/10 md:pt-20 md:pb-12 md:px-4">
-          <div className="container mx-auto max-w-6xl w-full">
+          <div className="w-full">
             <HeroSlider />
           </div>
         </section>

@@ -23,11 +23,25 @@ export default function Navigation() {
   
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
+      // Only apply scrolled effect on non-mobile devices
+      const isMobile = window.innerWidth < 768;
+      if (!isMobile) {
+        setScrolled(window.scrollY > 10);
+      } else {
+        // On mobile, don't set scrolled state to prevent navbar hiding
+        setScrolled(false);
+      }
     };
+    
+    // Initial check
+    handleScroll();
+    
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleScroll);
+    
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleScroll);
       // Clear timeouts on unmount
       if (categoriesTimeoutRef.current) clearTimeout(categoriesTimeoutRef.current);
       if (toolsTimeoutRef.current) clearTimeout(toolsTimeoutRef.current);
@@ -36,12 +50,12 @@ export default function Navigation() {
 
   return (
     <header 
-      className={`fixed w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white/90 dark:bg-black/90 backdrop-blur-sm py-2 shadow-md' : 'py-4'
+      className={`fixed w-full z-[50] transition-all duration-300 ${
+        scrolled ? 'bg-white/90 dark:bg-black/90 backdrop-blur-sm py-4 shadow-lg' : 'py-6'
       }`}
       role="banner"
     >
-      <div className="container mx-auto px-4 w-full max-w-full overflow-x-hidden overflow-y-hidden">
+      <div className="container mx-auto px-4 w-full max-w-full">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
@@ -52,17 +66,17 @@ export default function Navigation() {
               height={60}
               className="object-contain"
             />
-            <span className="text-3xl font-bold text-black">
+            <span className="text-4xl font-bold text-black">
               Marwari Luxe
             </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-10">
             {/* Home Link */}
             <Link
               href="/"
-              className="font-medium text-foreground hover:text-primary transition-colors duration-300"
+              className="font-semibold text-lg text-foreground hover:text-primary transition-colors duration-300"
             >
               Home
             </Link>
@@ -84,7 +98,7 @@ export default function Navigation() {
               }}
             >
               <button
-                className="font-medium text-foreground hover:text-primary transition-colors duration-300 flex items-center"
+                className="font-semibold text-lg text-foreground hover:text-primary transition-colors duration-300 flex items-center"
                 onClick={() => setIsCategoriesOpen(!isCategoriesOpen)}
               >
                 Categories
@@ -101,7 +115,7 @@ export default function Navigation() {
               {/* Dropdown Menu */}
               {isCategoriesOpen && (
                 <div 
-                  className="absolute left-0 mt-2 w-48 bg-white dark:bg-black rounded-md shadow-xl py-2 z-50 border border-gray-200 dark:border-gray-700 min-w-max"
+                  className="absolute left-0 mt-2 w-48 bg-white dark:bg-black rounded-md shadow-xl py-2 z-[9999] border border-gray-200 dark:border-gray-700 min-w-max"
                   onMouseEnter={() => {
                     if (categoriesTimeoutRef.current) {
                       clearTimeout(categoriesTimeoutRef.current);
@@ -135,7 +149,7 @@ export default function Navigation() {
             {/* Products Link */}
             <Link
               href="/products"
-              className="font-medium text-foreground hover:text-primary transition-colors duration-300"
+              className="font-semibold text-lg text-foreground hover:text-primary transition-colors duration-300"
             >
               Products
             </Link>
@@ -143,7 +157,7 @@ export default function Navigation() {
             {/* Blogs Link */}
             <Link
               href="/blogs"
-              className="font-medium text-foreground hover:text-primary transition-colors duration-300"
+              className="font-semibold text-lg text-foreground hover:text-primary transition-colors duration-300"
             >
               Blogs
             </Link>
@@ -165,7 +179,7 @@ export default function Navigation() {
               }}
             >
               <button
-                className="font-medium text-foreground hover:text-primary transition-colors duration-300 flex items-center"
+                className="font-semibold text-lg text-foreground hover:text-primary transition-colors duration-300 flex items-center"
                 onClick={() => setIsToolsOpen(!isToolsOpen)}
               >
                 Tools
@@ -182,7 +196,7 @@ export default function Navigation() {
               {/* Dropdown Menu */}
               {isToolsOpen && (
                 <div 
-                  className="absolute left-0 mt-2 w-48 bg-white dark:bg-black rounded-md shadow-xl py-2 z-50 border border-gray-200 dark:border-gray-700 min-w-max"
+                  className="absolute left-0 mt-2 w-48 bg-white dark:bg-black rounded-md shadow-xl py-2 z-[9999] border border-gray-200 dark:border-gray-700 min-w-max"
                   onMouseEnter={() => {
                     if (toolsTimeoutRef.current) {
                       clearTimeout(toolsTimeoutRef.current);
@@ -223,7 +237,7 @@ export default function Navigation() {
             {/* Contact Link */}
             <Link
               href="/contact"
-              className="font-medium text-foreground hover:text-primary transition-colors duration-300"
+              className="font-semibold text-lg text-foreground hover:text-primary transition-colors duration-300"
             >
               Contact
             </Link>
@@ -269,7 +283,7 @@ export default function Navigation() {
             {/* Home Link */}
             <Link
               href="/"
-              className="block py-2 font-medium text-foreground hover:text-primary transition-colors duration-300"
+              className="block py-3 font-semibold text-lg text-foreground hover:text-primary transition-colors duration-300"
               onClick={() => setIsMenuOpen(false)}
             >
               Home
@@ -278,7 +292,7 @@ export default function Navigation() {
             {/* Categories Dropdown */}
             <div className="py-2">
               <button
-                className="flex justify-between items-center w-full py-2 font-medium text-foreground hover:text-primary transition-colors duration-300"
+                className="flex justify-between items-center w-full py-3 font-semibold text-lg text-foreground hover:text-primary transition-colors duration-300"
                 onClick={() => setIsCategoriesOpen(!isCategoriesOpen)}
               >
                 <span>Categories</span>
@@ -321,7 +335,7 @@ export default function Navigation() {
             {/* Products Link */}
             <Link
               href="/products"
-              className="block py-2 font-medium text-foreground hover:text-primary transition-colors duration-300"
+              className="block py-3 font-semibold text-lg text-foreground hover:text-primary transition-colors duration-300"
               onClick={() => setIsMenuOpen(false)}
             >
               Products
@@ -330,7 +344,7 @@ export default function Navigation() {
             {/* Blogs Link */}
             <Link
               href="/blogs"
-              className="block py-2 font-medium text-foreground hover:text-primary transition-colors duration-300"
+              className="block py-3 font-semibold text-lg text-foreground hover:text-primary transition-colors duration-300"
               onClick={() => setIsMenuOpen(false)}
             >
               Blogs
@@ -339,7 +353,7 @@ export default function Navigation() {
             {/* Tools Dropdown */}
             <div className="py-2">
               <button
-                className="flex justify-between items-center w-full py-2 font-medium text-foreground hover:text-primary transition-colors duration-300"
+                className="flex justify-between items-center w-full py-3 font-semibold text-lg text-foreground hover:text-primary transition-colors duration-300"
                 onClick={() => setIsToolsOpen(!isToolsOpen)}
               >
                 <span>Tools</span>
@@ -392,7 +406,7 @@ export default function Navigation() {
             {/* Contact Link */}
             <Link
               href="/contact"
-              className="block py-2 font-medium text-foreground hover:text-primary transition-colors duration-300"
+              className="block py-3 font-semibold text-lg text-foreground hover:text-primary transition-colors duration-300"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
