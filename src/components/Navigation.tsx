@@ -16,16 +16,19 @@ export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
   const [isCategoriesOpen, setIsCategoriesOpen] = useState(false);
   const [isToolsOpen, setIsToolsOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
   
   // Refs for dropdown timeouts
   const categoriesTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   const toolsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
   
   useEffect(() => {
-    const handleScroll = () => {
+    const handleResize = () => {
+      const mobile = window.innerWidth < 768;
+      setIsMobile(mobile);
+      
       // Only apply scrolled effect on non-mobile devices
-      const isMobile = window.innerWidth < 768;
-      if (!isMobile) {
+      if (!mobile) {
         setScrolled(window.scrollY > 10);
       } else {
         // On mobile, don't set scrolled state to prevent navbar hiding
@@ -34,14 +37,14 @@ export default function Navigation() {
     };
     
     // Initial check
-    handleScroll();
+    handleResize();
     
-    window.addEventListener('scroll', handleScroll);
-    window.addEventListener('resize', handleScroll);
+    window.addEventListener('scroll', handleResize);
+    window.addEventListener('resize', handleResize);
     
     return () => {
-      window.removeEventListener('scroll', handleScroll);
-      window.removeEventListener('resize', handleScroll);
+      window.removeEventListener('scroll', handleResize);
+      window.removeEventListener('resize', handleResize);
       // Clear timeouts on unmount
       if (categoriesTimeoutRef.current) clearTimeout(categoriesTimeoutRef.current);
       if (toolsTimeoutRef.current) clearTimeout(toolsTimeoutRef.current);
@@ -51,7 +54,7 @@ export default function Navigation() {
   return (
     <header 
       className={`fixed w-full z-[50] transition-all duration-300 ${
-        scrolled ? 'bg-white/90 dark:bg-black/90 backdrop-blur-sm py-4 shadow-lg' : 'py-6'
+        scrolled || isMobile ? 'bg-white/90 dark:bg-black/90 backdrop-blur-sm py-4 shadow-lg' : 'py-6'
       }`}
       role="banner"
     >
