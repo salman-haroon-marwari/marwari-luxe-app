@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+
+# Allow all crawlers to access all content for international indexing
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+# Disallow admin and internal directories
+Disallow: /admin/
+Disallow: /internal/
+Disallow: /api/
+
+Sitemap: https://marwariluxe.com/sitemap.xml
+
+# Preferred domain (legacy directive, not actively used by Google)
+# Host: marwariluxe.com

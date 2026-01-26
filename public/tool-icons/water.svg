@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <path d="M30,20 Q50,5 70,20 Q70,50 50,80 Q30,50 30,20" fill="#3B82F6"/>
+  <path d="M35,25 Q50,15 65,25 Q65,45 50,70 Q35,45 35,25" fill="#93C5FD"/>
+  <ellipse cx="50" cy="30" rx="8" ry="5" fill="#BFDBFE"/>
+  <text x="50" y="90" font-family="Arial" font-size="12" fill="#3B82F6" text-anchor="middle" font-weight="bold">H₂O</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="40" r="20" fill="#EC4899" opacity="0.2"/>
+  <circle cx="50" cy="40" r="15" fill="#EC4899" opacity="0.4"/>
+  <path d="M30,60 Q50,80 70,60" stroke="#EC4899" stroke-width="3" fill="none"/>
+  <circle cx="40" cy="35" r="3" fill="#EC4899"/>
+  <circle cx="60" cy="35" r="3" fill="#EC4899"/>
+  <path d="M45,45 Q50,50 55,45" stroke="#EC4899" stroke-width="2" fill="none"/>
+  <rect x="35" y="65" width="30" height="15" rx="7" fill="#EC4899"/>
+  <text x="50" y="90" font-family="Arial" font-size="12" fill="#EC4899" text-anchor="middle" font-weight="bold">TRYON</text>
+</svg>

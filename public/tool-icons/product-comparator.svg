@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect x="20" y="30" width="25" height="40" rx="5" fill="#F59E0B" opacity="0.4"/>
+  <rect x="55" y="30" width="25" height="40" rx="5" fill="#F59E0B" opacity="0.4"/>
+  <line x1="32" y1="35" x2="32" y2="65" stroke="#F59E0B" stroke-width="2"/>
+  <line x1="67" y1="35" x2="67" y2="65" stroke="#F59E0B" stroke-width="2"/>
+  <path d="M45,50 L55,50" stroke="#F59E0B" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#F59E0B"/>
+    </marker>
+  </defs>
+  <text x="50" y="90" font-family="Arial" font-size="12" fill="#F59E0B" text-anchor="middle" font-weight="bold">COMPARE</text>
+</svg>

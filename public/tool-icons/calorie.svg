@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="40" fill="#F59E0B"/>
+  <path d="M30,40 Q50,20 70,40 Q70,60 50,80 Q30,60 30,40" fill="#FCD34D"/>
+  <circle cx="40" cy="45" r="3" fill="#EF4444"/>
+  <circle cx="60" cy="45" r="3" fill="#EF4444"/>
+  <path d="M45,60 Q50,65 55,60" stroke="#EF4444" stroke-width="2" fill="none"/>
+  <text x="50" y="90" font-family="Arial" font-size="12" fill="#F59E0B" text-anchor="middle" font-weight="bold">CAL</text>
+</svg>
