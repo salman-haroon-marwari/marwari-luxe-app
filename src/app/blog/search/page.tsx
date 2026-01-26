@@ -21,6 +21,7 @@ import Footer from '@/components/Footer';
 
 // Client component that uses useSearchParams
 const SearchContent = () => {
+  'use client';
   const searchParams = useSearchParams();
   const initialQuery = searchParams.get('q') || '';
   
