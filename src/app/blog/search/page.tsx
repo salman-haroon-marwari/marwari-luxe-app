@@ -1,5 +1,5 @@
 // Blog Search Results Page at /blog/search
-import { Suspense } from 'react';
+'use client';
 
 export const dynamic = 'force-dynamic';
 
@@ -12,6 +12,7 @@ import SearchBar from '@/components/blog/SearchBar';
 import CategoryFilter from '@/components/blog/CategoryFilter';
 import Pagination from '@/components/blog/Pagination';
 import BlogHero from '@/components/blog/BlogHero';
+import { Suspense } from 'react';
 
 // Import blog and author data
 import { blogPosts } from '@/data/blogs';
@@ -19,9 +20,7 @@ import { allAuthors } from '@/data/authors';
 import NavigationWrapper from '@/components/NavigationWrapper';
 import Footer from '@/components/Footer';
 
-// Client component that uses useSearchParams
 const SearchContent = () => {
-  'use client';
   const searchParams = useSearchParams();
   const initialQuery = searchParams.get('q') || '';
   
