@@ -73,17 +73,21 @@ const BlogSection = () => {
           {featuredBlogs.map((blog) => (
             <article 
               key={blog.id} 
-              className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+              className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 transform will-change-transform"
             >
-              <div className="relative h-48">
+              <div className="relative h-48 overflow-hidden rounded-t-xl">
                 <Image 
                   src={blog.image} 
                   alt={blog.title} 
                   fill
-                  className="object-cover"
+                  className="object-cover transition-transform duration-500 hover:scale-105"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  quality={75}
+                  placeholder="blur"
+                  blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                  loading="lazy"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 <div className="absolute top-4 left-4">
                   <span className="px-3 py-1 bg-pink-500 text-white text-sm font-bold rounded-full">
                     {blog.category}
@@ -127,13 +131,10 @@ export default function Home() {
       <Navigation />
       
       <main className="flex-grow">
-        {/* Hero Section */}
-        <section className="pt-0 pb-0 px-0 bg-none md:bg-gradient-to-br md:from-primary/5 md:to-secondary/10 md:pt-20 md:pb-12 md:px-4">
-          <div className="w-full">
-            <HeroSlider />
-          </div>
+        {/* Hero Section - Optimized for performance */}
+        <section className="w-full">
+          <HeroSlider />
         </section>
-        
         
         {/* Intro Section */}
         <IntroSection />
