@@ -19,6 +19,8 @@ export default function Navigation() {
   const [isCategoriesOpen, setIsCategoriesOpen] = useState(false);
   const [isToolsOpen, setIsToolsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [categoriesCloseTimer, setCategoriesCloseTimer] = useState<NodeJS.Timeout | null>(null);
+  const [toolsCloseTimer, setToolsCloseTimer] = useState<NodeJS.Timeout | null>(null);
   
   // Debug logs
   console.log('=== NAVIGATION STATE ===');
@@ -114,11 +116,21 @@ export default function Navigation() {
               data-open={isCategoriesOpen}
               onMouseEnter={() => {
                 console.log('Mouse entered categories');
+                if (categoriesCloseTimer) {
+                  clearTimeout(categoriesCloseTimer);
+                  setCategoriesCloseTimer(null);
+                }
                 if (!isMobile) setIsCategoriesOpen(true);
               }}
               onMouseLeave={() => {
                 console.log('Mouse left categories');
-                if (!isMobile) setIsCategoriesOpen(false);
+                if (!isMobile) {
+                  const timer = setTimeout(() => {
+                    setIsCategoriesOpen(false);
+                    setCategoriesCloseTimer(null);
+                  }, 300);
+                  setCategoriesCloseTimer(timer);
+                }
               }}
             >
               <button
@@ -180,11 +192,21 @@ export default function Navigation() {
               data-open={isToolsOpen}
               onMouseEnter={() => {
                 console.log('Mouse entered tools');
+                if (toolsCloseTimer) {
+                  clearTimeout(toolsCloseTimer);
+                  setToolsCloseTimer(null);
+                }
                 if (!isMobile) setIsToolsOpen(true);
               }}
               onMouseLeave={() => {
                 console.log('Mouse left tools');
-                if (!isMobile) setIsToolsOpen(false);
+                if (!isMobile) {
+                  const timer = setTimeout(() => {
+                    setIsToolsOpen(false);
+                    setToolsCloseTimer(null);
+                  }, 300);
+                  setToolsCloseTimer(timer);
+                }
               }}
             >
               <button
