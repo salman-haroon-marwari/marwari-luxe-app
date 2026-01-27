@@ -62,6 +62,20 @@ export default function RootLayout({
           }}
         />
         {/* End Google Analytics Verification */}
+        
+        {/* New Google Analytics Tracking Code */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9TFPGWPMCJ"></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-9TFPGWPMCJ');
+            `,
+          }}
+        />
+        {/* End New Google Analytics Tracking Code */}
         {/* Google AdSense */}
         <script 
           async 
