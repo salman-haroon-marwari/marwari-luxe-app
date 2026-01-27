@@ -25,21 +25,33 @@ export default function LegalPage() {
     },
     {
       id: 3,
-      title: 'Refund Policy',
-      description: 'Information about our refund and return policies.',
-      url: '/legal/refund-policy',
+      title: 'Disclaimer',
+      description: 'Important disclaimer regarding the use of our website, content, and services.',
+      url: '/legal/disclaimer',
     },
     {
       id: 4,
-      title: 'Cookie Policy',
-      description: 'How we use cookies and tracking technologies on our website.',
-      url: '/legal/cookies',
+      title: 'FAQ',
+      description: 'Frequently asked questions about our content and tools.',
+      url: '/legal/faq',
     },
     {
       id: 5,
-      title: 'Disclaimer',
-      description: 'Important disclaimer regarding the use of our website, products, and services.',
-      url: '/legal/disclaimer',
+      title: 'Editorial Policy',
+      description: 'Our standards for content creation, fact-checking, and editorial practices.',
+      url: '/legal/editorial-policy',
+    },
+    {
+      id: 6,
+      title: 'Copyright Policy',
+      description: 'How we respect intellectual property rights and handle copyright claims.',
+      url: '/legal/copyright-policy',
+    },
+    {
+      id: 7,
+      title: 'DMCA Policy',
+      description: 'Our procedures for handling DMCA takedown notices and counter-notifications.',
+      url: '/legal/dmca-policy',
     },
   ];
 

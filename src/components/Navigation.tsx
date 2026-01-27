@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
 const navItems = [
@@ -20,9 +20,12 @@ export default function Navigation() {
   const [isToolsOpen, setIsToolsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   
-  // Refs for dropdown timeouts
-  const categoriesTimeoutRef = useRef<NodeJS.Timeout | null>(null);
-  const toolsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  // Debug logs
+  console.log('=== NAVIGATION STATE ===');
+  console.log('isCategoriesOpen:', isCategoriesOpen);
+  console.log('isToolsOpen:', isToolsOpen);
+  console.log('isMobile:', isMobile);
+  console.log('========================');
   
   useEffect(() => {
     const handleResize = () => {
@@ -47,16 +50,35 @@ export default function Navigation() {
     return () => {
       window.removeEventListener('scroll', handleResize);
       window.removeEventListener('resize', handleResize);
-      // Clear timeouts on unmount
-      if (categoriesTimeoutRef.current) clearTimeout(categoriesTimeoutRef.current);
-      if (toolsTimeoutRef.current) clearTimeout(toolsTimeoutRef.current);
+    };
+  }, []);
+
+  // Close dropdowns when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      
+      // Check if click is outside categories dropdown
+      if (!target.closest('.categories-dropdown')) {
+        setIsCategoriesOpen(false);
+      }
+      
+      // Check if click is outside tools dropdown
+      if (!target.closest('.tools-dropdown')) {
+        setIsToolsOpen(false);
+      }
+    };
+    
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, []);
 
   return (
     <header 
       className={`fixed w-full z-[50] transition-all duration-300 ${
-        scrolled || isMobile ? 'bg-white/90 dark:bg-black/90 backdrop-blur-sm py-4 shadow-lg' : 'py-6'
+        scrolled || isMobile ? 'bg-white/90 backdrop-blur-sm py-4 shadow-lg' : 'bg-white/90 backdrop-blur-sm py-6 shadow-xl'
       }`}
       role="banner"
     >
@@ -71,7 +93,7 @@ export default function Navigation() {
               height={60}
               className="object-contain"
             />
-            <span className="text-4xl font-bold text-black">
+            <span className="text-4xl font-bold text-gray-900">
               Marwari Luxe
             </span>
           </Link>
@@ -81,30 +103,34 @@ export default function Navigation() {
             {/* Home Link */}
             <Link
               href="/"
-              className="font-semibold text-lg text-foreground hover:text-primary transition-colors duration-300"
+              className="font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-300"
             >
               Home
             </Link>
             
             {/* Categories Dropdown */}
             <div 
-              className="relative"
+              className={`relative categories-dropdown ${isCategoriesOpen ? 'bg-yellow-100' : ''}`}
+              data-open={isCategoriesOpen}
               onMouseEnter={() => {
-                if (categoriesTimeoutRef.current) {
-                  clearTimeout(categoriesTimeoutRef.current);
-                  categoriesTimeoutRef.current = null;
-                }
-                setIsCategoriesOpen(true);
+                console.log('Mouse entered categories');
+                if (!isMobile) setIsCategoriesOpen(true);
               }}
               onMouseLeave={() => {
-                categoriesTimeoutRef.current = setTimeout(() => {
-                  setIsCategoriesOpen(false);
-                }, 300); // 300ms delay before closing
+                console.log('Mouse left categories');
+                if (!isMobile) setIsCategoriesOpen(false);
               }}
             >
               <button
-                className="font-semibold text-lg text-foreground hover:text-primary transition-colors duration-300 flex items-center"
-                onClick={() => setIsCategoriesOpen(!isCategoriesOpen)}
+                className="font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-300 flex items-center cursor-pointer"
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  console.log('Categories button clicked');
+                  setIsCategoriesOpen(!isCategoriesOpen);
+                }}
+                aria-haspopup="true"
+                aria-expanded={isCategoriesOpen}
               >
                 Categories
                 <svg 
@@ -120,30 +146,27 @@ export default function Navigation() {
               {/* Dropdown Menu */}
               {isCategoriesOpen && (
                 <div 
-                  className="absolute left-0 mt-2 w-48 bg-white dark:bg-black rounded-md shadow-xl py-2 z-[9999] border border-gray-200 dark:border-gray-700 min-w-max"
-                  onMouseEnter={() => {
-                    if (categoriesTimeoutRef.current) {
-                      clearTimeout(categoriesTimeoutRef.current);
-                      categoriesTimeoutRef.current = null;
-                    }
-                  }}
-                  onMouseLeave={() => {
-                    categoriesTimeoutRef.current = setTimeout(() => {
-                      setIsCategoriesOpen(false);
-                    }, 300); // 300ms delay before closing
-                  }}
+                  className="dropdown-menu absolute left-0 mt-2 w-48 bg-white dark:bg-black rounded-md shadow-2xl py-2 z-50 border border-gray-200 dark:border-gray-700 min-w-max animate-fadeIn"
                 >
                   <Link 
                     href="/categories/health-wellness"
-                    className="block px-4 py-2 text-foreground hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors whitespace-nowrap"
-                    onClick={() => setIsCategoriesOpen(false)}
+                    className="block px-4 py-3 text-gray-800 hover:bg-purple-100 hover:text-purple-700 transition-all duration-200 whitespace-nowrap font-medium"
+                    onClick={() => {
+                      setIsCategoriesOpen(false);
+                      setIsToolsOpen(false);
+                      setIsMenuOpen(false);
+                    }}
                   >
                     Health & Wellness
                   </Link>
                   <Link 
                     href="/categories/beauty-cosmetics"
-                    className="block px-4 py-2 text-foreground hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors whitespace-nowrap"
-                    onClick={() => setIsCategoriesOpen(false)}
+                    className="block px-4 py-3 text-gray-800 hover:bg-purple-100 hover:text-purple-700 transition-all duration-200 whitespace-nowrap font-medium"
+                    onClick={() => {
+                      setIsCategoriesOpen(false);
+                      setIsToolsOpen(false);
+                      setIsMenuOpen(false);
+                    }}
                   >
                     Beauty & Cosmetics
                   </Link>
@@ -151,29 +174,29 @@ export default function Navigation() {
               )}
             </div>
             
-
-            
-
-            
             {/* Tools Dropdown */}
             <div 
-              className="relative"
+              className={`relative tools-dropdown ${isToolsOpen ? 'bg-yellow-100' : ''}`}
+              data-open={isToolsOpen}
               onMouseEnter={() => {
-                if (toolsTimeoutRef.current) {
-                  clearTimeout(toolsTimeoutRef.current);
-                  toolsTimeoutRef.current = null;
-                }
-                setIsToolsOpen(true);
+                console.log('Mouse entered tools');
+                if (!isMobile) setIsToolsOpen(true);
               }}
               onMouseLeave={() => {
-                toolsTimeoutRef.current = setTimeout(() => {
-                  setIsToolsOpen(false);
-                }, 300); // 300ms delay before closing
+                console.log('Mouse left tools');
+                if (!isMobile) setIsToolsOpen(false);
               }}
             >
               <button
-                className="font-semibold text-lg text-foreground hover:text-primary transition-colors duration-300 flex items-center"
-                onClick={() => setIsToolsOpen(!isToolsOpen)}
+                className="font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-300 flex items-center cursor-pointer"
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  console.log('Tools button clicked');
+                  setIsToolsOpen(!isToolsOpen);
+                }}
+                aria-haspopup="true"
+                aria-expanded={isToolsOpen}
               >
                 Tools
                 <svg 
@@ -189,37 +212,35 @@ export default function Navigation() {
               {/* Dropdown Menu */}
               {isToolsOpen && (
                 <div 
-                  className="absolute left-0 mt-2 w-48 bg-white dark:bg-black rounded-md shadow-xl py-2 z-[9999] border border-gray-200 dark:border-gray-700 min-w-max"
-                  onMouseEnter={() => {
-                    if (toolsTimeoutRef.current) {
-                      clearTimeout(toolsTimeoutRef.current);
-                      toolsTimeoutRef.current = null;
-                    }
-                  }}
-                  onMouseLeave={() => {
-                    toolsTimeoutRef.current = setTimeout(() => {
-                      setIsToolsOpen(false);
-                    }, 300); // 300ms delay before closing
-                  }}
+                  className="dropdown-menu absolute left-0 mt-2 w-48 bg-white dark:bg-black rounded-md shadow-2xl py-2 z-50 border border-gray-200 dark:border-gray-700 min-w-max animate-fadeIn"
                 >
                   <Link 
                     href="/tools/health"
-                    className="block px-4 py-2 text-foreground hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors whitespace-nowrap"
-                    onClick={() => setIsToolsOpen(false)}
+                    className="block px-4 py-3 text-gray-800 hover:bg-purple-100 hover:text-purple-700 transition-all duration-200 whitespace-nowrap font-medium"
+                    onClick={() => {
+                      setIsToolsOpen(false);
+                      setIsMenuOpen(false);
+                    }}
                   >
                     Health Tools
                   </Link>
                   <Link 
                     href="/tools/beauty"
-                    className="block px-4 py-2 text-foreground hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors whitespace-nowrap"
-                    onClick={() => setIsToolsOpen(false)}
+                    className="block px-4 py-3 text-gray-800 hover:bg-purple-100 hover:text-purple-700 transition-all duration-200 whitespace-nowrap font-medium"
+                    onClick={() => {
+                      setIsToolsOpen(false);
+                      setIsMenuOpen(false);
+                    }}
                   >
                     Beauty Tools
                   </Link>
                   <Link 
                     href="/tools/general"
-                    className="block px-4 py-2 text-foreground hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors whitespace-nowrap"
-                    onClick={() => setIsToolsOpen(false)}
+                    className="block px-4 py-3 text-gray-800 hover:bg-purple-100 hover:text-purple-700 transition-all duration-200 whitespace-nowrap font-medium"
+                    onClick={() => {
+                      setIsToolsOpen(false);
+                      setIsMenuOpen(false);
+                    }}
                   >
                     General Tools
                   </Link>
@@ -230,7 +251,7 @@ export default function Navigation() {
             {/* Blog Link */}
             <Link
               href="/blog"
-              className="font-semibold text-lg text-foreground hover:text-primary transition-colors duration-300"
+              className="font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-300"
             >
               Blog
             </Link>
@@ -238,7 +259,7 @@ export default function Navigation() {
             {/* Author Link */}
             <Link
               href="/author"
-              className="font-semibold text-lg text-foreground hover:text-primary transition-colors duration-300"
+              className="font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-300"
             >
               Author
             </Link>
@@ -246,7 +267,7 @@ export default function Navigation() {
             {/* Contact Link */}
             <Link
               href="/contact"
-              className="font-semibold text-lg text-foreground hover:text-primary transition-colors duration-300"
+              className="font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-300"
             >
               Contact
             </Link>
@@ -275,9 +296,9 @@ export default function Navigation() {
             aria-label="Toggle menu"
           >
             <div className="w-6 h-6 flex flex-col justify-center items-center">
-              <span className={`block w-6 h-0.5 bg-foreground rounded-sm transition-all duration-300 ${isMenuOpen ? 'rotate-45 translate-y-1' : '-mt-1'}`}></span>
-              <span className={`block w-6 h-0.5 bg-foreground rounded-sm mt-1 transition-all duration-300 ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
-              <span className={`block w-6 h-0.5 bg-foreground rounded-sm transition-all duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-1' : 'mt-1'}`}></span>
+              <span className={`block w-6 h-0.5 bg-white rounded-sm transition-all duration-300 ${isMenuOpen ? 'rotate-45 translate-y-1' : '-mt-1'}`}></span>
+              <span className={`block w-6 h-0.5 bg-white rounded-sm mt-1 transition-all duration-300 ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
+              <span className={`block w-6 h-0.5 bg-white rounded-sm transition-all duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-1' : 'mt-1'}`}></span>
             </div>
           </button>
         </div>
@@ -294,8 +315,12 @@ export default function Navigation() {
             {/* Home Link */}
             <Link
               href="/"
-              className="block py-3 font-semibold text-lg text-foreground hover:text-primary transition-colors duration-300"
-              onClick={() => setIsMenuOpen(false)}
+              className="block py-3 font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-300"
+              onClick={() => {
+                setIsMenuOpen(false);
+                setIsCategoriesOpen(false);
+                setIsToolsOpen(false);
+              }}
               role="menuitem"
             >
               Home
@@ -304,7 +329,7 @@ export default function Navigation() {
             {/* Categories Dropdown */}
             <div className="py-2">
               <button
-                className="flex justify-between items-center w-full py-3 font-semibold text-lg text-foreground hover:text-primary transition-colors duration-300"
+                className="flex justify-between items-center w-full py-3 font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-300"
                 onClick={() => setIsCategoriesOpen(!isCategoriesOpen)}
                 aria-expanded={isCategoriesOpen}
                 aria-haspopup="true"
@@ -321,11 +346,11 @@ export default function Navigation() {
                 </svg>
               </button>
               
-              {isCategoriesOpen && (
+              <div className={`overflow-hidden transition-all duration-300 ${isCategoriesOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'}`}>
                 <div className="pl-4 mt-2 space-y-2 bg-white/90 dark:bg-black/90 rounded-lg p-2" role="menu">
                   <Link 
                     href="/categories/health-wellness"
-                    className="block py-2 text-foreground hover:text-primary transition-colors duration-300 whitespace-nowrap"
+                    className="block py-2 text-gray-800 hover:text-purple-600 transition-colors duration-300 whitespace-nowrap"
                     onClick={() => {
                       setIsCategoriesOpen(false);
                       setIsMenuOpen(false);
@@ -336,7 +361,7 @@ export default function Navigation() {
                   </Link>
                   <Link 
                     href="/categories/beauty-cosmetics"
-                    className="block py-2 text-foreground hover:text-primary transition-colors duration-300 whitespace-nowrap"
+                    className="block py-2 text-gray-800 hover:text-purple-600 transition-colors duration-300 whitespace-nowrap"
                     onClick={() => {
                       setIsCategoriesOpen(false);
                       setIsMenuOpen(false);
@@ -346,7 +371,7 @@ export default function Navigation() {
                     Beauty & Cosmetics
                   </Link>
                 </div>
-              )}
+              </div>
             </div>
             
 
@@ -356,7 +381,7 @@ export default function Navigation() {
             {/* Tools Dropdown */}
             <div className="py-2">
               <button
-                className="flex justify-between items-center w-full py-3 font-semibold text-lg text-foreground hover:text-primary transition-colors duration-300"
+                className="flex justify-between items-center w-full py-3 font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-300"
                 onClick={() => setIsToolsOpen(!isToolsOpen)}
                 aria-expanded={isToolsOpen}
                 aria-haspopup="true"
@@ -373,11 +398,11 @@ export default function Navigation() {
                 </svg>
               </button>
               
-              {isToolsOpen && (
+              <div className={`overflow-hidden transition-all duration-300 ${isToolsOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'}`}>
                 <div className="pl-4 mt-2 space-y-2 bg-white/90 dark:bg-black/90 rounded-lg p-2" role="menu">
                   <Link 
                     href="/tools/health"
-                    className="block py-2 text-foreground hover:text-primary transition-colors duration-300 whitespace-nowrap"
+                    className="block py-2 text-gray-800 hover:text-purple-600 transition-colors duration-300 whitespace-nowrap"
                     onClick={() => {
                       setIsToolsOpen(false);
                       setIsMenuOpen(false);
@@ -388,7 +413,7 @@ export default function Navigation() {
                   </Link>
                   <Link 
                     href="/tools/beauty"
-                    className="block py-2 text-foreground hover:text-primary transition-colors duration-300 whitespace-nowrap"
+                    className="block py-2 text-gray-800 hover:text-purple-600 transition-colors duration-300 whitespace-nowrap"
                     onClick={() => {
                       setIsToolsOpen(false);
                       setIsMenuOpen(false);
@@ -399,7 +424,7 @@ export default function Navigation() {
                   </Link>
                   <Link 
                     href="/tools/general"
-                    className="block py-2 text-foreground hover:text-primary transition-colors duration-300 whitespace-nowrap"
+                    className="block py-2 text-gray-800 hover:text-purple-600 transition-colors duration-300 whitespace-nowrap"
                     onClick={() => {
                       setIsToolsOpen(false);
                       setIsMenuOpen(false);
@@ -409,13 +434,13 @@ export default function Navigation() {
                     General Tools
                   </Link>
                 </div>
-              )}
+              </div>
             </div>
             
             {/* Blog Link */}
             <Link
               href="/blog"
-              className="block py-3 font-semibold text-lg text-foreground hover:text-primary transition-colors duration-300"
+              className="block py-3 font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-300"
               onClick={() => setIsMenuOpen(false)}
               role="menuitem"
             >
@@ -425,7 +450,7 @@ export default function Navigation() {
             {/* Author Link */}
             <Link
               href="/author"
-              className="block py-3 font-semibold text-lg text-foreground hover:text-primary transition-colors duration-300"
+              className="block py-3 font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-300"
               onClick={() => setIsMenuOpen(false)}
               role="menuitem"
             >
@@ -435,7 +460,7 @@ export default function Navigation() {
             {/* Contact Link */}
             <Link
               href="/contact"
-              className="block py-3 font-semibold text-lg text-foreground hover:text-primary transition-colors duration-300"
+              className="block py-3 font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-300"
               onClick={() => setIsMenuOpen(false)}
               role="menuitem"
             >

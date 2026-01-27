@@ -1,6 +1,7 @@
 import Navigation from '../../../components/Navigation';
 import Footer from '../../../components/Footer';
 import Link from 'next/link';
+import { blogPosts } from '../../../data/blogs';
 
 
 export const metadata = {
@@ -149,81 +150,8 @@ export default function BeautyCosmeticsCategory() {
     },
   ];
 
-  // Enhanced beauty blog data with engaging content
-  const blogs = [
-    {
-      id: 'custom-beauty-001',
-      title: 'Waterless Skincare & Minimalist Beauty ',
-      excerpt: "Discover the future of beauty with waterless skincare and minimalist routines. Learn how concentrated, eco-friendly products simplify your regimen, nourish your skin, and support sustainability. Try 7 must-have products in 2026 for radiant, healthy skin with minimal effort and maximum impact.",
-      date: 'April 15, 2025',
-      category: 'Sustainability',
-      readTime: '12 min read',
-      image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/v1762857789/blogb-1_utllwn.png',
-      author: 'Beauty Editorial Team',
-      tags: ['Waterless', 'Minimalist', 'Sustainability'],
-      views: '2.5K'
-    },
-    {
-      id: 'custom-beauty-002',
-      title: 'Monochrome Makeup Looks',
-      excerpt: "Discover the simplicity of monochrome makeup—one color, endless possibilities. Learn how to choose the right shade for your skin tone, master daily looks, and find top 2026 product picks that simplify your beauty routine while keeping it modern, radiant, and naturally effortless.",
-      date: 'April 10, 2025',
-      category: 'Makeup Trends',
-      readTime: '9 min read',
-      image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/v1762858256/blogb-2_qnyvv6.png',
-      author: 'Makeup Artist Collective',
-      tags: ['Monochrome', 'Makeup', 'Trends'],
-      views: '1.8K'
-    },
-    {
-      id: 'custom-beauty-003',
-      title: 'Sustainable & Eco-Friendly Beauty',
-      excerpt: "Discover the top 10 sustainable beauty brands of 2025 revolutionizing skincare and makeup. Learn how to make eco-conscious swaps, choose ethical products, and embrace a cleaner, greener beauty routine that supports your skin and the planet effortlessly.",
-      date: 'April 5, 2025',
-      category: 'Eco Beauty',
-      readTime: '11 min read',
-      image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/v1762858786/blogb-3_bq9zlh.png',
-      author: 'Green Beauty Experts',
-      tags: ['Sustainable', 'Eco-Friendly', 'Brands'],
-      views: '3.1K'
-    },
-    {
-      id: 'custom-beauty-004',
-      title: 'Hair Colour & Texture Trands 2026',
-      excerpt: "Discover 2026’s most exciting hair trends—from AI-inspired color blends to eco-friendly dyes and natural textures. Learn how futuristic styles redefine beauty with individuality, sustainability, and effortless confidence for every hair type and tone.",
-      date: 'March 28, 2025',
-      category: 'Hair Trends',
-      readTime: '10 min read',
-      image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/v1762859782/blogb-4_rytecg.png',
-      author: 'Hair Styling Experts',
-      tags: ['Hair Color', 'Texture', 'Trends'],
-      views: '2.7K'
-    },
-    {
-      id: 'custom-beauty-005',
-      title: 'Tech-Powered Beauty (AI, AR, Smart Devices)',
-      excerpt: "Explore how AI, AR, and smart devices are transforming skincare and beauty in 2026. Learn how technology-driven tools personalize routines, improve results, and make sustainable self-care easier than ever.",
-      date: 'March 22, 2025',
-      category: 'Beauty Tech',
-      readTime: '13 min read',
-      image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/v1762860104/blogb-5_pmytov.png',
-      author: 'Tech Beauty Innovators',
-      tags: ['AI', 'AR', 'Smart Devices'],
-      views: '2.9K'
-    },
-    {
-      id: 'custom-beauty-006',
-      title: 'Playful & Statement Beauty Looks',
-      excerpt: "Explore 2026’s most exciting beauty trends—duck nails, bold lips, glitter finishes, and more. Discover how to express your personality with confidence and color through playful, statement-making looks that redefine modern beauty.",
-      date: 'March 18, 2025',
-      category: 'Beauty Trends',
-      readTime: '8 min read',
-      image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/v1762860508/blogb-6_sz2n1w.png',
-      author: 'Trend Forecasters',
-      tags: ['Statement Looks', 'Trends', 'Playful'],
-      views: '2.4K'
-    },
-  ];
+  // Filter blogs for beauty category
+  const beautyBlogs = blogPosts.filter(blog => blog.category === 'Beauty & Cosmetics');
 
    return (
     <div className="min-h-screen bg-background flex flex-col">
@@ -304,8 +232,8 @@ export default function BeautyCosmeticsCategory() {
             </div>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {blogs.map((blog) => (
-                <article key={blog.id} className="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover-lift border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-2xl">
+              {beautyBlogs.slice(0, 6).map((blog: any) => (
+                <article key={blog.slug} className="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover-lift border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-2xl">
                   <div className="relative">
                     <img 
                       src={blog.image} 
@@ -319,7 +247,7 @@ export default function BeautyCosmeticsCategory() {
                     </div>
                     {blog.tags && (
                       <div className="absolute bottom-4 left-4 flex flex-wrap gap-2">
-                        {blog.tags.slice(0, 2).map((tag, index) => (
+                        {blog.tags.slice(0, 2).map((tag: string, index: number) => (
                           <span key={index} className="px-2 py-1 bg-black/20 backdrop-blur-sm text-white text-xs rounded-full">
                             {tag}
                           </span>
@@ -338,12 +266,12 @@ export default function BeautyCosmeticsCategory() {
                         </div>
                       </div>
                       <span className="text-sm font-medium bg-pink-100 text-pink-800 px-2 py-1 rounded-full whitespace-nowrap">
-                        {blog.readTime}
+                        {blog.readTime} min read
                       </span>
                     </div>
                     <p className="text-foreground/80 mb-5">{blog.excerpt}</p>
                     <div className="flex justify-between items-center">
-                      <Link href={`/blogs/${blog.id}`} className="text-pink-600 dark:text-pink-400 font-medium hover:underline flex items-center">
+                      <Link href={`/blog/${blog.slug}`} className="text-pink-600 dark:text-pink-400 font-medium hover:underline flex items-center">
                         Read Full Article
                         <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
@@ -354,7 +282,7 @@ export default function BeautyCosmeticsCategory() {
                           <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
                           <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd"></path>
                         </svg>
-                        <span>{blog.views} reads</span>
+                        <span>{blog.views || '1.2K'} reads</span>
                       </div>
                     </div>
                   </div>

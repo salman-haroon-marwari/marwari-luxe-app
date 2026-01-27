@@ -1,6 +1,7 @@
 import Navigation from '../../../components/Navigation';
 import Footer from '../../../components/Footer';
 import Link from 'next/link';
+import { blogPosts } from '../../../data/blogs';
 
 
 
@@ -48,81 +49,22 @@ export const metadata = {
 };
 
 export default function HealthWellnessCategory() {
-  // Enhanced health blog data with engaging content
-  const blogs = [
-    {
-      id: 'custom-health-001',
-      title: 'Adaptogenic Herbs for Modern Wellness',
-      excerpt: "Discover the power of adaptogenic herbs in managing stress and enhancing vitality. Learn how Ashwagandha, Rhodiola, and Cordyceps can support your body's natural resilience and promote optimal wellness in our fast-paced world.",
-      date: 'May 12, 2025',
-      category: 'Herbal Wellness',
-      readTime: '10 min read',
-      image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761867399/hpd-1_hk8fvr.jpg',
-      author: 'Dr. Wellness Collective',
-      tags: ['Adaptogens', 'Stress Management', 'Herbal Medicine'],
-      views: '2.3K'
-    },
-    {
-      id: 'custom-health-002',
-      title: 'The Gut-Brain Connection',
-      excerpt: "Explore the fascinating relationship between your gut microbiome and mental health. Learn how probiotics, prebiotics, and targeted nutrition can improve mood, cognitive function, and overall psychological well-being.",
-      date: 'May 8, 2025',
-      category: 'Microbiome Health',
-      readTime: '12 min read',
-      image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761867463/hpd-2_hk8fvr.jpg',
-      author: 'Microbiome Research Team',
-      tags: ['Gut Health', 'Mental Wellness', 'Probiotics'],
-      views: '3.1K'
-    },
-    {
-      id: 'custom-health-003',
-      title: 'Intermittent Fasting for Longevity',
-      excerpt: "Dive into the science behind intermittent fasting and its potential benefits for cellular repair, metabolic health, and longevity. Learn evidence-based approaches to incorporate fasting into your lifestyle safely.",
-      date: 'May 3, 2025',
-      category: 'Nutritional Science',
-      readTime: '11 min read',
-      image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761867531/hpd-3_hk8fvr.jpg',
-      author: 'Nutrition Science Experts',
-      tags: ['Intermittent Fasting', 'Longevity', 'Metabolic Health'],
-      views: '2.7K'
-    },
-    {
-      id: 'custom-health-004',
-      title: 'Biohacking Your Sleep Cycle',
-      excerpt: "Unlock the secrets to optimal sleep with cutting-edge biohacking techniques. From light therapy to temperature optimization, discover how to enhance sleep quality and improve recovery naturally.",
-      date: 'April 28, 2025',
-      category: 'Sleep Science',
-      readTime: '9 min read',
-      image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761867600/hpd-4_hk8fvr.jpg',
-      author: 'Sleep Optimization Experts',
-      tags: ['Sleep Optimization', 'Recovery', 'Circadian Rhythm'],
-      views: '2.9K'
-    },
-    {
-      id: 'custom-health-005',
-      title: 'NAD+ Therapy and Cellular Rejuvenation',
-      excerpt: "Explore the revolutionary role of NAD+ in cellular energy production and aging. Learn how NAD+ boosting protocols can enhance vitality, cognitive function, and overall cellular health.",
-      date: 'April 22, 2025',
-      category: 'Cellular Health',
-      readTime: '13 min read',
-      image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761867673/hpd-5_hk8fvr.jpg',
-      author: 'Cellular Medicine Researchers',
-      tags: ['NAD+', 'Cellular Rejuvenation', 'Anti-Aging'],
-      views: '2.5K'
-    },
-    {
-      id: 'custom-health-006',
-      title: 'Cold Exposure and Metabolic Enhancement',
-      excerpt: "Discover the science behind cold exposure therapy and its benefits for metabolism, inflammation, and mental resilience. Learn safe protocols to incorporate cold therapy into your wellness routine.",
-      date: 'April 18, 2025',
-      category: 'Thermal Therapy',
-      readTime: '8 min read',
-      image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761867748/hpd-6_hk8fvr.jpg',
-      author: 'Thermal Therapy Specialists',
-      tags: ['Cold Therapy', 'Metabolism', 'Resilience'],
-      views: '2.1K'
-    }
-  ];
+  // Filter health and wellness blogs
+  const blogs = blogPosts
+    .filter(blog => blog.category === 'Health & Wellness')
+    .slice(0, 6)
+    .map(blog => ({
+      slug: blog.urlSlug,
+      title: blog.title,
+      excerpt: blog.excerpt,
+      date: blog.date,
+      category: blog.category,
+      readTime: blog.readTime,
+      image: blog.image,
+      author: blog.author,
+      tags: blog.tags,
+      views: blog.views
+    }));
   
 
 
@@ -305,8 +247,8 @@ export default function HealthWellnessCategory() {
             </div>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {blogs.map((blog: any) => (
-                <article key={blog.id} className="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover-lift border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-2xl">
+              {blogs.slice(0, 6).map((blog: any) => (
+                <article key={blog.slug} className="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover-lift border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:shadow-2xl">
                   <div className="relative">
                     <img 
                       src={blog.image} 
@@ -314,7 +256,7 @@ export default function HealthWellnessCategory() {
                       className="w-full h-48 object-cover"
                     />
                     <div className="absolute top-4 left-4">
-                      <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-indigo-700 text-sm font-medium rounded-full">
+                      <span className="px-3 py-1 bg-white/90 backdrop-blur-sm text-emerald-700 text-sm font-medium rounded-full">
                         {blog.category}
                       </span>
                     </div>
@@ -338,13 +280,13 @@ export default function HealthWellnessCategory() {
                           <span>{blog.date}</span>
                         </div>
                       </div>
-                      <span className="text-sm font-medium bg-blue-100 text-blue-800 px-2 py-1 rounded-full whitespace-nowrap">
-                        {blog.readTime}
+                      <span className="text-sm font-medium bg-emerald-100 text-emerald-800 px-2 py-1 rounded-full whitespace-nowrap">
+                        {blog.readTime} min read
                       </span>
                     </div>
                     <p className="text-foreground/80 mb-5">{blog.excerpt}</p>
                     <div className="flex justify-between items-center">
-                      <Link href={`/blogs/${blog.id}`} className="text-blue-600 dark:text-blue-400 font-medium hover:underline flex items-center">
+                      <Link href={`/blog/${blog.slug}`} className="text-emerald-600 dark:text-emerald-400 font-medium hover:underline flex items-center">
                         Read Full Article
                         <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>

@@ -53,8 +53,7 @@ const PrivacyPolicyPage = () => {
                 <p className="text-gray-700 mb-6">
                   At Marwari Luxe, we are committed to protecting your privacy and ensuring the security of your personal information. 
                   This comprehensive Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, 
-                  browse our premium health supplements and natural beauty products, or use our wellness services. As an affiliate marketing platform, 
-                  we work with trusted partners like CJ Dropshipping to provide you with quality products. We believe in transparency 
+                  browse our premium health and wellness content, or use our tools and services. We believe in transparency 
                   and want you to understand exactly how your data is handled in compliance with applicable data protection laws including GDPR and CCPA.
                 </p>
 
@@ -84,7 +83,7 @@ const PrivacyPolicyPage = () => {
                   <li>Improve our website and services</li>
                   <li>Ensure security and prevent fraud</li>
                   <li>Comply with legal obligations</li>
-                  <li>Facilitate affiliate marketing partnerships</li>
+                  <li>Provide and improve our content and services</li>
                 </ul>
 
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">Information Sharing and Disclosure</h2>
@@ -93,39 +92,24 @@ const PrivacyPolicyPage = () => {
                 </p>
                 <ul className="list-disc pl-6 mb-6 text-gray-700">
                   <li>With your explicit consent</li>
-                  <li>To trusted service providers who assist in operating our website (including CJ Dropshipping for order fulfillment)</li>
+                  <li>To trusted service providers who assist in operating our website</li>
                   <li>To comply with legal requirements or protect our rights</li>
                   <li>In connection with a business transfer or merger</li>
-                  <li>With affiliate partners for the purpose of processing your orders</li>
+                  <li>To trusted third parties who assist in operating our website and services</li>
                 </ul>
 
-                <h2 className="text-2xl font-semibold text-gray-900 mb-4">Affiliate Marketing and CJ Dropshipping</h2>
-                <div className="bg-purple-50 border-l-4 border-purple-400 p-6 mb-6">
-                  <h3 className="text-xl font-semibold text-purple-800 mb-3">🤝 Partnership with CJ Dropshipping</h3>
-                  <p className="text-purple-700 mb-4">
-                    As an affiliate marketing platform, we partner with CJ Dropshipping to provide you with quality products:
-                  </p>
-                  <ul className="list-disc pl-5 text-purple-700 space-y-2">
-                    <li>When you purchase products through our affiliate links, your order information is shared with CJ Dropshipping for fulfillment</li>
-                    <li>CJ Dropshipping handles all aspects of order processing, shipping, and customer service</li>
-                    <li>We may receive commission for purchases made through our affiliate links</li>
-                    <li>Your personal information shared with CJ Dropshipping is subject to their privacy policy</li>
-                    <li>We do not store payment information - all payments are processed by CJ Dropshipping</li>
-                  </ul>
-                </div>
 
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">Data Security</h2>
                 <p className="text-gray-700 mb-6">
                   We implement appropriate technical and organizational security measures to protect your personal information 
                   against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over 
-                  the internet is 100% secure. We work with trusted partners like CJ Dropshipping who also maintain high security standards.
+                  the internet is 100% secure.
                 </p>
 
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">Cookies and Tracking Technologies</h2>
                 <p className="text-gray-700 mb-6">
                   We use cookies and similar tracking technologies to enhance your browsing experience, analyze website traffic, 
-                  and understand user preferences. We also use tracking technologies to support our affiliate marketing activities 
-                  with partners like CJ Dropshipping. You can control cookie settings through your browser preferences.
+                  and understand user preferences. You can control cookie settings through your browser preferences.
                 </p>
 
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">Your Rights</h2>
@@ -141,10 +125,8 @@ const PrivacyPolicyPage = () => {
 
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">International Data Transfers</h2>
                 <p className="text-gray-700 mb-6">
-                  As part of our affiliate marketing operations, your information may be transferred to and maintained on computers 
-                  located outside of your state, province, country or other governmental jurisdiction where the data protection laws 
-                  may differ from those in your jurisdiction. This includes transfers to our affiliate partners like CJ Dropshipping 
-                  who may operate in different countries.
+                  Your information may be transferred to and maintained on computers located outside of your state, province, country 
+                  or other governmental jurisdiction where the data protection laws may differ from those in your jurisdiction.
                 </p>
 
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">Changes to This Privacy Policy</h2>
