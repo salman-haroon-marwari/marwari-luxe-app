@@ -1,13 +1,25 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, memo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
-const HeroSlider = () => {
+interface Slide {
+  id: number;
+  title: string;
+  subtitle: string;
+  image: string;
+  cta: string;
+  link: string;
+}
+
+const HeroSliderComponent = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [isHydrated, setIsHydrated] = useState(false);
-  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const [isClient, setIsClient] = useState(false);
+  const [imageErrors, setImageErrors] = useState<Record<number, boolean>>({});
+  
+  const router = useRouter();
 
   const slides = [
     {
@@ -52,94 +64,84 @@ const HeroSlider = () => {
     },
   ];
 
-  // Optimized slide navigation
-  const goToSlide = useCallback((index: number) => {
-    setCurrentSlide(index);
-  }, []);
-
-  const nextSlide = useCallback(() => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  }, [slides.length]);
-
-  const prevSlide = useCallback(() => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-  }, [slides.length]);
-
-  // Auto-play with pause on hover
   useEffect(() => {
-    if (!isHydrated || !isAutoPlaying) return;
+    console.log('HeroSlider mounted');
+    setIsClient(true);
     
-    const timer = setInterval(nextSlide, 5000);
-    return () => clearInterval(timer);
-  }, [isHydrated, isAutoPlaying, nextSlide]);
+    const interval = setInterval(() => {
+      console.log('Auto advancing slide');
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 5000);
+    
+    return () => {
+      console.log('Cleaning up interval');
+      clearInterval(interval);
+    };
+  }, [slides.length]);
 
-  // Preload next image for better performance
-  useEffect(() => {
-    if (isHydrated && slides.length > 0) {
-      const nextIndex = (currentSlide + 1) % slides.length;
-      const nextImage = new window.Image();
-      nextImage.src = slides[nextIndex].image;
-    }
-  }, [currentSlide, isHydrated, slides]);
+  const goToSlide = (index: number) => {
+    setCurrentSlide(index);
+  };
 
-  // Handle hydration
-  useEffect(() => {
-    setIsHydrated(true);
-  }, []);
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  };
 
-  // SVG Icons
-  const ChevronLeftIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-    </svg>
-  );
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  };
 
-  const ChevronRightIcon = () => (
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-    </svg>
-  );
-
-  const currentSlideData = slides[currentSlide] || slides[0];
-
-  if (!isHydrated) {
-    // Show first slide during hydration to prevent layout shift
+  if (!isClient) {
     return (
-      <div className="relative w-full h-[50vh] md:h-screen overflow-hidden">
-        <div className="absolute inset-0 bg-gray-200 animate-pulse" />
-        <div className="relative z-10 flex items-center justify-center h-full px-4">
-          <div className="text-center">
-            <div className="h-8 bg-gray-300 rounded w-64 mx-auto mb-4 animate-pulse" />
-            <div className="h-4 bg-gray-300 rounded w-96 mx-auto animate-pulse" />
+      <div className="relative w-full h-[50vh] md:h-screen overflow-hidden bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900">
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="text-center text-white">
+            <div className="h-10 bg-white/20 rounded-lg w-64 mx-auto mb-4 animate-pulse"></div>
+            <div className="h-6 bg-white/20 rounded w-96 mx-auto animate-pulse"></div>
           </div>
         </div>
       </div>
     );
   }
 
+  const currentSlideData = slides[currentSlide];
+  
+  const handleImageError = (slideId: number) => {
+    setImageErrors(prev => ({ ...prev, [slideId]: true }));
+  };
+  
+  const getImageSrc = (slide: typeof slides[number]) => {
+    if (imageErrors[slide.id]) {
+      // Return a fallback image if the main image fails to load
+      return '/marwari logo.png';
+    }
+    return slide.image;
+  };
+
   return (
-    <div 
-      className="relative w-full overflow-hidden h-[50vh] md:h-screen"
-      onMouseEnter={() => setIsAutoPlaying(false)}
-      onMouseLeave={() => setIsAutoPlaying(true)}
-      onTouchStart={() => setIsAutoPlaying(false)}
-      onTouchEnd={() => setIsAutoPlaying(true)}
-    >
-      {/* Background Image with Overlay */}
+    <div className="relative w-full h-[50vh] md:h-screen overflow-hidden">
+      {/* Background Image */}
       <div className="absolute inset-0">
         <Image
-          src={currentSlideData.image}
+          src={getImageSrc(currentSlideData)}
           alt={currentSlideData.title}
           fill
-          priority={currentSlide === 0}
-          className="object-cover"
-          sizes="(max-width: 768px) 100vw, 100vw"
+          priority
+          className="object-cover transition-opacity duration-1000"
+          sizes="100vw"
           quality={85}
           placeholder="blur"
-          blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
-          decoding="async"
+          blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiPjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjZGRkIi8+PC9zdmc+"
+          onLoadingComplete={(result) => {
+            console.log('Image loaded successfully:', currentSlideData.image);
+            console.log('Load result:', result);
+          }}
+          onError={(error) => {
+            console.error('Image failed to load:', error, currentSlideData.image);
+            handleImageError(currentSlideData.id);
+          }}
         />
-        <div className="absolute inset-0 bg-black/20" />
+        <div className="absolute inset-0 bg-black/30"></div>
       </div>
       
       {/* Content */}
@@ -174,14 +176,18 @@ const HeroSlider = () => {
         className="absolute left-2 sm:left-4 md:left-6 top-1/2 transform -translate-y-1/2 text-white hover:text-white/80 transition-all duration-300 z-20 p-2 sm:p-3 rounded-full bg-black/30 backdrop-blur-sm hover:bg-black/40 focus:outline-none focus:ring-2 focus:ring-white/50"
         aria-label="Previous slide"
       >
-        <ChevronLeftIcon />
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+        </svg>
       </button>
       <button
         onClick={nextSlide}
         className="absolute right-2 sm:right-4 md:right-6 top-1/2 transform -translate-y-1/2 text-white hover:text-white/80 transition-all duration-300 z-20 p-2 sm:p-3 rounded-full bg-black/30 backdrop-blur-sm hover:bg-black/40 focus:outline-none focus:ring-2 focus:ring-white/50"
         aria-label="Next slide"
       >
-        <ChevronRightIcon />
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-6 w-6 sm:h-8 sm:w-8 md:h-10 md:w-10 text-white">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+        </svg>
       </button>
 
       {/* Slide indicators */}
@@ -203,4 +209,8 @@ const HeroSlider = () => {
   );
 };
 
+const HeroSlider = memo(HeroSliderComponent);
+
 export default HeroSlider;
+
+HeroSlider.displayName = 'HeroSlider';
