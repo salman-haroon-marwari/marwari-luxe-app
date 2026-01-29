@@ -1,201 +1,167 @@
 import React from 'react';
-import type { Metadata } from 'next';
 import Link from 'next/link';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
-export const metadata: Metadata = {
-  title: 'DMCA Policy - Marwari Luxe',
-  description: 'Our DMCA policy outlining procedures for handling copyright infringement claims under the Digital Millennium Copyright Act.',
-  robots: "index, follow, max-image-preview:large",
-  alternates: {
-    canonical: 'https://marwariluxe.com/legal/dmca-policy'
-  },
+export const metadata = {
+  title: 'DMCA Copyright Policy - Marwari Luxe',
+  description: 'Digital Millennium Copyright Act (DMCA) policy for Marwari Luxe. Learn how to report copyright infringement and our takedown procedures.',
+  keywords: ['DMCA', 'copyright policy', 'copyright infringement', 'takedown notice', 'intellectual property', 'Marwari Luxe'],
   openGraph: {
-    title: 'DMCA Policy - Marwari Luxe',
-    description: 'Our DMCA policy outlining procedures for handling copyright infringement claims under the Digital Millennium Copyright Act.',
+    title: 'DMCA Copyright Policy - Marwari Luxe',
+    description: 'Digital Millennium Copyright Act (DMCA) policy for Marwari Luxe. Learn how to report copyright infringement and our takedown procedures.',
     url: 'https://marwariluxe.com/legal/dmca-policy',
+    siteName: 'Marwari Luxe',
     images: [
       {
-        url: '/dmca-policy-og-image.jpg',
+        url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Marwari Luxe DMCA Policy'
-      }
-    ]
+        alt: 'Marwari Luxe - DMCA Copyright Policy',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'DMCA Policy - Marwari Luxe',
-    description: 'Our DMCA policy outlining procedures for handling copyright infringement claims under the Digital Millennium Copyright Act.',
-    images: ['/dmca-policy-twitter-card.jpg']
-  }
+    title: 'DMCA Copyright Policy - Marwari Luxe',
+    description: 'Digital Millennium Copyright Act (DMCA) policy for Marwari Luxe. Learn how to report copyright infringement and our takedown procedures.',
+    images: ['https://marwariluxe.com/og-image.jpg'],
+    creator: '@marwariluxe',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  alternates: {
+    canonical: 'https://marwariluxe.com/legal/dmca-policy',
+  },
 };
 
-const DMCAPolicyPage = () => {
+export default function DMCAPolicyPage() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen bg-gray-50">
       <Navigation />
       
-      <main className="flex-grow">
-        <div className="min-h-screen bg-gray-50 py-8 px-4 sm:px-6 lg:px-8 pt-20">
-          <div className="max-w-4xl mx-auto">
-            {/* Header */}
-            <div className="bg-white shadow-sm rounded-lg p-6 mb-8">
-              <h1 className="text-3xl font-bold text-gray-900 mb-4">DMCA Policy</h1>
-              <p className="text-gray-600">Digital Millennium Copyright Act Compliance</p>
-              <p className="text-gray-600">Last updated: {new Date().toLocaleDateString()}</p>
+      <main className="pt-20 pb-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-lg shadow-lg p-8 md:p-12">
+            <div className="text-center mb-12">
+              <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">DMCA Copyright Policy</h1>
+              <p className="text-gray-600">Last Updated: May 1, 2026</p>
             </div>
-
-            {/* Content */}
-            <div className="bg-white shadow-sm rounded-lg p-6">
-              <div className="prose prose-lg max-w-none">
-                <h2 className="text-2xl font-semibold text-gray-900 mb-4">DMCA Compliance Statement</h2>
+            
+            <div className="prose prose-lg max-w-none">
+              <section className="mb-8">
+                <h2 className="text-2xl font-bold text-gray-800 mb-4">Respect for Intellectual Property</h2>
+                <p className="text-gray-700 mb-4">
+                  At Marwari Luxe ("we", "us", "our"), we respect the intellectual property rights of others and expect our users to do the same. It is our policy to respond to clear notices of alleged copyright infringement that comply with the Digital Millennium Copyright Act (DMCA).
+                </p>
+                <p className="text-gray-700">
+                  We are committed to maintaining a compliant website. If you believe that your copyrighted work has been copied in a way that constitutes copyright infringement and is accessible on Marwari Luxe, please notify us immediately.
+                </p>
+              </section>
+              
+              <section className="mb-8">
+                <h2 className="text-2xl font-bold text-gray-800 mb-4">DMCA Takedown Notice Requirements</h2>
+                <p className="text-gray-700 mb-4">
+                  If you are a copyright owner, or are authorized to act on behalf of one, and you believe that your work has been infringed upon, please submit a designated notice to us.
+                </p>
                 <p className="text-gray-700 mb-6">
-                  Marwari Luxe complies with the Digital Millennium Copyright Act (DMCA) and has established 
-                  procedures for handling copyright infringement claims. This policy describes how we respond 
-                  to DMCA takedown notices and counter-notifications.
+                  To be effective, your notification must be in writing and include the following information:
                 </p>
-
-                <h2 className="text-2xl font-semibold text-gray-900 mb-4">DMCA Takedown Procedure</h2>
-                <p className="text-gray-700 mb-4">
-                  If you believe content on our website infringes your copyright, you may submit a DMCA takedown notice.
-                </p>
-
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Required Elements for Valid DMCA Notice</h3>
-                <p className="text-gray-700 mb-4">
-                  Your DMCA notice must include all of the following elements:
-                </p>
-                <ul className="list-disc pl-6 mb-6 text-gray-700">
-                  <li><strong>Physical or electronic signature</strong> of the copyright owner or authorized agent</li>
-                  <li><strong>Identification of copyrighted work(s)</strong> claimed to be infringed</li>
-                  <li><strong>Identification of infringing material</strong> and its location on our website</li>
-                  <li><strong>Contact information</strong> including name, address, telephone, and email</li>
-                  <li><strong>Statement of good faith belief</strong> that use is not authorized by owner</li>
-                  <li><strong>Statement under penalty of perjury</strong> that information is accurate</li>
-                  <li><strong>Statement of authority</strong> to act on behalf of copyright owner</li>
-                </ul>
-
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Where to Send DMCA Notices</h3>
-                <div className="bg-gray-50 p-4 rounded-lg mb-6">
-                  <p className="text-gray-700">
-                    <strong>Email:</strong> marwariluxe@gmail.com<br/>
-                    <strong>Subject:</strong> DMCA Takedown Notice<br/>
-                    <strong>Include:</strong> "DMCA Notice" in the subject line for expedited processing
-                  </p>
+                
+                <div className="space-y-6">
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800 mb-3">Identification of the Copyrighted Work:</h3>
+                    <p className="text-gray-700 mb-3">
+                      A description of the copyrighted work that you claim has been infringed. If multiple copyrighted works are covered by a single notification, you may provide a representative list of such works.
+                    </p>
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800 mb-3">Identification of the Infringing Material:</h3>
+                    <p className="text-gray-700 mb-3">
+                      A description of the material that you claim is infringing (or to be the subject of infringing activity) and that is to be removed or access to which is to be disabled.
+                    </p>
+                    <p className="text-gray-700 font-medium text-red-600">
+                      Crucial: You must provide the specific URL(s) or other specific locations on Marwari Luxe where the material is located so we can locate it.
+                    </p>
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800 mb-3">Contact Information:</h3>
+                    <p className="text-gray-700 mb-3">
+                      Information reasonably sufficient to permit us to contact you, such as an address, telephone number, and a valid email address.
+                    </p>
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800 mb-3">Statement of Good Faith:</h3>
+                    <p className="text-gray-700 mb-3">
+                      A statement that you have a "good faith belief" that the use of the material in the manner complained of is not authorized by the copyright owner, its agent, or the law (e.g., "I hereby state that I have a good faith belief that the disputed use of the copyrighted material is not authorized by the copyright owner, its agent, or the law (e.g., as a fair use).").
+                    </p>
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800 mb-3">Statement of Accuracy:</h3>
+                    <p className="text-gray-700 mb-3">
+                      A statement that the information in the notification is accurate, and under penalty of perjury, that you are the copyright owner or authorized to act on behalf of the owner.
+                    </p>
+                  </div>
+                  
+                  <div>
+                    <h3 className="text-xl font-semibold text-gray-800 mb-3">Signature:</h3>
+                    <p className="text-gray-700 mb-3">
+                      A physical or electronic signature of the copyright owner or a person authorized to act on their behalf.
+                    </p>
+                  </div>
                 </div>
-
-                <h2 className="text-2xl font-semibold text-gray-900 mb-4">Our Response Process</h2>
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Initial Review</h3>
-                <ul className="list-disc pl-6 mb-6 text-gray-700">
-                  <li>We review all DMCA notices for completeness and validity</li>
-                  <li>Incomplete notices will be returned with request for additional information</li>
-                  <li>Valid notices are processed within 24-48 business hours</li>
-                </ul>
-
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Action Taken</h3>
-                <ul className="list-disc pl-6 mb-6 text-gray-700">
-                  <li>Upon receipt of valid DMCA notice, we will remove or disable access to allegedly infringing material</li>
-                  <li>We will notify the content uploader/author of the takedown</li>
-                  <li>We maintain records of all takedown notices and actions taken</li>
-                  <li>We may temporarily suspend accounts of repeat infringers</li>
-                </ul>
-
-                <h2 className="text-2xl font-semibold text-gray-900 mb-4">Counter-Notification Process</h2>
+              </section>
+              
+              <section className="mb-8">
+                <h2 className="text-2xl font-bold text-gray-800 mb-4">How to Submit a Claim</h2>
                 <p className="text-gray-700 mb-4">
-                  If your content was removed and you believe it was mistakenly identified as infringing, 
-                  you may submit a counter-notification:
+                  Please send your DMCA Takedown Notice to our Designated Copyright Agent via email:
                 </p>
-
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Required Elements for Counter-Notification</h3>
-                <ul className="list-disc pl-6 mb-6 text-gray-700">
-                  <li><strong>Physical or electronic signature</strong> of the subscriber</li>
-                  <li><strong>Identification of removed material</strong> and its former location</li>
-                  <li><strong>Statement under penalty of perjury</strong> that removal was mistaken</li>
-                  <li><strong>Consent to local federal court jurisdiction</strong> or agreement to accept service</li>
-                  <li><strong>Contact information</strong> including name, address, telephone, and email</li>
-                </ul>
-
-                <h3 className="text-xl font-semibold text-gray-800 mb-3">Counter-Notification Processing</h3>
-                <ul className="list-disc pl-6 mb-6 text-gray-700">
-                  <li>We forward valid counter-notifications to the original complainant</li>
-                  <li>Content remains disabled for 10-14 business days</li>
-                  <li>If no legal action is initiated, content may be restored</li>
-                  <li>We notify both parties of any restoration or permanent removal</li>
-                </ul>
-
-                <h2 className="text-2xl font-semibold text-gray-900 mb-4">Repeat Infringer Policy</h2>
-                <p className="text-gray-700 mb-6">
-                  We maintain a policy of terminating accounts of users who are repeat copyright infringers. 
-                  Termination decisions are made considering:
-                </p>
-                <ul className="list-disc pl-6 mb-6 text-gray-700">
-                  <li>Nature and severity of infringements</li>
-                  <li>Number of violations within a given period</li>
-                  <li>User's response to previous warnings</li>
-                  <li>Potential for future compliance</li>
-                </ul>
-
-                <h2 className="text-2xl font-semibold text-gray-900 mb-4">Fair Use Considerations</h2>
-                <p className="text-gray-700 mb-4">
-                  We evaluate whether allegedly infringing use may qualify as fair use under copyright law. 
-                  Fair use factors we consider include:
-                </p>
-                <ul className="list-disc pl-6 mb-6 text-gray-700">
-                  <li>Purpose and character of the use (commercial vs. educational)</li>
-                  <li>Nature of the copyrighted work</li>
-                  <li>Amount and substantiality of portion used</li>
-                  <li>Effect on the market for original work</li>
-                </ul>
-
-                <h2 className="text-2xl font-semibold text-gray-900 mb-4">Agent Designation</h2>
-                <p className="text-gray-700 mb-4">
-                  For formal DMCA communications, our designated agent is:
-                </p>
-                <div className="bg-gray-50 p-4 rounded-lg mb-6">
-                  <p className="text-gray-700">
-                    <strong>Designated Agent:</strong> Marwari Luxe DMCA Agent<br/>
-                    <strong>Email:</strong> marwariluxe@gmail.com<br/>
-                    <strong>Phone:</strong> [Add phone number if available]<br/>
-                    <strong>Address:</strong> [Add physical address if available]
-                  </p>
+                <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-6">
+                  <p className="text-gray-800 font-semibold text-lg mb-2">Email: <a href="mailto:MARWARILUXE@GMAIL.COM" className="text-blue-600 hover:underline">MARWARILUXE@GMAIL.COM</a></p>
+                  <p className="text-gray-700">Subject Line: DMCA Copyright Infringement Notice - [Insert Domain Name]</p>
                 </div>
-
-                <h2 className="text-2xl font-semibold text-gray-900 mb-4">False Claims Warning</h2>
-                <div className="bg-red-50 border-l-4 border-red-400 p-6 mb-6">
-                  <p className="text-red-700">
-                    <strong>Warning:</strong> The DMCA provides for damages and attorney's fees against 
-                    anyone who knowingly materially misrepresents that material is infringing. 
-                    Please ensure your claim is valid before submitting a notice.
-                  </p>
-                </div>
-
-                <h2 className="text-2xl font-semibold text-gray-900 mb-4">Alternative Dispute Resolution</h2>
-                <p className="text-gray-700 mb-6">
-                  We encourage parties to resolve copyright disputes amicably when possible. 
-                  Direct communication between copyright holders and content creators often 
-                  leads to faster resolutions.
-                </p>
-
-                <h2 className="text-2xl font-semibold text-gray-900 mb-4">Policy Updates</h2>
-                <p className="text-gray-700 mb-6">
-                  This DMCA Policy may be updated to reflect changes in law or our procedures. 
-                  Significant changes will be communicated to our users.
-                </p>
-
-                <h2 className="text-2xl font-semibold text-gray-900 mb-4">Contact Information</h2>
+              </section>
+              
+              <section className="mb-8">
+                <h2 className="text-2xl font-bold text-gray-800 mb-4">Important Note on False Claims</h2>
                 <p className="text-gray-700 mb-4">
-                  For DMCA-related inquiries, complaints, or counter-notifications:
+                  Please be aware that under Section 512(f) of the DMCA, any person who knowingly materially misrepresents that material or activity is infringing may be subject to liability for damages.
                 </p>
-                <div className="bg-gray-50 p-4 rounded-lg">
-                  <p className="text-gray-700">
-                    <strong>Email:</strong> marwariluxe@gmail.com<br/>
-                    <strong>Subject Line:</strong> DMCA Notice or Counter-Notice<br/>
-                    <strong>Response Time:</strong> Within 24-48 hours during business days<br/>
-                    <strong>Business Days:</strong> Monday-Friday, 9:00 AM - 5:00 PM [Time Zone]
-                  </p>
-                </div>
-              </div>
+                <p className="text-gray-700">
+                  If you are unsure whether the material available online infringes your copyright, we suggest that you contact an attorney before sending us a notice.
+                </p>
+              </section>
+              
+              <section>
+                <h2 className="text-2xl font-bold text-gray-800 mb-4">Handling of Requests</h2>
+                <p className="text-gray-700 mb-4">
+                  Upon receipt of a valid DMCA notice, Marwari Luxe will take reasonable steps to:
+                </p>
+                <ul className="list-disc pl-6 space-y-2 text-gray-700 mb-4">
+                  <li>Remove or disable access to the infringing material.</li>
+                  <li>Notify the content provider, member, or user that we have removed or disabled access to the material.</li>
+                  <li>Terminate the accounts of repeat infringers where appropriate.</li>
+                </ul>
+                <p className="text-gray-700">
+                  We aim to handle all takedown requests promptly to ensure a safe and legal environment for our users.
+                </p>
+              </section>
             </div>
           </div>
         </div>
@@ -204,6 +170,4 @@ const DMCAPolicyPage = () => {
       <Footer />
     </div>
   );
-};
-
-export default DMCAPolicyPage;
+}
