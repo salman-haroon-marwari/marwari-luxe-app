@@ -43,7 +43,7 @@ const PrivacyPolicyPage = () => {
             {/* Privacy Policy Title - Added even more padding above */}
             <div className="pt-16 mb-8">
               <h1 className="text-3xl font-bold text-gray-900">Privacy Policy - Marwari Luxe Data Protection</h1>
-              <p className="text-gray-600 mt-2">Last updated: {new Date().toLocaleDateString()}</p>
+              <p className="text-gray-600 mt-2">Last Updated: January 1, 2026</p>
             </div>
 
             {/* Content */}

@@ -43,7 +43,7 @@ const EditorialPolicyPage = () => {
             {/* Header */}
             <div className="bg-white shadow-sm rounded-lg p-6 mb-8">
               <h1 className="text-3xl font-bold text-gray-900 mb-4">Editorial Policy</h1>
-              <p className="text-gray-600">Last updated: {new Date().toLocaleDateString()}</p>
+              <p className="text-gray-600">Last Updated: January 1, 2026</p>
             </div>
 
             {/* Content */}

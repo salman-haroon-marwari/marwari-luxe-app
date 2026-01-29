@@ -56,7 +56,7 @@ export default function DMCAPolicyPage() {
           <div className="bg-white rounded-lg shadow-lg p-8 md:p-12">
             <div className="text-center mb-12">
               <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">DMCA Copyright Policy</h1>
-              <p className="text-gray-600">Last Updated: May 1, 2026</p>
+              <p className="text-gray-600">Last Updated: January 1, 2026</p>
             </div>
             
             <div className="prose prose-lg max-w-none">
