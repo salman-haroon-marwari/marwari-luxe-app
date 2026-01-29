@@ -1,121 +1,148 @@
-import Navigation from '../../components/Navigation';
-import Footer from '../../components/Footer';
+import React from 'react';
+import Link from 'next/link';
+import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 
 export const metadata = {
-  title: 'Legal | Marwari Luxe',
-  description: 'Legal information, terms of service, and privacy policy for Marwari Luxe.',
+  title: 'Legal - Marwari Luxe',
+  description: 'Legal information, policies, and terms for Marwari Luxe. Review our DMCA policy, privacy policy, terms of service, and other legal documents.',
+  keywords: ['legal', 'terms', 'privacy policy', 'disclaimer', 'DMCA policy', 'Marwari Luxe'],
+  openGraph: {
+    title: 'Legal - Marwari Luxe',
+    description: 'Legal information, policies, and terms for Marwari Luxe. Review our DMCA policy, privacy policy, terms of service, and other legal documents.',
+    url: 'https://marwariluxe.com/legal',
+    siteName: 'Marwari Luxe',
+    images: [
+      {
+        url: 'https://marwariluxe.com/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Marwari Luxe - Legal Information',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Legal - Marwari Luxe',
+    description: 'Legal information, policies, and terms for Marwari Luxe. Review our DMCA policy, privacy policy, terms of service, and other legal documents.',
+    images: ['https://marwariluxe.com/og-image.jpg'],
+    creator: '@marwariluxe',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   alternates: {
     canonical: 'https://marwariluxe.com/legal',
   },
 };
 
 export default function LegalPage() {
-  const legalPages = [
-    {
-      id: 1,
-      title: 'Terms of Service',
-      description: 'Our terms and conditions for using the Marwari Luxe website and services.',
-      url: '/legal/terms',
-    },
-    {
-      id: 2,
-      title: 'Privacy Policy',
-      description: 'How we collect, use, and protect your personal information.',
-      url: '/legal/privacy-policy',
-    },
-    {
-      id: 3,
-      title: 'Disclaimer',
-      description: 'Important disclaimer regarding the use of our website, content, and services.',
-      url: '/legal/disclaimer',
-    },
-    {
-      id: 4,
-      title: 'FAQ',
-      description: 'Frequently asked questions about our content and tools.',
-      url: '/legal/faq',
-    },
-    {
-      id: 5,
-      title: 'Editorial Policy',
-      description: 'Our standards for content creation, fact-checking, and editorial practices.',
-      url: '/legal/editorial-policy',
-    },
-    {
-      id: 6,
-      title: 'Copyright Policy',
-      description: 'How we respect intellectual property rights and handle copyright claims.',
-      url: '/legal/copyright-policy',
-    },
-    {
-      id: 7,
-      title: 'DMCA Policy',
-      description: 'Our procedures for handling DMCA takedown notices and counter-notifications.',
-      url: '/legal/dmca-policy',
-    },
-  ];
-
   return (
-    <div className="min-h-screen bg-background flex flex-col">
+    <div className="min-h-screen bg-gray-50">
       <Navigation />
       
-      <main className="flex-grow">
-        {/* Hero Section */}
-        <section className="pt-52 pb-16 px-4">
-          <div className="container mx-auto max-w-6xl">
-            <div className="text-center mb-16 animate-fade-in">
-              <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Legal Information</h1>
-              <p className="text-xl text-foreground/70 max-w-2xl mx-auto">
-                Review our policies and legal agreements to understand your rights and responsibilities
-              </p>
+      <main className="pt-20 pb-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-lg shadow-lg p-8 md:p-12">
+            <div className="text-center mb-12">
+              <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Legal Information</h1>
+              <p className="text-gray-600">Important legal documents and policies for Marwari Luxe</p>
             </div>
             
-            {/* Legal Documents Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {legalPages.map((page) => (
-                <div key={page.id} className="bg-white dark:bg-black/50 rounded-2xl overflow-hidden shadow-lg hover-lift animate-slide-up" 
-                     style={{animationDelay: `${(page.id % 3) * 100}ms`}}>
-                  <div className="p-6">
-                    <div className="bg-primary/10 p-3 rounded-lg w-12 h-12 flex items-center justify-center mb-4">
-                      <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-                      </svg>
-                    </div>
-                    <h3 className="text-xl font-bold text-foreground mb-3">{page.title}</h3>
-                    <p className="text-foreground/70 mb-4">{page.description}</p>
-                    <a 
-                      href={page.url}
-                      className="text-primary font-medium hover:underline"
-                    >
-                      Read Document →
-                    </a>
-                  </div>
-                </div>
-              ))}
-            </div>
-            
-            {/* Contact for Legal Inquiries */}
-            <div className="mt-20 bg-neutral rounded-2xl p-8 animate-fade-in">
-              <div className="flex flex-col md:flex-row items-center">
-                <div className="md:w-2/3 mb-6 md:mb-0 md:pr-8">
-                  <h2 className="text-2xl font-bold text-foreground mb-4">Have Legal Questions?</h2>
-                  <p className="text-foreground/70">
-                    If you have any questions about our legal documents or need clarification on any of our policies, 
-                    please don't hesitate to contact our legal team.
-                  </p>
-                </div>
-                <div className="md:w-1/3">
-                  <a 
-                    href="/contact" 
-                    className="block w-full py-3 bg-primary text-white font-medium rounded-lg text-center hover:bg-primary/90 transition-colors duration-300 focus-ring"
-                  >
-                    Contact Legal Team
-                  </a>
-                </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="bg-gray-50 rounded-lg p-6">
+                <h2 className="text-xl font-bold text-gray-800 mb-4">Copyright & IP Protection</h2>
+                <ul className="space-y-3">
+                  <li>
+                    <Link href="/legal/dmca-policy" className="text-blue-600 hover:underline font-medium">
+                      DMCA Copyright Policy
+                    </Link>
+                    <p className="text-gray-600 text-sm mt-1">Our policy regarding copyright infringement and takedown notices.</p>
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="bg-gray-50 rounded-lg p-6">
+                <h2 className="text-xl font-bold text-gray-800 mb-4">Privacy & Data Protection</h2>
+                <ul className="space-y-3">
+                  <li>
+                    <Link href="/legal/privacy-policy" className="text-blue-600 hover:underline font-medium">
+                      Privacy Policy
+                    </Link>
+                    <p className="text-gray-600 text-sm mt-1">Information about how we collect, use, and protect your personal data.</p>
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="bg-gray-50 rounded-lg p-6">
+                <h2 className="text-xl font-bold text-gray-800 mb-4">Terms & Conditions</h2>
+                <ul className="space-y-3">
+                  <li>
+                    <Link href="/legal/terms" className="text-blue-600 hover:underline font-medium">
+                      Terms of Service
+                    </Link>
+                    <p className="text-gray-600 text-sm mt-1">Rules and guidelines for using our website and services.</p>
+                  </li>
+                </ul>
+              </div>
+              
+              <div className="bg-gray-50 rounded-lg p-6">
+                <h2 className="text-xl font-bold text-gray-800 mb-4">Additional Policies</h2>
+                <ul className="space-y-3">
+                  <li>
+                    <Link href="/legal/disclaimer" className="text-blue-600 hover:underline font-medium">
+                      Disclaimer
+                    </Link>
+                    <p className="text-gray-600 text-sm mt-1">Important disclaimers regarding content and services.</p>
+                  </li>
+                  <li>
+                    <Link href="/legal/editorial-policy" className="text-blue-600 hover:underline font-medium">
+                      Editorial Policy
+                    </Link>
+                    <p className="text-gray-600 text-sm mt-1">Our standards and practices for content creation.</p>
+                  </li>
+                  <li>
+                    <Link href="/legal/copyright-policy" className="text-blue-600 hover:underline font-medium">
+                      Copyright Policy
+                    </Link>
+                    <p className="text-gray-600 text-sm mt-1">General information about copyright protection.</p>
+                  </li>
+                  <li>
+                    <Link href="/legal/faq" className="text-blue-600 hover:underline font-medium">
+                      Legal FAQ
+                    </Link>
+                    <p className="text-gray-600 text-sm mt-1">Frequently asked questions about our legal policies.</p>
+                  </li>
+                </ul>
               </div>
             </div>
+            
+            <div className="mt-12 pt-8 border-t border-gray-200">
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">About Our Legal Framework</h2>
+              <p className="text-gray-700 mb-4">
+                At Marwari Luxe, we are committed to maintaining transparency and trust with our users through comprehensive legal policies. 
+                Our legal framework ensures that both our users and our organization are protected and informed about rights and responsibilities.
+              </p>
+              <p className="text-gray-700 mb-4">
+                We regularly review and update our legal documents to ensure compliance with applicable laws and regulations. 
+                If you have any questions about our legal policies, please contact us at <a href="mailto:MARWARILUXE@GMAIL.COM" className="text-blue-600 hover:underline">MARWARILUXE@GMAIL.COM</a>.
+              </p>
+              <p className="text-gray-700">
+                This page serves as a central hub for all legal information related to Marwari Luxe. We recommend reviewing these documents periodically for any updates.
+              </p>
+            </div>
           </div>
-        </section>
+        </div>
       </main>
       
       <Footer />
