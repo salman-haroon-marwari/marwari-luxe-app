@@ -23,6 +23,7 @@ const Footer = () => {
     { name: 'Terms & Conditions', href: '/legal/terms' },
     { name: 'Disclaimer', href: '/legal/disclaimer' },
     { name: 'DMCA Policy', href: '/legal/dmca-policy' },
+    { name: 'Images & Media Policy', href: '/legal/images-media-policy' },
     { name: 'FAQ', href: '/legal/faq' },
   ];
 
