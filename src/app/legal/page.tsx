@@ -124,6 +124,12 @@ export default function LegalPage() {
                     <p className="text-gray-600 text-sm mt-1">Our policy on image and media usage and copyright compliance.</p>
                   </li>
                   <li>
+                    <Link href="/legal/images-disclaimer" className="text-blue-600 hover:underline font-medium">
+                      Images Disclaimer
+                    </Link>
+                    <p className="text-gray-600 text-sm mt-1">Disclaimer regarding images and visual media usage.</p>
+                  </li>
+                  <li>
                     <Link href="/legal/faq" className="text-blue-600 hover:underline font-medium">
                       Legal FAQ
                     </Link>
