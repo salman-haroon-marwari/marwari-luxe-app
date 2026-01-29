@@ -287,6 +287,61 @@ export default function AboutPage() {
         </section>
       </div>
       
+      {/* New About Section */}
+      <section className="py-16 bg-gray-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-white rounded-lg shadow-lg p-8 md:p-12">
+            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">About Us</h1>
+            
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Welcome to Marwari Luxe</h2>
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              At Marwari Luxe, we believe that a balanced lifestyle is built on knowledge, self-care, and the right resources. We are a comprehensive digital platform dedicated to providing our readers with high-quality content in the niches of Health, Beauty, and Lifestyle, alongside practical Digital Tools designed to simplify your daily life.
+            </p>
+            
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Our Mission</h2>
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              Our mission is simple: to empower our users with accessible, reliable, and engaging information. Whether you are looking to refine your skincare routine, explore wellness tips, or utilize helpful online utilities, Marwari Luxe is designed to be your go-to resource for making informed lifestyle decisions.
+            </p>
+            
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">What We Offer</h2>
+            <p className="text-gray-700 mb-4 leading-relaxed">
+              We strive to cover a diverse range of topics to cater to your needs:
+            </p>
+            <ul className="list-disc pl-6 mb-6 space-y-2 text-gray-700">
+              <li><strong>Health & Wellness:</strong> We publish insightful articles focusing on general well-being, fitness trends, and healthy habits. Our goal is to inspire you to prioritize your health through sustainable lifestyle changes.</li>
+              <li><strong>Beauty & Skincare:</strong> From the latest beauty trends to timeless skincare advice, we provide tips and guides to help you look and feel your best.</li>
+              <li><strong>Useful Tools:</strong> Beyond reading, we provide functional web-based tools and calculators designed to assist you with various daily tasks, planning, and metrics.</li>
+              <li><strong>Engaging Blogs:</strong> Our blog section covers a wide array of lifestyle topics, offering fresh perspectives and curated content for the modern reader.</li>
+            </ul>
+            
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">How We Help Our Users</h2>
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              In an internet filled with noise, Marwari Luxe aims to be a signal of clarity. We research our topics thoroughly to ensure that the time you spend on our site adds value to your day. Whether you are reading a 5-minute blog post or using one of our utility tools, our interface is designed for ease of use and user satisfaction.
+            </p>
+            
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Commitment to Responsibility and Trust</h2>
+            <p className="text-gray-700 mb-4 leading-relaxed">
+              At Marwari Luxe, we take content integrity seriously. We are committed to providing information that is researched and presented with care.
+            </p>
+            <p className="text-gray-700 mb-6 italic leading-relaxed">
+              <strong>Important Disclaimer:</strong> The content provided on Marwari Luxe, particularly regarding health and beauty, is for informational and educational purposes only. We do not offer medical advice, diagnoses, or professional treatments. Our articles and tools should not replace the advice of certified medical professionals or licensed experts. We encourage our readers to consult with healthcare providers before making significant changes to their diet, exercise, or health routines.
+            </p>
+            
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Contact Us</h2>
+            <p className="text-gray-700 mb-2 leading-relaxed">
+              We value our community and welcome your feedback, suggestions, or inquiries. If you have any questions about our content or tools, please feel free to reach out to us.
+            </p>
+            <p className="text-gray-700 mb-6 leading-relaxed">
+              Email: <a href="mailto:MARWARILUXE@GMAIL.COM" className="text-purple-600 hover:underline">MARWARILUXE@GMAIL.COM</a>
+            </p>
+            
+            <p className="text-gray-700 leading-relaxed">
+              Thank you for visiting Marwari Luxe. We look forward to being a part of your journey toward a healthier, more beautiful lifestyle.
+            </p>
+          </div>
+        </div>
+      </section>
+      
       <Footer />
     </div>
   );
