@@ -1,5 +1,3 @@
-import Navigation from '../../components/Navigation';
-import Footer from '../../components/Footer';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 
@@ -109,8 +107,6 @@ export default function CategoriesPage() {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
-      <Navigation />
-      
       <main className="flex-grow pt-32 pb-16 px-4">
         <div className="container mx-auto max-w-6xl">
           {/* Hero Section */}
@@ -231,7 +227,6 @@ export default function CategoriesPage() {
         </div>
       </main>
       
-      <Footer />
     </div>
   );
 }
