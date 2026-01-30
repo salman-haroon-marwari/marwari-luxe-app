@@ -159,6 +159,19 @@ export default function Navigation() {
               {isCategoriesOpen && (
                 <div 
                   className="dropdown-menu absolute left-0 mt-2 w-48 bg-white dark:bg-black rounded-md shadow-2xl py-2 z-50 border border-gray-200 dark:border-gray-700 min-w-max animate-fadeIn"
+                  onMouseEnter={() => {
+                    if (categoriesCloseTimer) {
+                      clearTimeout(categoriesCloseTimer);
+                      setCategoriesCloseTimer(null);
+                    }
+                  }}
+                  onMouseLeave={() => {
+                    const timer = setTimeout(() => {
+                      setIsCategoriesOpen(false);
+                      setCategoriesCloseTimer(null);
+                    }, 300);
+                    setCategoriesCloseTimer(timer);
+                  }}
                 >
                   <Link 
                     href="/categories/health-wellness"
@@ -235,6 +248,19 @@ export default function Navigation() {
               {isToolsOpen && (
                 <div 
                   className="dropdown-menu absolute left-0 mt-2 w-48 bg-white dark:bg-black rounded-md shadow-2xl py-2 z-50 border border-gray-200 dark:border-gray-700 min-w-max animate-fadeIn"
+                  onMouseEnter={() => {
+                    if (toolsCloseTimer) {
+                      clearTimeout(toolsCloseTimer);
+                      setToolsCloseTimer(null);
+                    }
+                  }}
+                  onMouseLeave={() => {
+                    const timer = setTimeout(() => {
+                      setIsToolsOpen(false);
+                      setToolsCloseTimer(null);
+                    }, 300);
+                    setToolsCloseTimer(timer);
+                  }}
                 >
                   <Link 
                     href="/tools/health"
