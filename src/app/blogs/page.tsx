@@ -1,4 +1,4 @@
-// Blog Listing Page at /blog
+// Blog Listing Page at /blogs
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -129,7 +129,7 @@ const BlogPage = () => {
           <Pagination 
             currentPage={currentPage} 
             totalPages={totalPages} 
-            basePath={'/blog'}
+            basePath={'/blogs'}
           />
         )}
       </div>

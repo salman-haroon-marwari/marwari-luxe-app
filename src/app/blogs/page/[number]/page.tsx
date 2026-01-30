@@ -92,7 +92,7 @@ const BlogPaginationPage = async ({ params }: BlogPaginationPageProps) => {
           <div className="flex justify-center mt-8">
             <nav className="flex items-center space-x-1" aria-label="Pagination">
               <a
-                href={pageNumber > 1 ? `/blog/page/${pageNumber - 1}` : `/blog/page/1`}
+                href={pageNumber > 1 ? `/blogs/page/${pageNumber - 1}` : `/blogs/page/1`}
                 className={`px-3 py-2 rounded-md text-sm font-medium ${
                   pageNumber === 1
                     ? 'bg-gray-100 text-gray-400 cursor-not-allowed'
@@ -106,7 +106,7 @@ const BlogPaginationPage = async ({ params }: BlogPaginationPageProps) => {
               {Array.from({ length: totalPages }, (_, i) => i + 1).map((num) => (
                 <a
                   key={num}
-                  href={`/blog/page/${num}`}
+                  href={`/blogs/page/${num}`}
                   className={`px-3 py-2 rounded-md text-sm font-medium ${
                     num === pageNumber
                       ? 'bg-blue-600 text-white'
@@ -118,7 +118,7 @@ const BlogPaginationPage = async ({ params }: BlogPaginationPageProps) => {
               ))}
 
               <a
-                href={pageNumber < totalPages ? `/blog/page/${pageNumber + 1}` : `/blog/page/${totalPages}`}
+                href={pageNumber < totalPages ? `/blogs/page/${pageNumber + 1}` : `/blogs/page/${totalPages}`}
                 className={`px-3 py-2 rounded-md text-sm font-medium ${
                   pageNumber === totalPages
                     ? 'bg-gray-100 text-gray-400 cursor-not-allowed'

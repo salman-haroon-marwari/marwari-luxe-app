@@ -1,4 +1,4 @@
-// Blog Search Results Page at /blog/search
+// Blog Search Results Page at /blogs/search
 'use client';
 
 export const dynamic = 'force-dynamic';

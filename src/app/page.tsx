@@ -103,7 +103,7 @@ const BlogSection = () => {
                   <span>{blog.readTime}</span>
                 </div>
                 <Link 
-                  href={`/blog/${blog.urlSlug}`} 
+                  href={`/blogs/${blog.urlSlug}`}
                   className="inline-block px-4 py-2 bg-pink-500 text-white font-medium rounded-lg hover:bg-pink-600 transition-colors duration-300"
                 >
                   Read More
@@ -115,7 +115,7 @@ const BlogSection = () => {
         
         <div className="text-center mt-12">
           <Link 
-            href="/blog" 
+            href="/blogs"
             className="inline-block px-8 py-3 bg-transparent border-2 border-pink-500 text-pink-500 font-medium rounded-lg hover:bg-pink-500 hover:text-white transition-colors duration-300"
           >
             View All Articles

@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 const navItems = [
   { name: 'Home', href: '/' },
-  { name: 'Blog', href: '/blog' },
+  { name: 'Blogs', href: '/blogs' },
   { name: 'Author', href: '/author' },
   { name: 'Categories', href: '/categories' },
   { name: 'Tools', href: '/tools' },
@@ -272,10 +272,10 @@ export default function Navigation() {
             
             {/* Blog Link */}
             <Link
-              href="/blog"
+              href="/blogs"
               className="font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-300"
             >
-              Blog
+              Blogs
             </Link>
             
             {/* Author Link */}
@@ -461,12 +461,12 @@ export default function Navigation() {
             
             {/* Blog Link */}
             <Link
-              href="/blog"
+              href="/blogs"
               className="block py-3 font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-300"
               onClick={() => setIsMenuOpen(false)}
               role="menuitem"
             >
-              Blog
+              Blogs
             </Link>
             
             {/* Author Link */}
