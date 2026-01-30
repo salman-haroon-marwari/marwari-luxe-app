@@ -325,80 +325,6 @@ export default function GeneralCategory() {
             </div>
           </section>
           
-          {/* Enhanced Products Section with Unique Features */}
-          <section id="products" className="mb-16">
-            <div className="flex flex-col md:flex-row md:justify-between md:items-end mb-10 gap-4">
-              <div>
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2">Premium Productivity Essentials</h2>
-                <p className="text-foreground/70 max-w-2xl">High-quality tools and accessories for optimal performance</p>
-              </div>
-              <a href="/products" className="px-6 py-3 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-medium rounded-lg hover:from-emerald-600 hover:to-teal-700 transition-all duration-300 shadow-md hover:shadow-lg">
-                Browse All Products
-              </a>
-            </div>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {products.map((product) => (
-                <div key={product.id} className="group rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800">
-                  <div className="relative">
-                    <div className="bg-gradient-to-r from-emerald-400 to-teal-500 h-52 flex items-center justify-center text-white font-bold">
-                      {product.image.replace('-', ' ').toUpperCase()}
-                    </div>
-                    <div className="absolute top-4 left-4">
-                      <span className="px-3 py-1 bg-emerald-500 text-white text-sm font-bold rounded-full">
-                        {product.badge}
-                      </span>
-                    </div>
-                    <div className="absolute top-4 right-4">
-                      <div className="flex items-center bg-black/20 backdrop-blur-sm px-2 py-1 rounded-full">
-                        <svg className="w-4 h-4 text-yellow-400 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                        </svg>
-                        <span className="text-white text-sm font-medium">{product.rating}</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="p-5">
-                    <div className="flex justify-between items-start mb-2">
-                      <h3 className="text-lg font-bold text-foreground">{product.name}</h3>
-                      <div className="text-right">
-                        <div className="text-lg font-bold text-emerald-600 dark:text-emerald-400">${product.price.toFixed(2)}</div>
-                        {product.originalPrice && (
-                          <div className="text-sm text-foreground/60 line-through">${product.originalPrice.toFixed(2)}</div>
-                        )}
-                      </div>
-                    </div>
-                    <p className="text-foreground/70 text-sm mb-4">{product.description}</p>
-                    
-                    <div className="mb-4">
-                      <div className="flex flex-wrap gap-1 mb-3">
-                        {product.benefits.map((benefit, index) => (
-                          <span key={index} className="px-2 py-1 bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 text-xs rounded-full">
-                            {benefit}
-                          </span>
-                        ))}
-                      </div>
-                      <div className="flex items-center text-xs text-foreground/60 mb-3">
-                        <svg className="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"></path>
-                          <path fillRule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clipRule="evenodd"></path>
-                        </svg>
-                        <span>{product.reviews.toLocaleString()} reviews</span>
-                        <span className="mx-1">•</span>
-                        <span>{product.sustainability}</span>
-                      </div>
-                    </div>
-                    
-                    <div className="flex gap-2">
-                      <button className="w-full py-2 bg-gradient-to-r from-emerald-500 to-teal-600 text-white rounded-lg hover:from-emerald-600 hover:to-teal-700 transition-colors text-sm font-medium">
-                        Add to Cart
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </section>
           
           {/* Unique Productivity Philosophy */}
           <div className="bg-gradient-to-r from-blue-500 to-cyan-600 rounded-3xl p-8 md:p-12 text-white mb-16">
@@ -467,7 +393,6 @@ export default function GeneralCategory() {
         </div>
       </main>
       
-      <Footer />
     </div>
   );
 }
