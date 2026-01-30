@@ -79,7 +79,7 @@ export default function Navigation() {
 
   return (
     <header 
-      className={`fixed w-full z-[50] transition-all duration-300 ${
+      className={`fixed w-full z-[50] transition-all duration-1000 ${
         scrolled || isMobile ? 'bg-white/90 backdrop-blur-sm py-4 shadow-lg' : 'bg-white/90 backdrop-blur-sm py-6 shadow-xl'
       }`}
       role="banner"
@@ -105,7 +105,7 @@ export default function Navigation() {
             {/* Home Link */}
             <Link
               href="/"
-              className="font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-300"
+              className="font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-1000"
             >
               Home
             </Link>
@@ -128,13 +128,13 @@ export default function Navigation() {
                   const timer = setTimeout(() => {
                     setIsCategoriesOpen(false);
                     setCategoriesCloseTimer(null);
-                  }, 300);
+                  }, 1000);
                   setCategoriesCloseTimer(timer);
                 }
               }}
             >
               <button
-                className="font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-300 flex items-center cursor-pointer"
+                className="font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-1000 flex items-center cursor-pointer"
                 onClick={(e) => {
                   e.preventDefault();
                   e.stopPropagation();
@@ -158,7 +158,7 @@ export default function Navigation() {
               {/* Dropdown Menu */}
               {isCategoriesOpen && (
                 <div 
-                  className="dropdown-menu absolute left-0 mt-2 w-48 bg-white dark:bg-black rounded-md shadow-2xl py-2 z-50 border border-gray-200 dark:border-gray-700 min-w-max animate-fadeIn"
+                  className="dropdown-menu absolute left-0 mt-2 w-48 bg-white dark:bg-black rounded-md shadow-2xl py-2 z-50 border border-gray-200 dark:border-gray-700 min-w-max transition-all duration-500 ease-in-out"
                   onMouseEnter={() => {
                     if (categoriesCloseTimer) {
                       clearTimeout(categoriesCloseTimer);
@@ -169,7 +169,7 @@ export default function Navigation() {
                     const timer = setTimeout(() => {
                       setIsCategoriesOpen(false);
                       setCategoriesCloseTimer(null);
-                    }, 300);
+                    }, 1000);
                     setCategoriesCloseTimer(timer);
                   }}
                 >
@@ -217,13 +217,13 @@ export default function Navigation() {
                   const timer = setTimeout(() => {
                     setIsToolsOpen(false);
                     setToolsCloseTimer(null);
-                  }, 300);
+                  }, 1000);
                   setToolsCloseTimer(timer);
                 }
               }}
             >
               <button
-                className="font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-300 flex items-center cursor-pointer"
+                className="font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-1000 flex items-center cursor-pointer"
                 onClick={(e) => {
                   e.preventDefault();
                   e.stopPropagation();
@@ -247,7 +247,7 @@ export default function Navigation() {
               {/* Dropdown Menu */}
               {isToolsOpen && (
                 <div 
-                  className="dropdown-menu absolute left-0 mt-2 w-48 bg-white dark:bg-black rounded-md shadow-2xl py-2 z-50 border border-gray-200 dark:border-gray-700 min-w-max animate-fadeIn"
+                  className="dropdown-menu absolute left-0 mt-2 w-48 bg-white dark:bg-black rounded-md shadow-2xl py-2 z-50 border border-gray-200 dark:border-gray-700 min-w-max transition-all duration-500 ease-in-out"
                   onMouseEnter={() => {
                     if (toolsCloseTimer) {
                       clearTimeout(toolsCloseTimer);
@@ -258,7 +258,7 @@ export default function Navigation() {
                     const timer = setTimeout(() => {
                       setIsToolsOpen(false);
                       setToolsCloseTimer(null);
-                    }, 300);
+                    }, 1000);
                     setToolsCloseTimer(timer);
                   }}
                 >
@@ -299,7 +299,7 @@ export default function Navigation() {
             {/* Blog Link */}
             <Link
               href="/blogs"
-              className="font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-300"
+              className="font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-1000"
             >
               Blogs
             </Link>
@@ -307,7 +307,7 @@ export default function Navigation() {
             {/* Author Link */}
             <Link
               href="/author"
-              className="font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-300"
+              className="font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-1000"
             >
               Author
             </Link>
@@ -315,7 +315,7 @@ export default function Navigation() {
             {/* Contact Link */}
             <Link
               href="/contact"
-              className="font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-300"
+              className="font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-1000"
             >
               Contact
             </Link>
@@ -323,7 +323,7 @@ export default function Navigation() {
             {/* Unique Social Media Button */}
             <Link
               href="/social-media"
-              className="px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full hover:from-blue-600 hover:to-purple-700 transition-all duration-300 flex items-center shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+              className="px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full hover:from-blue-600 hover:to-purple-700 transition-all duration-1000 flex items-center shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
               <svg 
                 className="w-5 h-5 mr-2"
@@ -344,16 +344,16 @@ export default function Navigation() {
             aria-label="Toggle menu"
           >
             <div className="w-6 h-6 flex flex-col justify-center items-center">
-              <span className={`block w-6 h-0.5 bg-white rounded-sm transition-all duration-300 ${isMenuOpen ? 'rotate-45 translate-y-1' : '-mt-1'}`}></span>
-              <span className={`block w-6 h-0.5 bg-white rounded-sm mt-1 transition-all duration-300 ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
-              <span className={`block w-6 h-0.5 bg-white rounded-sm transition-all duration-300 ${isMenuOpen ? '-rotate-45 -translate-y-1' : 'mt-1'}`}></span>
+              <span className={`block w-6 h-0.5 bg-white rounded-sm transition-all duration-1000 ${isMenuOpen ? 'rotate-45 translate-y-1' : '-mt-1'}`}></span>
+              <span className={`block w-6 h-0.5 bg-white rounded-sm mt-1 transition-all duration-1000 ${isMenuOpen ? 'opacity-0' : 'opacity-100'}`}></span>
+              <span className={`block w-6 h-0.5 bg-white rounded-sm transition-all duration-1000 ${isMenuOpen ? '-rotate-45 -translate-y-1' : 'mt-1'}`}></span>
             </div>
           </button>
         </div>
 
         {/* Mobile Navigation */}
         <div 
-          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+          className={`md:hidden overflow-hidden transition-all duration-1000 ease-in-out ${
             isMenuOpen ? 'max-h-screen opacity-100 mt-4' : 'max-h-0 opacity-0'
           }`}
           aria-label="Mobile Navigation"
@@ -363,7 +363,7 @@ export default function Navigation() {
             {/* Home Link */}
             <Link
               href="/"
-              className="block py-3 font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-300"
+              className="block py-3 font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-1000"
               onClick={() => {
                 setIsMenuOpen(false);
                 setIsCategoriesOpen(false);
@@ -377,7 +377,7 @@ export default function Navigation() {
             {/* Categories Dropdown */}
             <div className="py-2">
               <button
-                className="flex justify-between items-center w-full py-3 font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-300"
+                className="flex justify-between items-center w-full py-3 font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-1000"
                 onClick={() => setIsCategoriesOpen(!isCategoriesOpen)}
                 aria-expanded={isCategoriesOpen}
                 aria-haspopup="true"
@@ -394,11 +394,11 @@ export default function Navigation() {
                 </svg>
               </button>
               
-              <div className={`overflow-hidden transition-all duration-300 ${isCategoriesOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'}`}>
+              <div className={`overflow-hidden transition-all duration-1000 ${isCategoriesOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'}`}>
                 <div className="pl-4 mt-2 space-y-2 bg-white/90 dark:bg-black/90 rounded-lg p-2" role="menu">
                   <Link 
                     href="/categories/health-wellness"
-                    className="block py-2 text-gray-800 hover:text-purple-600 transition-colors duration-300 whitespace-nowrap"
+                    className="block py-2 text-gray-800 hover:text-purple-600 transition-colors duration-1000 whitespace-nowrap"
                     onClick={() => {
                       setIsCategoriesOpen(false);
                       setIsMenuOpen(false);
@@ -409,7 +409,7 @@ export default function Navigation() {
                   </Link>
                   <Link 
                     href="/categories/beauty-cosmetics"
-                    className="block py-2 text-gray-800 hover:text-purple-600 transition-colors duration-300 whitespace-nowrap"
+                    className="block py-2 text-gray-800 hover:text-purple-600 transition-colors duration-1000 whitespace-nowrap"
                     onClick={() => {
                       setIsCategoriesOpen(false);
                       setIsMenuOpen(false);
@@ -429,7 +429,7 @@ export default function Navigation() {
             {/* Tools Dropdown */}
             <div className="py-2">
               <button
-                className="flex justify-between items-center w-full py-3 font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-300"
+                className="flex justify-between items-center w-full py-3 font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-1000"
                 onClick={() => setIsToolsOpen(!isToolsOpen)}
                 aria-expanded={isToolsOpen}
                 aria-haspopup="true"
@@ -446,11 +446,11 @@ export default function Navigation() {
                 </svg>
               </button>
               
-              <div className={`overflow-hidden transition-all duration-300 ${isToolsOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'}`}>
+              <div className={`overflow-hidden transition-all duration-1000 ${isToolsOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'}`}>
                 <div className="pl-4 mt-2 space-y-2 bg-white/90 dark:bg-black/90 rounded-lg p-2" role="menu">
                   <Link 
                     href="/tools/health"
-                    className="block py-2 text-gray-800 hover:text-purple-600 transition-colors duration-300 whitespace-nowrap"
+                    className="block py-2 text-gray-800 hover:text-purple-600 transition-colors duration-1000 whitespace-nowrap"
                     onClick={() => {
                       setIsToolsOpen(false);
                       setIsMenuOpen(false);
@@ -461,7 +461,7 @@ export default function Navigation() {
                   </Link>
                   <Link 
                     href="/tools/beauty"
-                    className="block py-2 text-gray-800 hover:text-purple-600 transition-colors duration-300 whitespace-nowrap"
+                    className="block py-2 text-gray-800 hover:text-purple-600 transition-colors duration-1000 whitespace-nowrap"
                     onClick={() => {
                       setIsToolsOpen(false);
                       setIsMenuOpen(false);
@@ -472,7 +472,7 @@ export default function Navigation() {
                   </Link>
                   <Link 
                     href="/tools/general"
-                    className="block py-2 text-gray-800 hover:text-purple-600 transition-colors duration-300 whitespace-nowrap"
+                    className="block py-2 text-gray-800 hover:text-purple-600 transition-colors duration-1000 whitespace-nowrap"
                     onClick={() => {
                       setIsToolsOpen(false);
                       setIsMenuOpen(false);
@@ -488,7 +488,7 @@ export default function Navigation() {
             {/* Blog Link */}
             <Link
               href="/blogs"
-              className="block py-3 font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-300"
+              className="block py-3 font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-1000"
               onClick={() => setIsMenuOpen(false)}
               role="menuitem"
             >
@@ -498,7 +498,7 @@ export default function Navigation() {
             {/* Author Link */}
             <Link
               href="/author"
-              className="block py-3 font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-300"
+              className="block py-3 font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-1000"
               onClick={() => setIsMenuOpen(false)}
               role="menuitem"
             >
@@ -508,7 +508,7 @@ export default function Navigation() {
             {/* Contact Link */}
             <Link
               href="/contact"
-              className="block py-3 font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-300"
+              className="block py-3 font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-1000"
               onClick={() => setIsMenuOpen(false)}
               role="menuitem"
             >
@@ -518,7 +518,7 @@ export default function Navigation() {
             {/* Mobile Social Media Button */}
             <Link
               href="/social-media"
-              className="flex items-center px-4 py-2 my-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full hover:from-blue-600 hover:to-purple-700 transition-all duration-300 shadow-lg hover:shadow-xl w-full justify-center"
+              className="flex items-center px-4 py-2 my-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full hover:from-blue-600 hover:to-purple-700 transition-all duration-1000 shadow-lg hover:shadow-xl w-full justify-center"
               onClick={() => setIsMenuOpen(false)}
               role="menuitem"
             >
