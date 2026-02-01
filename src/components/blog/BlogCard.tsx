@@ -28,7 +28,7 @@ const BlogCard = ({ blog }: BlogCardProps) => {
         </div>
         
         <h3 className="text-xl font-bold text-gray-900 mb-2 line-clamp-2">
-          <Link href={`/blog/${blog.urlSlug}`} className="hover:text-blue-600 transition-colors">
+          <Link href={`/blogs/${blog.urlSlug}`} className="hover:text-blue-600 transition-colors">
             {blog.title}
           </Link>
         </h3>
@@ -42,7 +42,7 @@ const BlogCard = ({ blog }: BlogCardProps) => {
             <span className="text-sm text-gray-500">{blog.date}</span>
           </div>
           <Link 
-            href={`/blog/${blog.urlSlug}`}
+            href={`/blogs/${blog.urlSlug}`}
             className="text-blue-600 hover:text-blue-800 font-medium text-sm flex items-center"
           >
             Read More

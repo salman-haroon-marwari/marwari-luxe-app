@@ -18,7 +18,7 @@ const BlogHeader = () => {
           
           <nav className="hidden md:flex space-x-8">
             <Link 
-              href="/blog" 
+              href="/blogs" 
               className={`font-medium ${pathname.startsWith('/blog') ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600'}`}
             >
               Blog

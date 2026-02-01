@@ -286,7 +286,7 @@ export default function HealthWellnessCategory() {
                     </div>
                     <p className="text-foreground/80 mb-5">{blog.excerpt}</p>
                     <div className="flex justify-between items-center">
-                      <Link href={`/blog/${blog.slug}`} className="text-emerald-600 dark:text-emerald-400 font-medium hover:underline flex items-center">
+                      <Link href={`/blogs/${blog.slug}`} className="text-emerald-600 dark:text-emerald-400 font-medium hover:underline flex items-center">
                         Read Full Article
                         <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>

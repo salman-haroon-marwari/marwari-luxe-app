@@ -59,7 +59,7 @@ export default function BlogSection() {
                 <h3 className="text-xl font-bold text-foreground mb-3 line-clamp-2">{blog.title}</h3>
                 <p className="text-foreground/80 mb-4 line-clamp-3">{blog.excerpt}</p>
                 <Link 
-                  href={`/blog/${blog.urlSlug}`} 
+                  href={`/blogs/${blog.urlSlug}`} 
                   className="inline-block px-6 py-2 bg-primary text-white font-medium rounded-lg hover:bg-primary/90 transition-colors duration-300"
                 >
                   Read More

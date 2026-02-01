@@ -70,7 +70,7 @@ const BlogHero = ({ featuredBlogs }: BlogHeroProps) => {
               <h2 className="text-2xl font-bold mb-2">{currentBlog.title}</h2>
               <p className="text-sm opacity-90 mb-3">{currentBlog.excerpt}</p>
               <a 
-                href={`/blog/${currentBlog.urlSlug}`} 
+                href={`/blogs/${currentBlog.urlSlug}`} 
                 className="inline-flex items-center text-white hover:text-blue-200 transition-colors"
               >
                 Read Article

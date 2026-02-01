@@ -18,7 +18,7 @@ const BlogSidebar = ({ recentPosts, categories }: BlogSidebarProps) => {
           {recentPosts && recentPosts.slice(0, 5).map((post) => (
             <Link 
               key={post.id} 
-              href={`/blog/${post.urlSlug}`}
+              href={`/blogs/${post.urlSlug}`}
               className="block group"
             >
               <div className="flex items-start gap-3">

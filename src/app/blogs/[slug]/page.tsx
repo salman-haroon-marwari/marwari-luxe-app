@@ -46,7 +46,7 @@ const BlogDetailPage = async ({ params }: BlogDetailPageProps) => {
           <Breadcrumb 
             crumbs={[
             { title: 'Home', href: '/' },
-            { title: 'Blog', href: '/blog' },
+            { title: 'Blogs', href: '/blogs' },
             { title: blogPost.title }
             ]} 
           />
@@ -102,7 +102,7 @@ const BlogDetailPage = async ({ params }: BlogDetailPageProps) => {
           {/* Share Buttons */}
           <section className="mb-12">
             <ShareButtons 
-              url={`https://marwariluxe.com/blog/${blogPost.urlSlug}`}
+              url={`https://marwariluxe.com/blogs/${blogPost.urlSlug}`}
               title={blogPost.title}
               description={blogPost.metaDescription}
             />
