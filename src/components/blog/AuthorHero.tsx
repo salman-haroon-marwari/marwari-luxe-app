@@ -28,6 +28,8 @@ const AuthorHero = ({ author }: AuthorHeroProps) => {
             <h1 className="text-4xl font-bold text-gray-900 mb-2">{author.name}</h1>
             <p className="text-xl text-gray-700 mb-4">{author.role}</p>
             
+            {/* Stats section removed as it's not part of Author interface */}
+            {/* 
             <div className="flex flex-wrap justify-center md:justify-start gap-4 mb-6">
               <div className="bg-white rounded-lg px-4 py-2 shadow-sm">
                 <p className="text-2xl font-bold text-blue-600">{author.stats.articles}</p>
@@ -46,6 +48,7 @@ const AuthorHero = ({ author }: AuthorHeroProps) => {
                 <p className="text-sm text-gray-600">Awards</p>
               </div>
             </div>
+            */}
             
             <div className="flex justify-center md:justify-start space-x-4">
               {author.social.twitter && (
@@ -60,18 +63,7 @@ const AuthorHero = ({ author }: AuthorHeroProps) => {
                   </svg>
                 </a>
               )}
-              {author.social.linkedin && (
-                <a 
-                  href={author.social.linkedin} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="bg-blue-700 text-white p-3 rounded-full hover:bg-blue-800 transition-colors"
-                >
-                  <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                  </svg>
-                </a>
-              )}
+              {/* LinkedIn link removed as it's not part of Author interface */}
               {author.social.instagram && (
                 <a 
                   href={author.social.instagram} 
@@ -90,7 +82,7 @@ const AuthorHero = ({ author }: AuthorHeroProps) => {
         
         <div className="mt-8 max-w-3xl mx-auto">
           <p className="text-gray-700 text-lg text-center md:text-left">
-            {author.fullBio}
+            {author.bio}
           </p>
         </div>
       </div>
