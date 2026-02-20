@@ -26,7 +26,7 @@ const HeroSliderComponent = () => {
       id: 1,
       title: 'Smarter Health & Beauty for Modern Living',
       subtitle: 'Practical, research-backed guides and smart wellness tools designed to support healthier skin, stronger hair, and better everyday choices.',
-      image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864913/blog29-4_hfw0ga.png',
+      image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864930/marwari_loida5.png',
       cta: 'Shop Health Supplements',
       link: '/products',
     },
@@ -42,7 +42,7 @@ const HeroSliderComponent = () => {
       id: 3,
       title: 'Confident Skin. Balanced Health. Smarter Tools.',
       subtitle: 'Discover trusted health resources, dermatologist-style beauty guidance, and practical tools built for your daily routine.',
-      image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863833/blog16-2_trlvdr.png',
+      image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/v1762817098/3_x5umfy.png',
       cta: 'Try Wellness Tools',
       link: '/tools',
     },
@@ -50,7 +50,7 @@ const HeroSliderComponent = () => {
       id: 4,
       title: 'Elevate Your Health & Beauty Routine',
       subtitle: 'From skin concerns to lifestyle wellness, access expert-driven content and intelligent tools that help you make informed decisions.',
-      image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863792/blog13-9_oxsuot.png',
+      image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/v1762817052/2_gnrg7c.png',
       cta: 'Read Expert Blogs',
       link: '/blog',
     },
@@ -58,23 +58,20 @@ const HeroSliderComponent = () => {
       id: 5,
       title: 'Marwari Heritage Meets Modern Wellness',
       subtitle: 'Clear, credible, and practical advice designed for readers in the US and UK who value informed, science-based self-care.',
-      image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863714/blog8-8_ubvtyn.png',
+      image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/v1762816783/4_seitcm.png',
       cta: 'Discover Our Story',
       link: '/about',
     },
   ];
 
   useEffect(() => {
-    console.log('HeroSlider mounted');
     setIsClient(true);
     
     const interval = setInterval(() => {
-      console.log('Auto advancing slide');
       setCurrentSlide((prev) => (prev + 1) % slides.length);
     }, 5000);
     
     return () => {
-      console.log('Cleaning up interval');
       clearInterval(interval);
     };
   }, [slides.length]);
@@ -115,11 +112,8 @@ const HeroSliderComponent = () => {
       // Return a fallback image if the main image fails to load
       return '/marwari logo.png';
     }
-    // Ensure the image path is correct
-    if (slide.image.startsWith('/')) {
-      return slide.image;
-    }
-    return `/${slide.image}`;
+    // Return the original image URL as is (for external images)
+    return slide.image;
   };
 
   return (
@@ -132,13 +126,11 @@ const HeroSliderComponent = () => {
           fill
           priority
           className="object-cover transition-opacity duration-1000"
-          sizes="100vw"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
           quality={85}
-          placeholder="empty"
-          onLoadingComplete={(result) => {
-            console.log('Image loaded successfully:', currentSlideData.image);
-            console.log('Load result:', result);
-          }}
+          placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAADAAQDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwA/AFlh7//Z"
+          onLoadingComplete={() => {}}
           onError={(error) => {
             console.error('Image failed to load:', error, currentSlideData.image);
             handleImageError(currentSlideData.id);
