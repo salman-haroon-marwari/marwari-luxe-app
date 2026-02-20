@@ -80,7 +80,7 @@ export default function Navigation() {
   return (
     <header 
       className={`fixed w-full z-[50] transition-all duration-1000 ${
-        scrolled || isMobile ? 'bg-white/90 backdrop-blur-sm py-4 shadow-lg' : 'bg-white/90 backdrop-blur-sm py-6 shadow-xl'
+        scrolled || isMobile ? 'bg-white/90 backdrop-blur-sm py-0.5 shadow-lg' : 'bg-white/90 backdrop-blur-sm py-1 shadow-xl'
       }`}
       role="banner"
     >
@@ -91,21 +91,21 @@ export default function Navigation() {
             <Image
               src="/marwari logo.png"
               alt="Marwari Luxe Logo"
-              width={60}
-              height={60}
+              width={35}
+              height={35}
               className="object-contain"
             />
-            <span className="text-4xl font-bold text-gray-900">
+            <span className="text-lg font-bold text-gray-900">
               Marwari Luxe
             </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-10">
+          <nav className="hidden md:flex items-center space-x-6">
             {/* Home Link */}
             <Link
               href="/"
-              className="font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-1000"
+              className="font-medium text-sm text-gray-900 hover:text-purple-600 transition-colors duration-1000"
             >
               Home
             </Link>
@@ -128,13 +128,13 @@ export default function Navigation() {
                   const timer = setTimeout(() => {
                     setIsCategoriesOpen(false);
                     setCategoriesCloseTimer(null);
-                  }, 1000);
+                  }, 300);
                   setCategoriesCloseTimer(timer);
                 }
               }}
             >
               <button
-                className="font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-1000 flex items-center cursor-pointer"
+                className="font-medium text-sm text-gray-900 hover:text-purple-600 transition-colors duration-1000 flex items-center cursor-pointer"
                 onClick={(e) => {
                   e.preventDefault();
                   e.stopPropagation();
@@ -156,7 +156,7 @@ export default function Navigation() {
               </button>
               
               {/* Dropdown Menu */}
-              {isCategoriesOpen && (
+              {(isCategoriesOpen || isMobile) && (
                 <div 
                   className="dropdown-menu absolute left-0 mt-2 w-48 bg-white dark:bg-black rounded-md shadow-2xl py-2 z-50 border border-gray-200 dark:border-gray-700 min-w-max transition-all duration-500 ease-in-out"
                   onMouseEnter={() => {
@@ -175,7 +175,7 @@ export default function Navigation() {
                 >
                   <Link 
                     href="/categories/health-wellness"
-                    className="block px-4 py-3 text-gray-800 hover:bg-purple-100 hover:text-purple-700 transition-all duration-200 whitespace-nowrap font-medium"
+                    className="block px-3 py-2 text-gray-800 hover:bg-purple-100 hover:text-purple-700 transition-all duration-200 whitespace-nowrap text-sm font-medium"
                     onClick={() => {
                       setIsCategoriesOpen(false);
                       setIsToolsOpen(false);
@@ -186,7 +186,7 @@ export default function Navigation() {
                   </Link>
                   <Link 
                     href="/categories/beauty-cosmetics"
-                    className="block px-4 py-3 text-gray-800 hover:bg-purple-100 hover:text-purple-700 transition-all duration-200 whitespace-nowrap font-medium"
+                    className="block px-3 py-2 text-gray-800 hover:bg-purple-100 hover:text-purple-700 transition-all duration-200 whitespace-nowrap text-sm font-medium"
                     onClick={() => {
                       setIsCategoriesOpen(false);
                       setIsToolsOpen(false);
@@ -199,7 +199,6 @@ export default function Navigation() {
               )}
             </div>
             
-            {/* Tools Dropdown */}
             <div 
               className={`relative tools-dropdown ${isToolsOpen ? 'bg-yellow-100' : ''}`}
               data-open={isToolsOpen}
@@ -217,13 +216,13 @@ export default function Navigation() {
                   const timer = setTimeout(() => {
                     setIsToolsOpen(false);
                     setToolsCloseTimer(null);
-                  }, 1000);
+                  }, 300);
                   setToolsCloseTimer(timer);
                 }
               }}
             >
               <button
-                className="font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-1000 flex items-center cursor-pointer"
+                className="font-medium text-sm text-gray-900 hover:text-purple-600 transition-colors duration-1000 flex items-center cursor-pointer"
                 onClick={(e) => {
                   e.preventDefault();
                   e.stopPropagation();
@@ -245,7 +244,7 @@ export default function Navigation() {
               </button>
               
               {/* Dropdown Menu */}
-              {isToolsOpen && (
+              {(isToolsOpen || isMobile) && (
                 <div 
                   className="dropdown-menu absolute left-0 mt-2 w-48 bg-white dark:bg-black rounded-md shadow-2xl py-2 z-50 border border-gray-200 dark:border-gray-700 min-w-max transition-all duration-500 ease-in-out"
                   onMouseEnter={() => {
@@ -264,7 +263,7 @@ export default function Navigation() {
                 >
                   <Link 
                     href="/tools/health"
-                    className="block px-4 py-3 text-gray-800 hover:bg-purple-100 hover:text-purple-700 transition-all duration-200 whitespace-nowrap font-medium"
+                    className="block px-3 py-2 text-gray-800 hover:bg-purple-100 hover:text-purple-700 transition-all duration-200 whitespace-nowrap text-sm font-medium"
                     onClick={() => {
                       setIsToolsOpen(false);
                       setIsMenuOpen(false);
@@ -274,7 +273,7 @@ export default function Navigation() {
                   </Link>
                   <Link 
                     href="/tools/beauty"
-                    className="block px-4 py-3 text-gray-800 hover:bg-purple-100 hover:text-purple-700 transition-all duration-200 whitespace-nowrap font-medium"
+                    className="block px-3 py-2 text-gray-800 hover:bg-purple-100 hover:text-purple-700 transition-all duration-200 whitespace-nowrap text-sm font-medium"
                     onClick={() => {
                       setIsToolsOpen(false);
                       setIsMenuOpen(false);
@@ -284,7 +283,7 @@ export default function Navigation() {
                   </Link>
                   <Link 
                     href="/tools/general"
-                    className="block px-4 py-3 text-gray-800 hover:bg-purple-100 hover:text-purple-700 transition-all duration-200 whitespace-nowrap font-medium"
+                    className="block px-3 py-2 text-gray-800 hover:bg-purple-100 hover:text-purple-700 transition-all duration-200 whitespace-nowrap text-sm font-medium"
                     onClick={() => {
                       setIsToolsOpen(false);
                       setIsMenuOpen(false);
@@ -296,34 +295,31 @@ export default function Navigation() {
               )}
             </div>
             
-            {/* Blog Link */}
             <Link
               href="/blogs"
-              className="font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-1000"
+              className="font-medium text-sm text-gray-900 hover:text-purple-600 transition-colors duration-1000"
             >
               Blogs
             </Link>
             
-            {/* Author Link */}
             <Link
               href="/author"
-              className="font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-1000"
+              className="font-medium text-sm text-gray-900 hover:text-purple-600 transition-colors duration-1000"
             >
               Author
             </Link>
             
-            {/* Contact Link */}
             <Link
               href="/contact"
-              className="font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-1000"
+              className="font-medium text-sm text-gray-900 hover:text-purple-600 transition-colors duration-1000"
             >
               Contact
             </Link>
             
-            {/* Unique Social Media Button */}
+            {/* Social Media Link */}
             <Link
               href="/social-media"
-              className="px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full hover:from-blue-600 hover:to-purple-700 transition-all duration-1000 flex items-center shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+              className="px-2.5 py-1 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full hover:from-blue-600 hover:to-purple-700 transition-all duration-1000 flex items-center shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 text-xs"
             >
               <svg 
                 className="w-5 h-5 mr-2"
@@ -363,7 +359,7 @@ export default function Navigation() {
             {/* Home Link */}
             <Link
               href="/"
-              className="block py-3 font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-1000"
+              className="block py-1.5 font-medium text-sm text-gray-900 hover:text-purple-600 transition-colors duration-1000"
               onClick={() => {
                 setIsMenuOpen(false);
                 setIsCategoriesOpen(false);
@@ -377,7 +373,7 @@ export default function Navigation() {
             {/* Categories Dropdown */}
             <div className="py-2">
               <button
-                className="flex justify-between items-center w-full py-3 font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-1000"
+                className="flex justify-between items-center w-full py-1.5 font-medium text-sm text-gray-900 hover:text-purple-600 transition-colors duration-1000"
                 onClick={() => setIsCategoriesOpen(!isCategoriesOpen)}
                 aria-expanded={isCategoriesOpen}
                 aria-haspopup="true"
@@ -398,7 +394,7 @@ export default function Navigation() {
                 <div className="pl-4 mt-2 space-y-2 bg-white/90 dark:bg-black/90 rounded-lg p-2" role="menu">
                   <Link 
                     href="/categories/health-wellness"
-                    className="block py-2 text-gray-800 hover:text-purple-600 transition-colors duration-1000 whitespace-nowrap"
+                    className="block py-1.5 text-gray-800 hover:text-purple-600 transition-colors duration-1000 whitespace-nowrap text-sm"
                     onClick={() => {
                       setIsCategoriesOpen(false);
                       setIsMenuOpen(false);
@@ -409,7 +405,7 @@ export default function Navigation() {
                   </Link>
                   <Link 
                     href="/categories/beauty-cosmetics"
-                    className="block py-2 text-gray-800 hover:text-purple-600 transition-colors duration-1000 whitespace-nowrap"
+                    className="block py-1.5 text-gray-800 hover:text-purple-600 transition-colors duration-1000 whitespace-nowrap text-sm"
                     onClick={() => {
                       setIsCategoriesOpen(false);
                       setIsMenuOpen(false);
@@ -429,7 +425,7 @@ export default function Navigation() {
             {/* Tools Dropdown */}
             <div className="py-2">
               <button
-                className="flex justify-between items-center w-full py-3 font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-1000"
+                className="flex justify-between items-center w-full py-1.5 font-medium text-sm text-gray-900 hover:text-purple-600 transition-colors duration-1000"
                 onClick={() => setIsToolsOpen(!isToolsOpen)}
                 aria-expanded={isToolsOpen}
                 aria-haspopup="true"
@@ -450,7 +446,7 @@ export default function Navigation() {
                 <div className="pl-4 mt-2 space-y-2 bg-white/90 dark:bg-black/90 rounded-lg p-2" role="menu">
                   <Link 
                     href="/tools/health"
-                    className="block py-2 text-gray-800 hover:text-purple-600 transition-colors duration-1000 whitespace-nowrap"
+                    className="block py-1.5 text-gray-800 hover:text-purple-600 transition-colors duration-1000 whitespace-nowrap text-sm"
                     onClick={() => {
                       setIsToolsOpen(false);
                       setIsMenuOpen(false);
@@ -461,7 +457,7 @@ export default function Navigation() {
                   </Link>
                   <Link 
                     href="/tools/beauty"
-                    className="block py-2 text-gray-800 hover:text-purple-600 transition-colors duration-1000 whitespace-nowrap"
+                    className="block py-1.5 text-gray-800 hover:text-purple-600 transition-colors duration-1000 whitespace-nowrap text-sm"
                     onClick={() => {
                       setIsToolsOpen(false);
                       setIsMenuOpen(false);
@@ -472,7 +468,7 @@ export default function Navigation() {
                   </Link>
                   <Link 
                     href="/tools/general"
-                    className="block py-2 text-gray-800 hover:text-purple-600 transition-colors duration-1000 whitespace-nowrap"
+                    className="block py-1.5 text-gray-800 hover:text-purple-600 transition-colors duration-1000 whitespace-nowrap text-sm"
                     onClick={() => {
                       setIsToolsOpen(false);
                       setIsMenuOpen(false);
@@ -488,7 +484,7 @@ export default function Navigation() {
             {/* Blog Link */}
             <Link
               href="/blogs"
-              className="block py-3 font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-1000"
+              className="block py-1.5 font-medium text-sm text-gray-900 hover:text-purple-600 transition-colors duration-1000"
               onClick={() => setIsMenuOpen(false)}
               role="menuitem"
             >
@@ -498,7 +494,7 @@ export default function Navigation() {
             {/* Author Link */}
             <Link
               href="/author"
-              className="block py-3 font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-1000"
+              className="block py-1.5 font-medium text-sm text-gray-900 hover:text-purple-600 transition-colors duration-1000"
               onClick={() => setIsMenuOpen(false)}
               role="menuitem"
             >
@@ -508,28 +504,20 @@ export default function Navigation() {
             {/* Contact Link */}
             <Link
               href="/contact"
-              className="block py-3 font-semibold text-lg text-gray-900 hover:text-purple-600 transition-colors duration-1000"
+              className="block py-1.5 font-medium text-sm text-gray-900 hover:text-purple-600 transition-colors duration-1000"
               onClick={() => setIsMenuOpen(false)}
               role="menuitem"
             >
               Contact
             </Link>
             
-            {/* Mobile Social Media Button */}
+            {/* Social Media Link - Mobile */}
             <Link
               href="/social-media"
-              className="flex items-center px-4 py-2 my-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full hover:from-blue-600 hover:to-purple-700 transition-all duration-1000 shadow-lg hover:shadow-xl w-full justify-center"
+              className="block py-1.5 font-medium text-sm text-gray-900 hover:text-purple-600 transition-colors duration-1000"
               onClick={() => setIsMenuOpen(false)}
               role="menuitem"
             >
-              <svg 
-                className="w-5 h-5 mr-2"
-                fill="none" 
-                stroke="currentColor" 
-                viewBox="0 0 24 24"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
-              </svg>
               Social Media
             </Link>
           </nav>

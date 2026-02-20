@@ -4,7 +4,7 @@ import { blogPosts } from '@/data/blogs';
 import { allAuthors } from '@/data/authors';
 import KeyTakeaways from '@/components/blog/KeyTakeaways';
 import TableOfContents from '@/components/blog/TableOfContents';
-import BlogContent from '@/components/blog/BlogContent';
+import StandardizedBlogContent from '@/components/blog/StandardizedBlogContent';
 import FAQAccordion from '@/components/blog/FAQAccordion';
 import AuthorBox from '@/components/blog/AuthorBox';
 import ShareButtons from '@/components/blog/ShareButtons';
@@ -69,7 +69,6 @@ const BlogDetailPage = async ({ params }: BlogDetailPageProps) => {
             <div className="flex flex-wrap items-center gap-4 text-gray-600 text-sm mb-6">
               <span>{blogPost.date}</span>
               <span>{blogPost.readTime}</span>
-              <span>{blogPost.views} views</span>
             </div>
             
             {/* Featured Image */}
@@ -84,28 +83,25 @@ const BlogDetailPage = async ({ params }: BlogDetailPageProps) => {
             )}
           </header>
 
-          {/* Key Takeaways - First as requested */}
-          <section className="mb-12">
-            <KeyTakeaways takeaways={blogPost.keyTakeaways} />
-          </section>
-
-          {/* Table of Contents - Second as requested */}
-          <section className="mb-12">
-            <TableOfContents items={blogPost.tableOfContents} />
-          </section>
-
           {/* Blog Content */}
           <section className="mb-12">
-            <BlogContent content={blogContent} />
+            <StandardizedBlogContent 
+              content={blogContent} 
+              title=""
+              date=""
+              readTime=""
+            />
           </section>
 
-          {/* Share Buttons */}
-          <section className="mb-12">
-            <ShareButtons 
-              url={`https://marwariluxe.com/blogs/${blogPost.urlSlug}`}
-              title={blogPost.title}
-              description={blogPost.metaDescription}
-            />
+          {/* Share Buttons - Centered */}
+          <section className="mb-12 flex justify-center">
+            <div className="w-full max-w-2xl">
+              <ShareButtons 
+                url={`https://marwariluxe.com/blogs/${blogPost.urlSlug}`}
+                title={blogPost.title}
+                description={blogPost.metaDescription}
+              />
+            </div>
           </section>
 
           {/* FAQ Accordion */}

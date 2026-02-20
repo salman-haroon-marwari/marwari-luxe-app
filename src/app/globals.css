@@ -50,6 +50,9 @@ body {
   transition: background-color, color var(--transition-normal) ease;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+  /* Ensure proper scaling at different zoom levels */
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body::-webkit-scrollbar {
@@ -284,6 +287,50 @@ html {
   overflow: hidden;
 }
 
+/* Compact design for smaller elements */
+html {
+  font-size: 14px; /* Reduced from default 16px */
+}
+
+h1 {
+  font-size: clamp(1.5rem, 3.5vw, 2rem) !important;
+}
+
+h2 {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem) !important;
+}
+
+h3 {
+  font-size: clamp(1.1rem, 2vw, 1.25rem) !important;
+}
+
+p {
+  font-size: clamp(0.75rem, 2vw, 0.875rem) !important;
+  line-height: 1.5 !important;
+}
+
+/* Zoom level optimizations */
+@media screen and (-webkit-min-device-pixel-ratio: 1.5),
+       screen and (min-resolution: 1.5dppx),
+       screen and (min-resolution: 144dpi) {
+  /* Adjustments for higher density displays and zoom levels */
+  html {
+    font-size: 14px;
+  }
+  
+  h1 {
+    font-size: clamp(1.5rem, 3.5vw, 2rem);
+  }
+  
+  h2 {
+    font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  }
+  
+  p {
+    font-size: clamp(0.75rem, 2vw, 0.875rem);
+  }
+}
+
 /* Mobile-first responsive utilities */
 @media (max-width: 640px) {
   .sm\:hidden { display: none; }
@@ -293,6 +340,22 @@ html {
 @media (min-width: 641px) and (max-width: 768px) {
   .md\:hidden { display: none; }
   .md\:block { display: block; }
+}
+
+/* Navigation compact styling */
+header {
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+}
+
+.nav-item {
+  font-size: 0.875rem !important;
+  padding: 0.5rem !important;
+}
+
+.dropdown-menu {
+  font-size: 0.8rem !important;
+  min-width: 120px !important;
 }
 
 /* Touch device optimizations */

@@ -24,41 +24,41 @@ const HeroSliderComponent = () => {
   const slides = [
     {
       id: 1,
-      title: 'Premium Health Supplements & Wellness Products',
-      subtitle: 'Discover scientifically-backed vitamins, minerals & supplements that transform your daily wellness routine. Shop 25+ premium products.',
-      image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,q_auto,w_1600,dpr_auto,c_fill,g_auto/v1762817015/1_pllyfb.png',
+      title: 'Smarter Health & Beauty for Modern Living',
+      subtitle: 'Practical, research-backed guides and smart wellness tools designed to support healthier skin, stronger hair, and better everyday choices.',
+      image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864913/blog29-4_hfw0ga.png',
       cta: 'Shop Health Supplements',
       link: '/products',
     },
     {
       id: 2,
-      title: 'Natural Anti-Aging Beauty Solutions',
-      subtitle: 'Embrace your natural glow with our expert-curated collection of organic skincare, anti-aging serums & cruelty-free beauty essentials.',
-      image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,q_auto,w_1600,dpr_auto,c_fill,g_auto/v1762817052/2_gnrg7c.png',
+      title: 'Where Science Meets Everyday Beauty',
+      subtitle: 'Explore evidence-based skincare advice, wellness insights, and easy-to-use tools tailored for real results — no hype, just clarity.',
+      image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863836/blog16-7_ijdjcx.png',
       cta: 'Explore Natural Beauty',
       link: '/categories/beauty',
     },
     {
       id: 3,
-      title: 'Health Calculators & Wellness Tools',
-      subtitle: 'Access 25+ powerful health calculators, BMI tools & fitness trackers to optimize your wellness journey with data-driven insights.',
-      image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,q_auto,w_1600,dpr_auto,c_fill,g_auto/v1762817080/5_gifuma.png',
+      title: 'Confident Skin. Balanced Health. Smarter Tools.',
+      subtitle: 'Discover trusted health resources, dermatologist-style beauty guidance, and practical tools built for your daily routine.',
+      image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863833/blog16-2_trlvdr.png',
       cta: 'Try Wellness Tools',
       link: '/tools',
     },
     {
       id: 4,
-      title: 'Expert Health & Beauty Insights Blog',
-      subtitle: 'Read science-backed health advice, beauty tips & wellness guides from certified experts. 30+ comprehensive articles updated regularly.',
-      image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,q_auto,w_1600,dpr_auto,c_fill,g_auto/v1762817098/3_x5umfy.png',
+      title: 'Elevate Your Health & Beauty Routine',
+      subtitle: 'From skin concerns to lifestyle wellness, access expert-driven content and intelligent tools that help you make informed decisions.',
+      image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863792/blog13-9_oxsuot.png',
       cta: 'Read Expert Blogs',
       link: '/blog',
     },
     {
       id: 5,
       title: 'Marwari Heritage Meets Modern Wellness',
-      subtitle: 'Experience timeless Ayurvedic wisdom combined with cutting-edge health innovation. Discover our heritage-inspired wellness philosophy.',
-      image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/f_auto,q_auto,w_1600,dpr_auto,c_fill,g_auto/v1762816783/4_seitcm.png',
+      subtitle: 'Clear, credible, and practical advice designed for readers in the US and UK who value informed, science-based self-care.',
+      image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761863714/blog8-8_ubvtyn.png',
       cta: 'Discover Our Story',
       link: '/about',
     },
@@ -115,7 +115,11 @@ const HeroSliderComponent = () => {
       // Return a fallback image if the main image fails to load
       return '/marwari logo.png';
     }
-    return slide.image;
+    // Ensure the image path is correct
+    if (slide.image.startsWith('/')) {
+      return slide.image;
+    }
+    return `/${slide.image}`;
   };
 
   return (
@@ -130,8 +134,7 @@ const HeroSliderComponent = () => {
           className="object-cover transition-opacity duration-1000"
           sizes="100vw"
           quality={85}
-          placeholder="blur"
-          blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiPjxyZWN0IHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIiBmaWxsPSIjZGRkIi8+PC9zdmc+"
+          placeholder="empty"
           onLoadingComplete={(result) => {
             console.log('Image loaded successfully:', currentSlideData.image);
             console.log('Load result:', result);
