@@ -55,7 +55,7 @@ const SocialMediaClient = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Navigation />
-      <div className="flex-grow bg-gradient-to-br from-gray-50 to-gray-100 py-8" style={{ paddingTop: '20px' }}>
+      <div className="flex-grow bg-gradient-to-br from-gray-50 to-gray-100 py-8" style={{ paddingTop: '50px' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
