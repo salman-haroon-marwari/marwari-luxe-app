@@ -305,59 +305,12 @@ export default function GeneralToolsPage() {
             </div>
           </section>
           
-          {/* Enhanced Productivity Quote */}
-          <div className="bg-gradient-to-r from-blue-500 to-cyan-600 rounded-3xl p-8 md:p-12 text-white mb-16">
-            <div className="max-w-4xl mx-auto text-center">
-              <blockquote className="text-2xl md:text-3xl font-bold mb-6">
-                "Efficiency is doing things right; effectiveness is doing the right things. Work smarter, not harder, with the right tools for the job."
-              </blockquote>
-              <div className="flex flex-col md:flex-row justify-center items-center gap-4">
-                <cite className="text-lg">- Peter Drucker</cite>
-                <div className="hidden md:block w-1 h-6 bg-white/30 rounded-full"></div>
-                <span className="text-sm bg-white/20 px-3 py-1 rounded-full">Productivity Philosophy</span>
-              </div>
-            </div>
-          </div>
+
           
-          {/* Enhanced Call to Action */}
-          <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 md:p-12 text-center shadow-lg border border-gray-200 dark:border-gray-700">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Boost Your Productivity Today</h2>
-            <p className="text-xl text-foreground/80 mb-10 max-w-2xl mx-auto">
-              Join millions who have transformed their workflow with our productivity ecosystem
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <a 
-                href="/tools/general/password-generator" 
-                className="px-8 py-4 bg-gradient-to-r from-blue-500 to-cyan-600 text-white font-bold rounded-xl hover:from-blue-600 hover:to-cyan-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-              >
-                Secure Your Digital Life
-              </a>
-              <a 
-                href="/tools/general/unit-converter" 
-                className="px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold rounded-xl hover:from-green-600 hover:to-emerald-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-              >
-                Convert Anything Instantly
-              </a>
-            </div>
-            <div className="flex flex-wrap justify-center gap-8 text-foreground/70">
-              <div className="flex items-center">
-                <div className="w-3 h-3 rounded-full bg-green-500 mr-2"></div>
-                <span>All tools free to use</span>
-              </div>
-              <div className="flex items-center">
-                <div className="w-3 h-3 rounded-full bg-green-500 mr-2"></div>
-                <span>No registration required</span>
-              </div>
-              <div className="flex items-center">
-                <div className="w-3 h-3 rounded-full bg-green-500 mr-2"></div>
-                <span>Regular feature updates</span>
-              </div>
-            </div>
-          </div>
+          {/* Enhanced Call to Action section removed to avoid footer duplication */}
         </div>
       </main>
       
-      <Footer />
     </div>
   );
 }

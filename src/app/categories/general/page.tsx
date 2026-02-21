@@ -355,44 +355,10 @@ export default function GeneralCategory() {
             </div>
           </div>
           
-          {/* Enhanced Call to Action */}
-          <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 md:p-12 text-center shadow-lg border border-gray-200 dark:border-gray-700">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Boost Your Productivity Today</h2>
-            <p className="text-xl text-foreground/80 mb-10 max-w-2xl mx-auto">
-              Join millions who have transformed their workflow with our productivity ecosystem
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <a 
-                href="/tools/general/password-generator" 
-                className="px-8 py-4 bg-gradient-to-r from-blue-500 to-cyan-600 text-white font-bold rounded-xl hover:from-blue-600 hover:to-cyan-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-              >
-                Secure Your Digital Life
-              </a>
-              <a 
-                href="/tools/general/unit-converter" 
-                className="px-8 py-4 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold rounded-xl hover:from-emerald-600 hover:to-teal-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-              >
-                Convert Anything Instantly
-              </a>
-            </div>
-            <div className="flex flex-wrap justify-center gap-8 text-foreground/70">
-              <div className="flex items-center">
-                <div className="w-3 h-3 rounded-full bg-green-500 mr-2"></div>
-                <span>All tools free to use</span>
-              </div>
-              <div className="flex items-center">
-                <div className="w-3 h-3 rounded-full bg-green-500 mr-2"></div>
-                <span>No registration required</span>
-              </div>
-              <div className="flex items-center">
-                <div className="w-3 h-3 rounded-full bg-green-500 mr-2"></div>
-                <span>Regular feature updates</span>
-              </div>
-            </div>
-          </div>
+
         </div>
       </main>
-      
+      <Footer />
     </div>
   );
 }
