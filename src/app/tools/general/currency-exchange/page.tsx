@@ -104,7 +104,7 @@ export default function CurrencyExchangePage() {
                       id="from-currency"
                       className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-green-500 focus:border-transparent bg-white dark:bg-gray-700 text-foreground"
                     >
-                      <option value="USD" selected>US Dollar (USD)</option>
+                      <option value="USD">US Dollar (USD)</option>
                       <option value="EUR">Euro (EUR)</option>
                       <option value="GBP">British Pound (GBP)</option>
                       <option value="JPY">Japanese Yen (JPY)</option>
@@ -140,7 +140,7 @@ export default function CurrencyExchangePage() {
                       <option value="GBP">British Pound (GBP)</option>
                       <option value="JPY">Japanese Yen (JPY)</option>
                       <option value="CAD">Canadian Dollar (CAD)</option>
-                      <option value="AUD" selected>Australian Dollar (AUD)</option>
+                      <option value="AUD">Australian Dollar (AUD)</option>
                       <option value="CHF">Swiss Franc (CHF)</option>
                       <option value="CNY">Chinese Yuan (CNY)</option>
                       <option value="INR">Indian Rupee (INR)</option>

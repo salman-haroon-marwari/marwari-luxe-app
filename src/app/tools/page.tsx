@@ -1,6 +1,8 @@
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 import type { Metadata } from 'next';
+import { tools } from '../../data/tools';
+import { getToolUrl } from '../../utils/toolUtils';
 
 // Adding metadata for the tools page
 export const metadata: Metadata = {
@@ -47,15 +49,6 @@ export const metadata: Metadata = {
 };
 
 export default function ToolsPage() {
-  // Sample tools data
-  const tools = Array.from({ length: 6 }, (_, i) => ({
-    id: i + 1,
-    name: `Wellness Tool ${i + 1}`,
-    description: 'Calculate your wellness metrics with our interactive tool designed by experts.',
-    category: i % 3 === 0 ? 'Health' : i % 3 === 1 ? 'Beauty' : 'General',
-    image: `tool-${i + 1}`,
-  }));
-
   return (
     <div className="min-h-screen bg-background flex flex-col">
       <Navigation />
@@ -91,9 +84,22 @@ export default function ToolsPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {tools.map((tool) => (
                 <div key={tool.id} className="bg-white dark:bg-black/50 rounded-2xl overflow-hidden shadow-lg hover-lift animate-slide-up" 
-                     style={{animationDelay: `${(tool.id % 3) * 100}ms`}}>
+                     style={{animationDelay: `${(tools.indexOf(tool) % 3) * 100}ms`}}>
                   <div className="bg-gray-200 border-2 border-dashed w-full h-48 flex items-center justify-center text-gray-500">
-                    {tool.name} Image
+                    <img 
+                      src={`/tool-icons/${tool.id.replace('tool-', '')}.svg`} 
+                      alt={tool.name}
+                      className="w-16 h-16 object-contain"
+                      onError={(e) => {
+                        const target = e.target as HTMLImageElement;
+                        target.onerror = null;
+                        target.style.display = 'none';
+                        const parent = target.parentElement;
+                        if (parent) {
+                          parent.innerHTML = `${tool.name} Icon`;
+                        }
+                      }}
+                    />
                   </div>
                   <div className="p-6">
                     <div className="flex justify-between items-center mb-3">
@@ -103,9 +109,9 @@ export default function ToolsPage() {
                     </div>
                     <h3 className="text-xl font-bold text-foreground mb-3">{tool.name}</h3>
                     <p className="text-foreground/70 mb-6">{tool.description}</p>
-                    <button className="w-full py-3 bg-primary text-white font-medium rounded-lg hover:bg-primary/90 transition-colors duration-300 focus-ring">
+                    <a href={getToolUrl(tool.id, tool.name, tool.category)} className="w-full py-3 bg-primary text-white font-medium rounded-lg hover:bg-primary/90 transition-colors duration-300 focus-ring">
                       Start Tool
-                    </button>
+                    </a>
                   </div>
                 </div>
               ))}

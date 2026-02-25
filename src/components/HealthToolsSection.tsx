@@ -2,6 +2,7 @@
 
 import { tools } from '../data/tools';
 import Link from 'next/link';
+import { getToolUrl } from '../utils/toolUtils';
 
 const HealthToolsSection = () => {
   // Filter tools by Health category
@@ -32,7 +33,7 @@ const HealthToolsSection = () => {
               <h3 className="text-xl font-bold text-foreground mb-3">{tool.name}</h3>
               <p className="text-foreground/70 mb-4">{tool.description}</p>
               <Link 
-                href={`/tools/${tool.id}`} 
+                href={getToolUrl(tool.id, tool.name, tool.category)} 
                 className="inline-flex items-center text-primary font-medium hover:underline"
               >
                 Use Tool

@@ -27,8 +27,8 @@ const HeroSliderComponent = () => {
       title: 'Smarter Health & Beauty for Modern Living',
       subtitle: 'Practical, research-backed guides and smart wellness tools designed to support healthier skin, stronger hair, and better everyday choices.',
       image: 'https://res.cloudinary.com/dxg5ldzkv/image/upload/v1761864930/marwari_loida5.png',
-      cta: 'Shop Health Supplements',
-      link: '/products',
+      cta: 'Read Health Articles',
+      link: '/blogs',
     },
     {
       id: 2,

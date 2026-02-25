@@ -2,22 +2,21 @@
 
 import Navigation from '../../../../components/Navigation';
 import Footer from '../../../../components/Footer';
+import { useState } from 'react';
 
 export default function BeautyCalendarPage() {
+  const [treatment, setTreatment] = useState<string>('');
+  const [date, setDate] = useState<string>('');
+  const [time, setTime] = useState<string>('');
+  const [notes, setNotes] = useState<string>('');
+  const [appointments, setAppointments] = useState<Array<{id: number, treatment: string, date: string, time: string, notes: string}>>([]);
+  const [confirmation, setConfirmation] = useState<string>('');
+  
   const scheduleTreatment = () => {
-    // Get input values
-    const treatment = (document.getElementById('treatment') as HTMLInputElement).value;
-    const date = (document.getElementById('date') as HTMLInputElement).value;
-    const time = (document.getElementById('time') as HTMLInputElement).value;
-    const notes = (document.getElementById('notes') as HTMLTextAreaElement).value;
-    
     if (!treatment || !date || !time) {
       alert('Please fill in all required fields');
       return;
     }
-    
-    // In a real app, this would save to a database
-    // For now, we'll just display the scheduled treatment
     
     const newAppointment = {
       id: Date.now(),
@@ -27,42 +26,44 @@ export default function BeautyCalendarPage() {
       notes
     };
     
-    // Display confirmation
-    const confirmationElement = document.querySelector('.confirmation-message');
-    const upcomingAppointments = document.querySelector('.upcoming-appointments');
+    setAppointments(prev => [...prev, newAppointment]);
+    setConfirmation(`Appointment Scheduled! Your ${treatment} is scheduled for ${date} at ${time}.`);
     
-    if (confirmationElement && upcomingAppointments) {
-      confirmationElement.innerHTML = `
-        <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg mb-4">
-          <p className="font-bold">Appointment Scheduled!</p>
-          <p>Your ${treatment} is scheduled for ${date} at ${time}.</p>
-        </div>
-      `;
-      
-      // Add to upcoming appointments list
-      const appointmentElement = document.createElement('div');
-      appointmentElement.className = 'flex justify-between items-center p-4 bg-indigo-50 dark:bg-gray-600 rounded-lg mb-2';
-      appointmentElement.innerHTML = `
-        <div>
-          <h4 className="font-bold text-indigo-600 dark:text-indigo-400">${treatment}</h4>
-          <p className="text-sm text-foreground/80">${date} at ${time}</p>
-          ${notes ? `<p className="text-sm text-foreground/70 mt-1">${notes}</p>` : ''}
-        </div>
-        <button 
-          onclick="this.parentElement.remove()" 
-          className="text-red-500 hover:text-red-700"
-        >
-          Cancel
-        </button>
-      `;
-      
-      upcomingAppointments.prepend(appointmentElement);
-      
-      // Clear form
-      (document.getElementById('treatment') as HTMLInputElement).value = '';
-      (document.getElementById('date') as HTMLInputElement).value = '';
-      (document.getElementById('time') as HTMLInputElement).value = '';
-      (document.getElementById('notes') as HTMLTextAreaElement).value = '';
+    // Clear form
+    setTreatment('');
+    setDate('');
+    setTime('');
+    setNotes('');
+    
+    // Clear confirmation after 5 seconds
+    setTimeout(() => {
+      setConfirmation('');
+    }, 5000);
+  };
+  
+  const handleTreatmentChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setTreatment(e.target.value);
+  };
+  
+  const handleDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setDate(e.target.value);
+  };
+  
+  const handleTimeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setTime(e.target.value);
+  };
+  
+  const handleNotesChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setNotes(e.target.value);
+  };
+  
+  const cancelAppointment = (id: number) => {
+    setAppointments(prev => prev.filter(app => app.id !== id));
+  };
+  
+  const handleKeyPress = (e: React.KeyboardEvent) => {
+    if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) {
+      scheduleTreatment();
     }
   };
 
@@ -102,6 +103,8 @@ export default function BeautyCalendarPage() {
                   </label>
                   <select
                     id="treatment"
+                    value={treatment}
+                    onChange={handleTreatmentChange}
                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent bg-white dark:bg-gray-700 text-foreground"
                   >
                     <option value="">Select a treatment</option>
@@ -125,6 +128,8 @@ export default function BeautyCalendarPage() {
                   <input
                     type="date"
                     id="date"
+                    value={date}
+                    onChange={handleDateChange}
                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent bg-white dark:bg-gray-700 text-foreground"
                   />
                 </div>
@@ -136,6 +141,8 @@ export default function BeautyCalendarPage() {
                   <input
                     type="time"
                     id="time"
+                    value={time}
+                    onChange={handleTimeChange}
                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent bg-white dark:bg-gray-700 text-foreground"
                   />
                 </div>
@@ -146,6 +153,8 @@ export default function BeautyCalendarPage() {
                   </label>
                   <textarea
                     id="notes"
+                    value={notes}
+                    onChange={handleNotesChange}
                     rows={3}
                     className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent bg-white dark:bg-gray-700 text-foreground"
                     placeholder="Any special requests or reminders..."
@@ -160,7 +169,14 @@ export default function BeautyCalendarPage() {
                 </button>
               </div>
               
-              <div className="confirmation-message mt-4"></div>
+              <div className="mt-4">
+                {confirmation && (
+                  <div className="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-lg mb-4 animate-fade-in">
+                    <p className="font-bold">Appointment Scheduled!</p>
+                    <p>{confirmation}</p>
+                  </div>
+                )}
+              </div>
             </div>
             
             {/* Upcoming Appointments */}
@@ -178,11 +194,31 @@ export default function BeautyCalendarPage() {
                 <h2 className="text-2xl font-bold text-foreground">Upcoming Appointments</h2>
               </div>
               
-              <div className="upcoming-appointments">
-                <div className="text-center py-8 text-foreground/70">
-                  <p>No appointments scheduled yet.</p>
-                  <p className="mt-2">Schedule your first beauty treatment!</p>
-                </div>
+              <div className="space-y-3">
+                {appointments.length === 0 ? (
+                  <div className="text-center py-8 text-foreground/70">
+                    <p>No appointments scheduled yet.</p>
+                    <p className="mt-2">Schedule your first beauty treatment!</p>
+                  </div>
+                ) : (
+                  appointments.map(appointment => (
+                    <div key={appointment.id} className="flex justify-between items-center p-4 bg-indigo-50 dark:bg-gray-600 rounded-lg mb-2 animate-fade-in">
+                      <div>
+                        <h4 className="font-bold text-indigo-600 dark:text-indigo-400">{appointment.treatment}</h4>
+                        <p className="text-sm text-foreground/80">{appointment.date} at {appointment.time}</p>
+                        {appointment.notes && (
+                          <p className="text-sm text-foreground/70 mt-1">{appointment.notes}</p>
+                        )}
+                      </div>
+                      <button 
+                        onClick={() => cancelAppointment(appointment.id)}
+                        className="text-red-500 hover:text-red-700 font-medium px-3 py-1 rounded hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors"
+                      >
+                        Cancel
+                      </button>
+                    </div>
+                  ))
+                )}
               </div>
               
               <div className="mt-8 bg-indigo-50 dark:bg-gray-700 rounded-xl p-5">

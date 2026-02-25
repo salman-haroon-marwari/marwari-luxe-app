@@ -88,31 +88,31 @@ const values = [
 ];
 
 const stats = [
-  { number: "10K+", label: "Happy Customers" },
-  { number: "25+", label: "Premium Products" },
+  { number: "10K+", label: "Happy Readers" },
+  { number: "100+", label: "Expert Articles" },
   { number: "50+", label: "Countries Served" },
-  { number: "99%", label: "Customer Satisfaction" }
+  { number: "99%", label: "Content Satisfaction" }
 ];
 
 // Team members data
 const teamMembers = [
   {
-    name: "Salman Marwari",
-    role: "Founder & CEO",
-    image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1762293147/1_iqq4q6.jpg",
-    description: "Salman Marwari is the Founder and CEO of Marwari Luxe, a trusted health and beauty platform. As a passionate health and beauty blogger, he creates research-based, easy-to-understand content on skincare, nutrition and overall wellness. With years of experience in writing and digital health communication, Salman combines science and storytelling to help readers make smarter lifestyle choices. His vision is to build Marwari Luxe into a global brand that educates and inspires people to live healthier, more confident lives."
+    name: "Marwari Luxe Team",
+    role: "Health & Wellness Experts",
+    image: "",
+    description: "Our dedicated team of health and wellness professionals committed to providing accurate, research-based information. We combine expertise in nutrition, fitness, skincare, and holistic health to deliver comprehensive content."
   },
   {
-    name: "Dr. Sarfaraz Alam",
-    role: "Chief Health Officer",
-    image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1762293147/2_k3mah0.jpg",
-    description: "Dr. Sarfaraz Alam is the Chief Health Officer at Marwari Luxe. He holds an MBBS degree with specialization in preventive medicine and nutrition. With over 10 years of medical practice, he ensures that all health-related content published on the platform follows accurate, evidence-based standards. His expertise bridges the gap between modern medicine and everyday wellness, making health information both credible and accessible for readers worldwide."
+    name: "Marwari Luxe Team",
+    role: "Beauty & Wellness Specialists",
+    image: "",
+    description: "Our beauty team specializes in all aspects of beauty and wellness. We focus on providing practical, evidence-based beauty advice that helps our readers enhance their natural beauty while maintaining healthy skin and overall wellbeing."
   },
   {
-    name: "Dr. Farha Ali",
-    role: "Beauty Specialist",
-    image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1762293147/3_obup78.jpg",
-    description: "Dr. Farha Ali serves as the Beauty Specialist at Marwari Luxe. She holds a Doctorate in Cosmetic Science and is certified in Advanced Skin and Hair Care Formulations. With her strong background in dermatology and aesthetic medicine, Dr. Farha helps translate complex beauty science into practical advice. Her insights guide readers toward safer, more effective skincare routines while promoting confidence through knowledge and self-care."
+    name: "Marwari Luxe Team",
+    role: "Content & Research Team",
+    image: "",
+    description: "Our content team ensures all information is thoroughly researched and presented with care. We stay updated with the latest research and trends to provide our readers with reliable information they can trust."
   }
 ];
 
@@ -250,10 +250,9 @@ export default function AboutPage() {
                   key={member.name}
                   className="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow group"
                 >
-                  <div className="h-64 bg-gradient-to-br from-purple-200 to-blue-200 flex items-center justify-center relative overflow-hidden">
+                  <div className="h-64 bg-gradient-to-br from-purple-500 to-blue-600 flex items-center justify-center relative overflow-hidden">
                     {member.image ? (
                       <>
-                        {/* Added explicit width and height to ensure proper loading */}
                         <Image
                           src={member.image}
                           alt={member.name}
@@ -261,12 +260,9 @@ export default function AboutPage() {
                           fill
                           priority={false}
                         />
-                        <div className="fallback-text absolute inset-0 flex items-center justify-center text-6xl opacity-0 group-hover:opacity-100 transition-opacity">
-                          
-                        </div>
                       </>
                     ) : (
-                      <div className="text-6xl">👤</div>
+                      <div className="text-6xl font-bold text-white">ML</div>
                     )}
                   </div>
                   <div className="p-6">

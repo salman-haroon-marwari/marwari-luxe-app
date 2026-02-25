@@ -132,7 +132,7 @@ export default function TimeZoneConverterPage() {
                       <option value="PST">PST (Pacific Standard Time)</option>
                       <option value="CST">CST (Central Standard Time)</option>
                       <option value="MST">MST (Mountain Standard Time)</option>
-                      <option value="IST" selected>IST (India Standard Time)</option>
+                      <option value="IST">IST (India Standard Time)</option>
                       <option value="CET">CET (Central European Time)</option>
                       <option value="JST">JST (Japan Standard Time)</option>
                       <option value="AEST">AEST (Australian Eastern Standard Time)</option>
@@ -159,7 +159,7 @@ export default function TimeZoneConverterPage() {
                     >
                       <option value="UTC">UTC (Coordinated Universal Time)</option>
                       <option value="GMT">GMT (Greenwich Mean Time)</option>
-                      <option value="EST" selected>EST (Eastern Standard Time)</option>
+                      <option value="EST">EST (Eastern Standard Time)</option>
                       <option value="PST">PST (Pacific Standard Time)</option>
                       <option value="CST">CST (Central Standard Time)</option>
                       <option value="MST">MST (Mountain Standard Time)</option>

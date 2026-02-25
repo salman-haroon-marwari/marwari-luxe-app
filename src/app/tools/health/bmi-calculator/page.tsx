@@ -2,55 +2,65 @@
 
 import Navigation from '../../../../components/Navigation';
 import Footer from '../../../../components/Footer';
+import { useState } from 'react';
 
 // Client component starts here
 export default function BMICalculatorPage() {
+  const [bmiResult, setBmiResult] = useState<string>('--');
+  const [bmiCategory, setBmiCategory] = useState<string>('Not Calculated');
+  const [bmiCategoryClass, setBmiCategoryClass] = useState<string>('text-blue-600 dark:text-blue-400');
+  const [height, setHeight] = useState<string>('');
+  const [weight, setWeight] = useState<string>('');
+  
   const calculateBMI = () => {
-    // Get input values
-    const heightInput = document.getElementById('height') as HTMLInputElement;
-    const weightInput = document.getElementById('weight') as HTMLInputElement;
+    const heightValue = parseFloat(height);
+    const weightValue = parseFloat(weight);
     
-    if (!heightInput || !weightInput) return;
-    
-    const height = parseFloat(heightInput.value);
-    const weight = parseFloat(weightInput.value);
-    
-    if (isNaN(height) || isNaN(weight) || height <= 0 || weight <= 0) {
+    if (isNaN(heightValue) || isNaN(weightValue) || heightValue <= 0 || weightValue <= 0) {
       alert('Please enter valid height and weight values');
       return;
     }
     
     // Convert height from cm to meters
-    const heightInMeters = height / 100;
+    const heightInMeters = heightValue / 100;
     
     // Calculate BMI
-    const bmi = weight / (heightInMeters * heightInMeters);
+    const bmi = weightValue / (heightInMeters * heightInMeters);
     
-    // Display result
-    const resultElement = document.querySelector('.bmi-result');
-    const categoryElement = document.querySelector('.bmi-category');
+    setBmiResult(bmi.toFixed(1));
     
-    if (resultElement && categoryElement) {
-      resultElement.textContent = bmi.toFixed(1);
-      
-      // Determine category
-      let category = '';
-      let categoryClass = '';
-      if (bmi < 18.5) {
-        category = 'Underweight';
-        categoryClass = 'text-blue-500';
-      } else if (bmi < 25) {
-        category = 'Normal weight';
-        categoryClass = 'text-green-500';
-      } else if (bmi < 30) {
-        category = 'Overweight';
-        categoryClass = 'text-yellow-500';
-      } else {
-        category = 'Obesity';
-        categoryClass = 'text-red-500';
-      }
-      
-      categoryElement.innerHTML = `Category: <span class="${categoryClass} font-bold">${category}</span>`;
+    // Determine category
+    let category = '';
+    let categoryClass = '';
+    if (bmi < 18.5) {
+      category = 'Underweight';
+      categoryClass = 'text-blue-500';
+    } else if (bmi < 25) {
+      category = 'Normal weight';
+      categoryClass = 'text-green-500';
+    } else if (bmi < 30) {
+      category = 'Overweight';
+      categoryClass = 'text-yellow-500';
+    } else {
+      category = 'Obesity';
+      categoryClass = 'text-red-500';
+    }
+    
+    setBmiCategory(category);
+    setBmiCategoryClass(`${categoryClass} font-bold`);
+  };
+  
+  const handleHeightChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setHeight(e.target.value);
+  };
+  
+  const handleWeightChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setWeight(e.target.value);
+  };
+  
+  const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      calculateBMI();
     }
   };
 
@@ -91,6 +101,9 @@ export default function BMICalculatorPage() {
                     <input
                       type="number"
                       id="height"
+                      value={height}
+                      onChange={handleHeightChange}
+                      onKeyPress={handleKeyPress}
                       className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-foreground"
                       placeholder="Enter your height"
                     />
@@ -103,6 +116,9 @@ export default function BMICalculatorPage() {
                     <input
                       type="number"
                       id="weight"
+                      value={weight}
+                      onChange={handleWeightChange}
+                      onKeyPress={handleKeyPress}
                       className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-foreground"
                       placeholder="Enter your weight"
                     />
@@ -120,10 +136,10 @@ export default function BMICalculatorPage() {
               <div className="flex flex-col justify-center items-center">
                 <div className="bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-gray-700 dark:to-gray-800 rounded-2xl p-8 w-full text-center">
                   <h3 className="text-2xl font-bold text-foreground mb-4">Your Result</h3>
-                  <div className="text-5xl font-bold text-blue-600 dark:text-blue-400 mb-2 bmi-result">--</div>
+                  <div className="text-5xl font-bold text-blue-600 dark:text-blue-400 mb-2">{bmiResult}</div>
                   <div className="text-xl text-foreground/80">BMI Score</div>
                   <div className="mt-4 px-4 py-2 bg-white dark:bg-gray-700 rounded-lg">
-                    <p className="text-foreground font-medium bmi-category">Category: <span className="text-blue-600 dark:text-blue-400">Not Calculated</span></p>
+                    <p className="text-foreground font-medium">Category: <span className={bmiCategoryClass}>{bmiCategory}</span></p>
                   </div>
                 </div>
                 

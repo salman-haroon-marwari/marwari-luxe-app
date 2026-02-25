@@ -115,7 +115,7 @@ export default function FileConverterPage() {
                       <option value="xlsx">Excel Spreadsheet (.xlsx)</option>
                       <option value="pptx">PowerPoint Presentation (.pptx)</option>
                       <option value="jpg">JPEG Image (.jpg)</option>
-                      <option value="png" selected>PNG Image (.png)</option>
+                      <option value="png">PNG Image (.png)</option>
                       <option value="gif">GIF Image (.gif)</option>
                       <option value="mp4">MP4 Video (.mp4)</option>
                       <option value="mp3">MP3 Audio (.mp3)</option>

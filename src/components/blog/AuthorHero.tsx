@@ -13,14 +13,18 @@ const AuthorHero = ({ author }: AuthorHeroProps) => {
       <div className="container mx-auto px-4 py-12">
         <div className="flex flex-col md:flex-row items-center">
           <div className="mb-6 md:mb-0 md:mr-8">
-            <div className="relative w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-lg">
-              <Image
-                src={author.photo}
-                alt={author.name}
-                width={160}
-                height={160}
-                className="object-cover"
-              />
+            <div className="relative w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-lg flex items-center justify-center bg-gradient-to-br from-blue-500 to-purple-600">
+              {author.photo ? (
+                <Image
+                  src={author.photo}
+                  alt={author.name}
+                  width={160}
+                  height={160}
+                  className="object-cover"
+                />
+              ) : (
+                <div className="text-4xl font-bold text-white">ML</div>
+              )}
             </div>
           </div>
           

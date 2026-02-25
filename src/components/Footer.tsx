@@ -118,8 +118,8 @@ const Footer = () => {
                 <h3 className="text-xl sm:text-2xl font-bold text-purple-400">Marwari Luxe</h3>
               </div> */}
               <p className="text-gray-300 mb-4 text-sm sm:text-base leading-relaxed">
-                Your trusted destination for premium health and beauty products. 
-                We&apos;re committed to providing high-quality products that enhance 
+                Your trusted destination for expert health and beauty content. 
+                We&apos;re committed to providing high-quality, evidence-based information that enhances 
                 your wellness journey and natural beauty.
               </p>
 
@@ -218,7 +218,7 @@ const Footer = () => {
                     <svg className="w-4 h-4 mr-1 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                     </svg>
-                    <span>Early product access</span>
+                    <span>Early content access</span>
                   </div>
                 </div>
               </div>

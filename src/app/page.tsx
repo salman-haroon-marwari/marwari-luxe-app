@@ -12,12 +12,12 @@ import { blogPosts } from '@/data/blogs';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Marwari Luxe - Premium Health & Beauty Products | Free Tools',
-  description: 'Shop premium health & beauty products + FREE tools! Get personalized skincare, medication reminders & more. Trusted by 10K+ customers worldwide. Luxury wellness for modern life.',
-  keywords: ['health', 'wellness', 'beauty', 'premium products', 'luxury skincare', 'natural supplements', 'wellness lifestyle', 'beauty products', 'health supplements', 'organic beauty', 'international shipping'],
+  title: 'Marwari Luxe - Expert Health & Beauty Articles | Free Wellness Tools',
+  description: 'Discover expert health & beauty articles + FREE wellness tools! Get personalized skincare advice, health tips & more. Trusted by 10K+ readers worldwide. Evidence-based wellness for modern life.',
+  keywords: ['health', 'wellness', 'beauty', 'expert articles', 'wellness tools', 'skincare advice', 'health tips', 'beauty guides', 'wellness lifestyle', 'evidence-based', 'free tools'],
   openGraph: {
-    title: 'Marwari Luxe - Premium Health & Beauty Products | Free Tools',
-    description: 'Shop premium health & beauty products + FREE tools! Get personalized skincare, medication reminders & more. Trusted by 10K+ customers worldwide. Luxury wellness for modern life.',
+    title: 'Marwari Luxe - Expert Health & Beauty Articles | Free Wellness Tools',
+    description: 'Discover expert health & beauty articles + FREE wellness tools! Get personalized skincare advice, health tips & more. Trusted by 10K+ readers worldwide. Evidence-based wellness for modern life.',
     url: 'https://marwariluxe.com',
     siteName: 'Marwari Luxe',
     images: [
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
         url: 'https://marwariluxe.com/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Marwari Luxe - Premium Health, Wellness & Beauty Products',
+        alt: 'Marwari Luxe - Expert Health, Wellness & Beauty Articles',
       },
     ],
     locale: 'en_US',
@@ -33,10 +33,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Marwari Luxe - Premium Health & Beauty Products | Free Tools',
-    description: 'Shop premium health & beauty products + FREE tools! Get personalized skincare, medication reminders & more. Trusted by 10K+ customers.',
+    title: 'Marwari Luxe - Expert Health & Beauty Articles | Free Wellness Tools',
+    description: 'Discover expert health & beauty articles + FREE wellness tools! Get personalized skincare advice, health tips & more. Trusted by 10K+ readers.',
     images: ['https://marwariluxe.com/og-image.jpg'],
     creator: '@marwariluxe',
+    site: '@marwariluxe',
   },
   robots: {
     index: true,

@@ -3,65 +3,69 @@
 import Navigation from '../../../../components/Navigation';
 import Footer from '../../../../components/Footer';
 
+import { useState } from 'react';
+
 export default function StressAssessmentPage() {
+  const [answers, setAnswers] = useState<Record<string, string>>({});
+  const [showResults, setShowResults] = useState(false);
+  const [totalScore, setTotalScore] = useState(0);
+  const [stressLevel, setStressLevel] = useState('');
+  const [stressLevelClass, setStressLevelClass] = useState('');
+  const [advice, setAdvice] = useState('');
+  
+  const handleAnswerChange = (question: string, value: string) => {
+    setAnswers(prev => ({
+      ...prev,
+      [question]: value
+    }));
+  };
+  
   const calculateStressLevel = () => {
-    // Get all radio button groups
-    const questions = [
-      'q1', 'q2', 'q3', 'q4', 'q5', 
-      'q6', 'q7', 'q8', 'q9', 'q10'
-    ];
+    // Check if all questions are answered
+    const questions = ['q1', 'q2', 'q3', 'q4', 'q5', 'q6', 'q7', 'q8', 'q9', 'q10'];
     
-    let totalScore = 0;
-    let answeredAll = true;
-    
-    questions.forEach(question => {
-      const selected = document.querySelector(`input[name="${question}"]:checked`) as HTMLInputElement;
-      if (selected) {
-        totalScore += parseInt(selected.value);
-      } else {
-        answeredAll = false;
+    for (const question of questions) {
+      if (!answers[question]) {
+        alert('Please answer all questions');
+        return;
       }
+    }
+    
+    // Calculate total score
+    let score = 0;
+    questions.forEach(question => {
+      score += parseInt(answers[question]);
     });
     
-    if (!answeredAll) {
-      alert('Please answer all questions');
-      return;
+    setTotalScore(score);
+    setShowResults(true);
+    
+    // Determine stress level
+    let level = '';
+    let levelClass = '';
+    let stressAdvice = '';
+    
+    if (score <= 10) {
+      level = 'Low Stress';
+      levelClass = 'text-green-500';
+      stressAdvice = 'You\'re experiencing low stress levels. Continue practicing healthy coping strategies and maintain your current routines.';
+    } else if (score <= 20) {
+      level = 'Moderate Stress';
+      levelClass = 'text-yellow-500';
+      stressAdvice = 'You\'re experiencing moderate stress. Try relaxation techniques like deep breathing, meditation, or taking short breaks during your day.';
+    } else if (score <= 30) {
+      level = 'High Stress';
+      levelClass = 'text-orange-500';
+      stressAdvice = 'You\'re experiencing high stress. Consider speaking with a counselor or therapist. Practice stress management techniques and prioritize self-care.';
+    } else {
+      level = 'Very High Stress';
+      levelClass = 'text-red-500';
+      stressAdvice = 'You\'re experiencing very high stress levels. It\'s important to seek professional help. Reach out to a mental health professional or your healthcare provider.';
     }
     
-    // Display results
-    const scoreElement = document.querySelector('.stress-score');
-    const levelElement = document.querySelector('.stress-level');
-    const adviceElement = document.querySelector('.stress-advice');
-    
-    if (scoreElement && levelElement && adviceElement) {
-      scoreElement.textContent = totalScore.toString();
-      
-      // Determine stress level
-      let level = '';
-      let levelClass = '';
-      let advice = '';
-      
-      if (totalScore <= 10) {
-        level = 'Low Stress';
-        levelClass = 'text-green-500';
-        advice = 'You\'re experiencing low stress levels. Continue practicing healthy coping strategies and maintain your current routines.';
-      } else if (totalScore <= 20) {
-        level = 'Moderate Stress';
-        levelClass = 'text-yellow-500';
-        advice = 'You\'re experiencing moderate stress. Try relaxation techniques like deep breathing, meditation, or taking short breaks during your day.';
-      } else if (totalScore <= 30) {
-        level = 'High Stress';
-        levelClass = 'text-orange-500';
-        advice = 'You\'re experiencing high stress. Consider speaking with a counselor or therapist. Practice stress management techniques and prioritize self-care.';
-      } else {
-        level = 'Very High Stress';
-        levelClass = 'text-red-500';
-        advice = 'You\'re experiencing very high stress levels. It\'s important to seek professional help. Reach out to a mental health professional or your healthcare provider.';
-      }
-      
-      levelElement.innerHTML = `<span class="${levelClass} font-bold">${level}</span>`;
-      adviceElement.textContent = advice;
-    }
+    setStressLevel(level);
+    setStressLevelClass(levelClass);
+    setAdvice(stressAdvice);
   };
 
   return (

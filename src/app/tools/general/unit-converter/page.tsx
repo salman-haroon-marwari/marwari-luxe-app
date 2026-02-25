@@ -3,19 +3,23 @@
 import Navigation from '../../../../components/Navigation';
 import Footer from '../../../../components/Footer';
 
+import { useState } from 'react';
+
 export default function UnitConverterPage() {
+  const [inputValue, setInputValue] = useState<string>('');
+  const [fromUnit, setFromUnit] = useState<string>('meters');
+  const [toUnit, setToUnit] = useState<string>('kilometers');
+  const [result, setResult] = useState<string>('');
+  
   const convertUnits = () => {
-    const inputValue = parseFloat((document.getElementById('input-value') as HTMLInputElement).value);
-    const fromUnit = (document.getElementById('from-unit') as HTMLSelectElement).value;
-    const toUnit = (document.getElementById('to-unit') as HTMLSelectElement).value;
-    const resultElement = document.getElementById('conversion-result');
+    const value = parseFloat(inputValue);
     
-    if (isNaN(inputValue)) {
-      if (resultElement) resultElement.textContent = 'Please enter a valid number';
+    if (isNaN(value)) {
+      setResult('Please enter a valid number');
       return;
     }
     
-    let result = 0;
+    let conversionResult = 0;
     
     // Length conversions (meters as base unit)
     const lengthFactors = {
@@ -55,17 +59,17 @@ export default function UnitConverterPage() {
     
     // Temperature conversions
     if (fromUnit === 'celsius' && toUnit === 'fahrenheit') {
-      result = (inputValue * 9/5) + 32;
+      conversionResult = (value * 9/5) + 32;
     } else if (fromUnit === 'fahrenheit' && toUnit === 'celsius') {
-      result = (inputValue - 32) * 5/9;
+      conversionResult = (value - 32) * 5/9;
     } else if (fromUnit === 'celsius' && toUnit === 'kelvin') {
-      result = inputValue + 273.15;
+      conversionResult = value + 273.15;
     } else if (fromUnit === 'kelvin' && toUnit === 'celsius') {
-      result = inputValue - 273.15;
+      conversionResult = value - 273.15;
     } else if (fromUnit === 'fahrenheit' && toUnit === 'kelvin') {
-      result = (inputValue - 32) * 5/9 + 273.15;
+      conversionResult = (value - 32) * 5/9 + 273.15;
     } else if (fromUnit === 'kelvin' && toUnit === 'fahrenheit') {
-      result = (inputValue - 273.15) * 9/5 + 32;
+      conversionResult = (value - 273.15) * 9/5 + 32;
     } else {
       // Handle other units
       let factorFrom = 1;
@@ -82,11 +86,27 @@ export default function UnitConverterPage() {
         factorTo = volumeFactors[toUnit as keyof typeof volumeFactors];
       }
       
-      result = inputValue * factorFrom / factorTo;
+      conversionResult = value * factorFrom / factorTo;
     }
     
-    if (resultElement) {
-      resultElement.textContent = `${inputValue} ${fromUnit} = ${result.toFixed(4)} ${toUnit}`;
+    setResult(`${value} ${fromUnit} = ${conversionResult.toFixed(4)} ${toUnit}`);
+  };
+  
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setInputValue(e.target.value);
+  };
+  
+  const handleFromUnitChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setFromUnit(e.target.value);
+  };
+  
+  const handleToUnitChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setToUnit(e.target.value);
+  };
+  
+  const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      convertUnits();
     }
   };
 
@@ -127,6 +147,9 @@ export default function UnitConverterPage() {
                     <input
                       type="number"
                       id="input-value"
+                      value={inputValue}
+                      onChange={handleInputChange}
+                      onKeyPress={handleKeyPress}
                       className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-foreground"
                       placeholder="Enter a number"
                     />
@@ -138,12 +161,14 @@ export default function UnitConverterPage() {
                     </label>
                     <select
                       id="from-unit"
+                      value={fromUnit}
+                      onChange={handleFromUnitChange}
                       className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-foreground"
                     >
                       <optgroup label="Length">
                         <option value="millimeters">Millimeters</option>
                         <option value="centimeters">Centimeters</option>
-                        <option value="meters" selected>Meters</option>
+                        <option value="meters">Meters</option>
                         <option value="kilometers">Kilometers</option>
                         <option value="inches">Inches</option>
                         <option value="feet">Feet</option>
@@ -184,13 +209,15 @@ export default function UnitConverterPage() {
                     </label>
                     <select
                       id="to-unit"
+                      value={toUnit}
+                      onChange={handleToUnitChange}
                       className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-700 text-foreground"
                     >
                       <optgroup label="Length">
                         <option value="millimeters">Millimeters</option>
                         <option value="centimeters">Centimeters</option>
                         <option value="meters">Meters</option>
-                        <option value="kilometers" selected>Kilometers</option>
+                        <option value="kilometers">Kilometers</option>
                         <option value="inches">Inches</option>
                         <option value="feet">Feet</option>
                         <option value="yards">Yards</option>
@@ -218,7 +245,7 @@ export default function UnitConverterPage() {
                       </optgroup>
                       <optgroup label="Temperature">
                         <option value="celsius">Celsius</option>
-                        <option value="fahrenheit" selected>Fahrenheit</option>
+                        <option value="fahrenheit">Fahrenheit</option>
                         <option value="kelvin">Kelvin</option>
                       </optgroup>
                     </select>
@@ -250,8 +277,8 @@ export default function UnitConverterPage() {
                   
                   <div className="bg-white dark:bg-gray-700 rounded-xl p-6">
                     <div className="text-center">
-                      <div id="conversion-result" className="text-2xl font-bold text-blue-600 dark:text-blue-400 min-h-[3rem] flex items-center justify-center">
-                        Enter values and click convert
+                      <div className="text-2xl font-bold text-blue-600 dark:text-blue-400 min-h-[3rem] flex items-center justify-center">
+                        {result || 'Enter values and click convert'}
                       </div>
                     </div>
                   </div>

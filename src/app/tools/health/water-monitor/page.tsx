@@ -2,53 +2,64 @@
 
 import Navigation from '../../../../components/Navigation';
 import Footer from '../../../../components/Footer';
+import { useState } from 'react';
 
 export default function WaterMonitorPage() {
-  const updateProgress = (current: number, goal: number) => {
-    const percentage = Math.min(100, Math.round((current / goal) * 100));
-    const progressBar = document.querySelector('.progress-bar-fill') as HTMLElement;
-    const progressText = document.querySelector('.progress-text') as HTMLElement;
-    
-    if (progressBar && progressText) {
-      progressBar.style.width = `${percentage}%`;
-      progressBar.className = `progress-bar-fill h-full rounded-full transition-all duration-500 ${
-        percentage < 30 ? 'bg-red-500' : percentage < 70 ? 'bg-yellow-500' : 'bg-green-500'
-      }`;
-      progressText.textContent = `${percentage}%`;
-    }
-  };
-
+  const [currentWater, setCurrentWater] = useState<number>(0);
+  const [goalWater, setGoalWater] = useState<number>(2000);
+  const [customAmount, setCustomAmount] = useState<string>('');
+  const [goalInput, setGoalInput] = useState<string>('2000');
+  
   const addWater = (amount: number) => {
-    const currentElement = document.querySelector('.current-water');
-    const goalElement = document.querySelector('.goal-water');
-    
-    if (currentElement && goalElement) {
-      const current = parseFloat(currentElement.textContent || '0');
-      const goal = parseFloat(goalElement.textContent || '2000');
-      const newAmount = current + amount;
-      
-      currentElement.textContent = newAmount.toFixed(2);
-      updateProgress(newAmount, goal);
-    }
+    setCurrentWater(prev => prev + amount);
   };
 
   const setGoal = () => {
-    const goalInput = document.getElementById('goal') as HTMLInputElement;
-    const goalElement = document.querySelector('.goal-water');
-    const currentElement = document.querySelector('.current-water');
+    const goal = parseFloat(goalInput);
     
-    if (goalInput && goalElement && currentElement) {
-      const goal = parseFloat(goalInput.value);
-      const current = parseFloat(currentElement.textContent || '0');
-      
-      if (!isNaN(goal) && goal > 0) {
-        goalElement.textContent = goal.toFixed(2);
-        updateProgress(current, goal);
-      } else {
-        alert('Please enter a valid goal amount');
-      }
+    if (!isNaN(goal) && goal > 0) {
+      setGoalWater(goal);
+    } else {
+      alert('Please enter a valid goal amount');
     }
   };
+  
+  const handleCustomAmount = () => {
+    const amount = parseFloat(customAmount);
+    if (!isNaN(amount) && amount > 0) {
+      addWater(amount);
+      setCustomAmount('');
+    } else {
+      alert('Please enter a valid amount');
+    }
+  };
+  
+  const handleGoalChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setGoalInput(e.target.value);
+  };
+  
+  const handleCustomAmountChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setCustomAmount(e.target.value);
+  };
+  
+  const handleGoalKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      setGoal();
+    }
+  };
+  
+  const handleCustomAmountKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      handleCustomAmount();
+    }
+  };
+  
+  const resetIntake = () => {
+    setCurrentWater(0);
+  };
+  
+  const percentage = Math.min(100, Math.round((currentWater / goalWater) * 100));
+  const progressColor = percentage < 30 ? 'bg-red-500' : percentage < 70 ? 'bg-yellow-500' : 'bg-green-500';
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
@@ -116,9 +127,11 @@ export default function WaterMonitorPage() {
                       <input
                         type="number"
                         id="goal"
+                        value={goalInput}
+                        onChange={handleGoalChange}
+                        onKeyPress={handleGoalKeyPress}
                         className="flex-grow px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent bg-white dark:bg-gray-700 text-foreground"
                         placeholder="Daily goal in ml"
-                        defaultValue="2000"
                       />
                       <button 
                         onClick={setGoal}
@@ -135,22 +148,14 @@ export default function WaterMonitorPage() {
                       <input
                         type="number"
                         id="custom-amount"
+                        value={customAmount}
+                        onChange={handleCustomAmountChange}
+                        onKeyPress={handleCustomAmountKeyPress}
                         className="flex-grow px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-2 focus:ring-cyan-500 focus:border-transparent bg-white dark:bg-gray-700 text-foreground"
                         placeholder="Amount in ml"
                       />
                       <button 
-                        onClick={() => {
-                          const customInput = document.getElementById('custom-amount') as HTMLInputElement;
-                          if (customInput) {
-                            const amount = parseFloat(customInput.value);
-                            if (!isNaN(amount) && amount > 0) {
-                              addWater(amount);
-                              customInput.value = '';
-                            } else {
-                              alert('Please enter a valid amount');
-                            }
-                          }
-                        }}
+                        onClick={handleCustomAmount}
                         className="px-4 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 text-white rounded-lg hover:from-cyan-600 hover:to-blue-700 transition-all font-medium"
                       >
                         Add
@@ -159,15 +164,7 @@ export default function WaterMonitorPage() {
                   </div>
                   
                   <button 
-                    onClick={() => {
-                      const currentElement = document.querySelector('.current-water');
-                      if (currentElement) {
-                        currentElement.textContent = '0.00';
-                        const goalElement = document.querySelector('.goal-water');
-                        const goal = parseFloat(goalElement?.textContent || '2000');
-                        updateProgress(0, goal);
-                      }
-                    }}
+                    onClick={resetIntake}
                     className="w-full px-6 py-3 bg-gradient-to-r from-red-500 to-rose-600 text-white font-bold rounded-lg hover:from-red-600 hover:to-rose-700 transition-all"
                   >
                     Reset Daily Intake
@@ -182,9 +179,9 @@ export default function WaterMonitorPage() {
                   <div className="relative w-48 h-48 mx-auto mb-6">
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="text-center">
-                        <div className="text-3xl font-bold text-cyan-600 dark:text-cyan-400 current-water">0.00</div>
+                        <div className="text-3xl font-bold text-cyan-600 dark:text-cyan-400">{currentWater.toFixed(2)}</div>
                         <div className="text-foreground/80">ml</div>
-                        <div className="text-sm text-foreground/60 mt-1">of <span className="goal-water">2000</span> ml</div>
+                        <div className="text-sm text-foreground/60 mt-1">of <span>{goalWater}</span> ml</div>
                       </div>
                     </div>
                     <svg className="w-full h-full" viewBox="0 0 100 100">
@@ -211,14 +208,14 @@ export default function WaterMonitorPage() {
                       />
                     </svg>
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="text-xl font-bold text-cyan-600 dark:text-cyan-400 progress-text">0%</span>
+                      <span className="text-xl font-bold text-cyan-600 dark:text-cyan-400">{percentage}%</span>
                     </div>
                   </div>
                   
                   <div className="w-full bg-gray-200 rounded-full h-4 mb-6">
                     <div 
-                      className="progress-bar-fill h-full rounded-full transition-all duration-500 bg-red-500" 
-                      style={{width: '0%'}}
+                      className={`h-full rounded-full transition-all duration-500 ${progressColor}`}
+                      style={{width: `${percentage}%`}}
                     ></div>
                   </div>
                   

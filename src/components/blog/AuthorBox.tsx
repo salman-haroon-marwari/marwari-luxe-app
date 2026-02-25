@@ -11,14 +11,18 @@ const AuthorBox = ({ author }: AuthorBoxProps) => {
   return (
     <div className="bg-gray-50 rounded-lg p-6 mb-8">
       <div className="flex items-start">
-        <div className="relative w-16 h-16 flex-shrink-0">
-          <Image
-            src={author.photo}
-            alt={author.name}
-            width={64}
-            height={64}
-            className="rounded-full object-cover"
-          />
+        <div className="relative w-16 h-16 flex-shrink-0 rounded-full overflow-hidden bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center">
+          {author.photo ? (
+            <Image
+              src={author.photo}
+              alt={author.name}
+              width={64}
+              height={64}
+              className="rounded-full object-cover"
+            />
+          ) : (
+            <div className="text-lg font-bold text-white">ML</div>
+          )}
         </div>
         <div className="ml-4">
           <h3 className="text-lg font-bold text-gray-900">{author.name}</h3>

@@ -20,19 +20,19 @@ const IntroSection = () => {
               </h2>
             </div>
             <p className="text-lg text-gray-600 leading-relaxed">
-             At Marwari Luxe, we combine ancient wellness traditions with modern science. We offer premium health supplements, natural beauty products, and smart wellness tools to help you feel and look your best. Our products include high-quality vitamins, organic skincare, anti-aging serums, and health calculators that support your wellness journey.
+             At Marwari Luxe, we combine ancient wellness traditions with modern science. We provide expert health and beauty articles, evidence-based wellness guides, and smart wellness tools to help you feel and look your best. Our content covers nutrition, skincare, fitness, and holistic wellness approaches that support your journey to optimal health.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
-              We blend Ayurvedic wisdom with modern science to connect tradition and innovation. Every product is carefully tested for purity, safety, and effectiveness. Whether you need supplements, skincare, or wellness tools, our collection offers authentic, high-quality products you can trust.
+              We blend Ayurvedic wisdom with modern science to connect tradition and innovation. Every article and tool is carefully researched for accuracy, reliability, and practical application. Whether you need health advice, skincare guidance, or wellness tools, our content offers evidence-based information you can trust.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
               <div className="text-center p-4 transition-opacity duration-700">
-                <div className="text-3xl font-bold text-purple-600 mb-2">25+</div>
-                <div className="text-gray-600">Premium Health & Beauty Products</div>
+                <div className="text-3xl font-bold text-purple-600 mb-2">50+</div>
+                <div className="text-gray-600">Expert Health & Beauty Articles</div>
               </div>
               <div className="text-center p-4 transition-opacity duration-700">
-                <div className="text-3xl font-bold text-purple-600 mb-2">10K+</div>
-                <div className="text-gray-600">Satisfied Global Customers</div>
+                <div className="text-3xl font-bold text-purple-600 mb-2">200+</div>
+                <div className="text-gray-600">Happy Readers</div>
               </div>
               <div className="text-center p-4 transition-opacity duration-700">
                 <div className="text-3xl font-bold text-purple-600 mb-2">25+</div>

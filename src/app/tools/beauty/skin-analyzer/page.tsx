@@ -1,62 +1,59 @@
 'use client';
 
+import { useState } from 'react';
+import Navigation from '../../../../components/Navigation';
+import Footer from '../../../../components/Footer';
+
 export default function SkinAnalyzerPage() {
+  const [skinType, setSkinType] = useState<string>('Not Analyzed');
+  const [skinDescription, setSkinDescription] = useState<string>('Complete the questionnaire to discover your skin type and get personalized recommendations.');
+  const [recommendations, setRecommendations] = useState<string>('Answer the questions above to receive personalized skincare advice.');
+  const [q1Value, setQ1Value] = useState<string>('');
+  const [q2Value, setQ2Value] = useState<string>('');
+  
   const analyzeSkinType = () => {
-    // Get all radio button groups
-    const q1Selected = document.querySelector('input[name="q1"]:checked') as HTMLInputElement;
-    const q2Selected = document.querySelector('input[name="q2"]:checked') as HTMLInputElement;
-    
-    if (!q1Selected || !q2Selected) {
+    if (!q1Value || !q2Value) {
       alert('Please answer all questions');
       return;
     }
     
-    const q1Value = q1Selected.value;
-    const q2Value = q2Selected.value;
-    
     // Determine skin type based on answers
-    let skinType = '';
-    let skinDescription = '';
-    let recommendations = '';
+    let newSkinType = '';
+    let newSkinDescription = '';
+    let newRecommendations = '';
     
     // Logic to determine skin type
     if (q1Value === 'tight' && q2Value === 'rarely') {
-      skinType = 'Dry Skin';
-      skinDescription = 'Your skin lacks oil and may feel tight or flaky.';
-      recommendations = 'Use hydrating cleansers, rich moisturizers, and avoid harsh products.';
-    } else if (q1Value === 'comfortable' && q2Value === 'rarely') {
-      skinType = 'Normal Skin';
-      skinDescription = 'Your skin is well-balanced with few imperfections.';
-      recommendations = 'Maintain your routine with gentle cleansers and lightweight moisturizers.';
-    } else if (q1Value === 'shiny' && (q2Value === 'weekly' || q2Value === 'daily')) {
-      skinType = 'Oily Skin';
-      skinDescription = 'Your skin produces excess oil, especially in the T-zone.';
-      recommendations = 'Use foaming cleansers, oil-free moisturizers, and salicylic acid products.';
+      newSkinType = 'Dry Skin';
+      newSkinDescription = 'Your skin lacks oil and may feel tight or flaky.';
+      newRecommendations = 'Use hydrating cleansers, rich moisturizers, and avoid harsh products.';
+    } else if (q1Value === 'normal' && q2Value === 'rarely') {
+      newSkinType = 'Normal Skin';
+      newSkinDescription = 'Your skin is well-balanced with few imperfections.';
+      newRecommendations = 'Maintain your routine with gentle cleansers and lightweight moisturizers.';
+    } else if (q1Value === 'oily' && (q2Value === 'weekly' || q2Value === 'daily')) {
+      newSkinType = 'Oily Skin';
+      newSkinDescription = 'Your skin produces excess oil, especially in the T-zone.';
+      newRecommendations = 'Use foaming cleansers, oil-free moisturizers, and salicylic acid products.';
     } else if (q1Value === 'combination' && q2Value === 'weekly') {
-      skinType = 'Combination Skin';
-      skinDescription = 'Your T-zone is oily while cheeks are normal or dry.';
-      recommendations = 'Use different products for different areas - gentle cleanser with targeted treatments.';
+      newSkinType = 'Combination Skin';
+      newSkinDescription = 'Your T-zone is oily while cheeks are normal or dry.';
+      newRecommendations = 'Use different products for different areas - gentle cleanser with targeted treatments.';
     } else {
       // Default case for mixed answers
-      skinType = 'Combination Skin';
-      skinDescription = 'Your skin has both oily and dry areas.';
-      recommendations = 'Use gentle, balancing products and adjust routine by area.';
+      newSkinType = 'Combination Skin';
+      newSkinDescription = 'Your skin has both oily and dry areas.';
+      newRecommendations = 'Use gentle, balancing products and adjust routine by area.';
     }
     
-    // Display results
-    const skinTypeElement = document.querySelector('.skin-type-result');
-    const skinDescriptionElement = document.querySelector('.skin-description');
-    const recommendationsElement = document.querySelector('.recommendations');
-    
-    if (skinTypeElement && skinDescriptionElement && recommendationsElement) {
-      skinTypeElement.textContent = skinType;
-      skinDescriptionElement.textContent = skinDescription;
-      recommendationsElement.textContent = recommendations;
-    }
+    setSkinType(newSkinType);
+    setSkinDescription(newSkinDescription);
+    setRecommendations(newRecommendations);
   };
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
+      <Navigation />
       <main className="flex-grow pt-32 pb-16 px-4">
         <div className="container mx-auto max-w-4xl">
           <div className="mb-8 animate-fade-in">
@@ -89,19 +86,19 @@ export default function SkinAnalyzerPage() {
                     </label>
                     <div className="space-y-2">
                       <label className="flex items-center p-3 bg-pink-50 dark:bg-gray-700 rounded-lg">
-                        <input type="radio" name="q1" value="tight" className="mr-2 text-pink-500" />
+                        <input type="radio" name="q1" value="tight" className="mr-2 text-pink-500" checked={q1Value === 'tight'} onChange={() => setQ1Value('tight')} />
                         <span>Tight and dry</span>
                       </label>
                       <label className="flex items-center p-3 bg-pink-50 dark:bg-gray-700 rounded-lg">
-                        <input type="radio" name="q1" value="normal" className="mr-2 text-pink-500" />
+                        <input type="radio" name="q1" value="normal" className="mr-2 text-pink-500" checked={q1Value === 'normal'} onChange={() => setQ1Value('normal')} />
                         <span>Comfortable and smooth</span>
                       </label>
                       <label className="flex items-center p-3 bg-pink-50 dark:bg-gray-700 rounded-lg">
-                        <input type="radio" name="q1" value="oily" className="mr-2 text-pink-500" />
+                        <input type="radio" name="q1" value="oily" className="mr-2 text-pink-500" checked={q1Value === 'oily'} onChange={() => setQ1Value('oily')} />
                         <span>Shiny, especially in the T-zone</span>
                       </label>
                       <label className="flex items-center p-3 bg-pink-50 dark:bg-gray-700 rounded-lg">
-                        <input type="radio" name="q1" value="combination" className="mr-2 text-pink-500" />
+                        <input type="radio" name="q1" value="combination" className="mr-2 text-pink-500" checked={q1Value === 'combination'} onChange={() => setQ1Value('combination')} />
                         <span>Oily in some areas, dry in others</span>
                       </label>
                     </div>
@@ -113,19 +110,19 @@ export default function SkinAnalyzerPage() {
                     </label>
                     <div className="space-y-2">
                       <label className="flex items-center p-3 bg-pink-50 dark:bg-gray-700 rounded-lg">
-                        <input type="radio" name="q2" value="rarely" className="mr-2 text-pink-500" />
+                        <input type="radio" name="q2" value="rarely" className="mr-2 text-pink-500" checked={q2Value === 'rarely'} onChange={() => setQ2Value('rarely')} />
                         <span>Rarely or never</span>
                       </label>
                       <label className="flex items-center p-3 bg-pink-50 dark:bg-gray-700 rounded-lg">
-                        <input type="radio" name="q2" value="monthly" className="mr-2 text-pink-500" />
+                        <input type="radio" name="q2" value="monthly" className="mr-2 text-pink-500" checked={q2Value === 'monthly'} onChange={() => setQ2Value('monthly')} />
                         <span>Occasionally, mostly around my period</span>
                       </label>
                       <label className="flex items-center p-3 bg-pink-50 dark:bg-gray-700 rounded-lg">
-                        <input type="radio" name="q2" value="weekly" className="mr-2 text-pink-500" />
+                        <input type="radio" name="q2" value="weekly" className="mr-2 text-pink-500" checked={q2Value === 'weekly'} onChange={() => setQ2Value('weekly')} />
                         <span>Weekly, mainly in the T-zone</span>
                       </label>
                       <label className="flex items-center p-3 bg-pink-50 dark:bg-gray-700 rounded-lg">
-                        <input type="radio" name="q2" value="daily" className="mr-2 text-pink-500" />
+                        <input type="radio" name="q2" value="daily" className="mr-2 text-pink-500" checked={q2Value === 'daily'} onChange={() => setQ2Value('daily')} />
                         <span>Daily, all over my face</span>
                       </label>
                     </div>
@@ -157,14 +154,14 @@ export default function SkinAnalyzerPage() {
                   
                   <div className="bg-white dark:bg-gray-700 rounded-xl p-6 mb-6">
                     <h4 className="font-bold text-lg mb-2 text-pink-600 dark:text-pink-400">Skin Type</h4>
-                    <div className="text-3xl font-bold text-pink-600 dark:text-pink-400 mb-4 skin-type-result">Not Analyzed</div>
-                    <p className="text-foreground/80 skin-description">
-                      Complete the questionnaire to discover your skin type and get personalized recommendations.
+                    <div className="text-3xl font-bold text-pink-600 dark:text-pink-400 mb-4">{skinType}</div>
+                    <p className="text-foreground/80">
+                      {skinDescription}
                     </p>
                     <div className="mt-4 text-left">
                       <h5 className="font-bold text-foreground mb-2">Recommendations:</h5>
-                      <p className="text-foreground/80 recommendations">
-                        Answer the questions above to receive personalized skincare advice.
+                      <p className="text-foreground/80">
+                        {recommendations}
                       </p>
                     </div>
                   </div>
@@ -185,6 +182,7 @@ export default function SkinAnalyzerPage() {
           </div>
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
