@@ -1,52 +1,10 @@
+'use client';
+
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
 import type { Metadata } from 'next';
 import { tools } from '../../data/tools';
 import { getToolUrl } from '../../utils/toolUtils';
-
-// Adding metadata for the tools page
-export const metadata: Metadata = {
-  title: 'Free Health, Wellness & Beauty Tools | Marwari Luxe',
-  description: 'Access our collection of free interactive tools for health tracking, beauty assessments, and wellness planning. Calculate BMI, track water intake, analyze your skin, and more with our expert-designed tools.',
-  keywords: ['free tools', 'health tools', 'wellness tools', 'beauty tools', 'BMI calculator', 'skin analyzer', 'water tracker', 'health calculator', 'beauty assessment', 'wellness planner', 'fitness tools'],
-  openGraph: {
-    title: 'Free Health, Wellness & Beauty Tools | Marwari Luxe',
-    description: 'Access our collection of free interactive tools for health tracking, beauty assessments, and wellness planning.',
-    url: 'https://marwariluxe.com/tools',
-    siteName: 'Marwari Luxe',
-    images: [
-      {
-        url: 'https://marwariluxe.com/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Marwari Luxe Free Health, Wellness & Beauty Tools',
-      },
-    ],
-    locale: 'en_US',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Free Health, Wellness & Beauty Tools | Marwari Luxe',
-    description: 'Access our collection of free interactive tools for health tracking, beauty assessments, and wellness planning.',
-    images: ['https://marwariluxe.com/og-image.jpg'],
-    creator: '@marwariluxe',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-  alternates: {
-    canonical: 'https://marwariluxe.com/tools'
-  },
-};
 
 export default function ToolsPage() {
   return (
