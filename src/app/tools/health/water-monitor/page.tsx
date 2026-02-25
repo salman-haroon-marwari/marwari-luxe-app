@@ -1,7 +1,6 @@
 'use client';
 
 import Navigation from '../../../../components/Navigation';
-import Footer from '../../../../components/Footer';
 import { useState } from 'react';
 
 export default function WaterMonitorPage() {
@@ -234,8 +233,6 @@ export default function WaterMonitorPage() {
           </div>
         </div>
       </main>
-      
-      <Footer />
     </div>
   );
 }

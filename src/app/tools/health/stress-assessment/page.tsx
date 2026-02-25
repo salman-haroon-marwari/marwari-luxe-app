@@ -1,7 +1,6 @@
 'use client';
 
 import Navigation from '../../../../components/Navigation';
-import Footer from '../../../../components/Footer';
 
 import { useState } from 'react';
 
@@ -397,8 +396,6 @@ export default function StressAssessmentPage() {
           </div>
         </div>
       </main>
-      
-      <Footer />
     </div>
   );
 }

@@ -1,7 +1,6 @@
 'use client';
 
 import Navigation from '../../../../components/Navigation';
-import Footer from '../../../../components/Footer';
 
 export default function SkincareRoutineBuilderPage() {
   const buildRoutine = () => {
@@ -232,8 +231,6 @@ export default function SkincareRoutineBuilderPage() {
           </div>
         </div>
       </main>
-      
-      <Footer />
     </div>
   );
 }

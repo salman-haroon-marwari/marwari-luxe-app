@@ -1,7 +1,6 @@
 'use client';
 
 import Navigation from '../../../../components/Navigation';
-import Footer from '../../../../components/Footer';
 
 import { useState } from 'react';
 
@@ -298,8 +297,6 @@ export default function UnitConverterPage() {
           </div>
         </div>
       </main>
-      
-      <Footer />
     </div>
   );
 }

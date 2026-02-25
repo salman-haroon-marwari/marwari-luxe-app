@@ -1,5 +1,4 @@
 import Navigation from '../../../components/Navigation';
-import Footer from '../../../components/Footer';
 
 export const metadata = {
   title: 'General Productivity Tools & Utilities | Marwari Luxe',
@@ -358,7 +357,6 @@ export default function GeneralCategory() {
 
         </div>
       </main>
-      <Footer />
     </div>
   );
 }

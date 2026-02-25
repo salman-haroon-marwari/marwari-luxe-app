@@ -1,7 +1,6 @@
 'use client';
 
 import Navigation from '../../../../components/Navigation';
-import Footer from '../../../../components/Footer';
 
 export default function VirtualMakeupTryOnPage() {
   const tryOnMakeup = () => {
@@ -275,8 +274,6 @@ export default function VirtualMakeupTryOnPage() {
           </div>
         </div>
       </main>
-      
-      <Footer />
     </div>
   );
 }

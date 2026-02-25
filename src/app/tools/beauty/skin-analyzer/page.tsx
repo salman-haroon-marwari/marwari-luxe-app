@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import Navigation from '../../../../components/Navigation';
-import Footer from '../../../../components/Footer';
 
 export default function SkinAnalyzerPage() {
   const [skinType, setSkinType] = useState<string>('Not Analyzed');
@@ -182,7 +181,6 @@ export default function SkinAnalyzerPage() {
           </div>
         </div>
       </main>
-      <Footer />
     </div>
   );
 }

@@ -1,7 +1,6 @@
 'use client';
 
 import Navigation from '../../../../components/Navigation';
-import Footer from '../../../../components/Footer';
 
 export default function IngredientCheckerPage() {
   const checkIngredients = () => {
@@ -240,8 +239,6 @@ export default function IngredientCheckerPage() {
           </div>
         </div>
       </main>
-      
-      <Footer />
     </div>
   );
 }

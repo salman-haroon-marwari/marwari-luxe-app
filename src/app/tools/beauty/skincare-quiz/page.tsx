@@ -1,7 +1,6 @@
 'use client';
 
 import Navigation from '../../../../components/Navigation';
-import Footer from '../../../../components/Footer';
 
 export default function SkincareQuizPage() {
   const takeQuiz = () => {
@@ -238,8 +237,6 @@ export default function SkincareQuizPage() {
           </div>
         </div>
       </main>
-      
-      <Footer />
     </div>
   );
 }

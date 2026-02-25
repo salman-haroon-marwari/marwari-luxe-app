@@ -1,7 +1,6 @@
 'use client';
 
 import Navigation from '../../../../components/Navigation';
-import Footer from '../../../../components/Footer';
 
 export default function MakeupShadeFinderPage() {
   const findShades = () => {
@@ -204,8 +203,6 @@ export default function MakeupShadeFinderPage() {
           </div>
         </div>
       </main>
-      
-      <Footer />
     </div>
   );
 }

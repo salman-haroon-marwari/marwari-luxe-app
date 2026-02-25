@@ -1,7 +1,6 @@
 'use client';
 
 import Navigation from '../../../../components/Navigation';
-import Footer from '../../../../components/Footer';
 
 export default function ProductComparatorPage() {
   const compareProducts = () => {
@@ -219,8 +218,6 @@ export default function ProductComparatorPage() {
           </div>
         </div>
       </main>
-      
-      <Footer />
     </div>
   );
 }

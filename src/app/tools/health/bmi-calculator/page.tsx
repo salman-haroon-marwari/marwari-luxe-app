@@ -1,7 +1,6 @@
 'use client';
 
 import Navigation from '../../../../components/Navigation';
-import Footer from '../../../../components/Footer';
 import { useState } from 'react';
 
 // Client component starts here
@@ -169,8 +168,6 @@ export default function BMICalculatorPage() {
           </div>
         </div>
       </main>
-      
-      <Footer />
     </div>
   );
 }
