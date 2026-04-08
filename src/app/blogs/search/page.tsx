@@ -94,7 +94,9 @@ const SearchContent = () => {
           <div>
             <CategoryFilter 
               categories={categories} 
+              selectedCategory={selectedCategory}
               onCategoryChange={setSelectedCategory} 
+              blogPosts={blogPosts}
             />
           </div>
         </div>
