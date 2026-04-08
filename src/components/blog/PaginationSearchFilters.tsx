@@ -36,7 +36,9 @@ const PaginationSearchFilters = ({ categories }: PaginationSearchFiltersProps) =
       <div>
         <CategoryFilter 
           categories={categories}
+          selectedCategory={null}
           onCategoryChange={handleCategoryChange} 
+          blogPosts={[]}
         />
       </div>
     </div>
