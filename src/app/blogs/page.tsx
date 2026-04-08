@@ -1,13 +1,11 @@
 // Blog Listing Page at /blogs
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { BlogPost } from '@/data/blogs';
-import { Author } from '@/data/authors';
 import BlogCard from '@/components/blog/BlogCard';
 import SearchBar from '@/components/blog/SearchBar';
 import CategoryFilter from '@/components/blog/CategoryFilter';
-import Pagination from '@/components/blog/Pagination';
 import BlogHero from '@/components/blog/BlogHero';
 import NavigationWrapper from '@/components/NavigationWrapper';
 import Footer from '@/components/Footer';
@@ -17,51 +15,65 @@ import { blogPosts } from '@/data/blogs';
 import { allAuthors } from '@/data/authors';
 
 const BlogPage = () => {
-  const [filteredPosts, setFilteredPosts] = useState<BlogPost[]>(blogPosts);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage] = useState(9);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const postsPerPage = 9;
 
   // Get unique categories for the filter
   const categories = Array.from(new Set(blogPosts.map(post => post.category)));
 
   // Filter posts based on search query and category
-  useEffect(() => {
-    let result = blogPosts;
-
-    // Apply search filter
-    if (searchQuery) {
-      const query = searchQuery.toLowerCase();
-      result = result.filter(post => 
-        post.title.toLowerCase().includes(query) || 
-        post.excerpt.toLowerCase().includes(query) ||
-        post.tags.some(tag => tag.toLowerCase().includes(query))
-      );
-    }
-
+  const filteredPosts = blogPosts.filter(post => {
     // Apply category filter
-    if (selectedCategory) {
-      result = result.filter(post => post.category === selectedCategory);
-    }
+    const matchesCategory = !selectedCategory || post.category === selectedCategory;
+    
+    // Apply search filter
+    const matchesSearch = !searchQuery || 
+      post.title.toLowerCase().includes(searchQuery.toLowerCase()) || 
+      post.excerpt.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      post.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()));
+    
+    return matchesCategory && matchesSearch;
+  });
 
-    setFilteredPosts(result);
-    setCurrentPage(1); // Reset to first page when filters change
-  }, [searchQuery, selectedCategory]);
+  console.log('🟢 === BLOG PAGE STATE ===');
+  console.log('🟢 Selected Category:', selectedCategory);
+  console.log('🟢 Search Query:', searchQuery);
+  console.log('🟢 Total Blogs:', blogPosts.length);
+  console.log('🟢 Filtered Blogs:', filteredPosts.length);
+  console.log('🟢 Categories Available:', categories);
 
-  // Get current posts for pagination
+  // Calculate pagination
+  const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = filteredPosts.slice(indexOfFirstPost, indexOfLastPost);
-  
-  // Calculate total pages
-  const totalPages = Math.ceil(filteredPosts.length / postsPerPage);
 
-  // Handle pagination
+  // Handle page change
   const handlePageChange = (page: number) => {
+    if (page < 1 || page > totalPages) return;
     setCurrentPage(page);
     // Scroll to top of blog listings
-    document.getElementById('blog-listings')?.scrollIntoView({ behavior: 'smooth' });
+    setTimeout(() => {
+      const blogListings = document.getElementById('blog-listings');
+      if (blogListings) {
+        blogListings.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 100);
+  };
+
+  // Reset to page 1 when filters change
+  const handleCategoryChange = (category: string | null) => {
+    console.log('🟣 Category changed to:', category);
+    setSelectedCategory(category);
+    setCurrentPage(1);
+  };
+
+  const handleSearch = (query: string) => {
+    console.log('🟣 Search changed to:', query);
+    setSearchQuery(query);
+    setCurrentPage(1);
   };
 
   return (
@@ -79,15 +91,15 @@ const BlogPage = () => {
           <div className="md:col-span-3">
             <SearchBar 
               initialValue={searchQuery}
-              onSearch={(query) => {
-                setSearchQuery(query);
-              }} 
+              onSearch={handleSearch} 
             />
           </div>
           <div>
             <CategoryFilter 
               categories={categories} 
-              onCategoryChange={setSelectedCategory} 
+              selectedCategory={selectedCategory}
+              onCategoryChange={handleCategoryChange}
+              blogPosts={blogPosts}
             />
           </div>
         </div>
@@ -95,9 +107,10 @@ const BlogPage = () => {
         {/* Results Info */}
         <div className="mb-6">
           <p className="text-gray-600">
-            Showing {currentPosts.length} of {filteredPosts.length} posts
-            {selectedCategory && ` in ${selectedCategory}`}
-            {searchQuery && ` for "${searchQuery}"`}
+            Showing {currentPosts.length} of {filteredPosts.length} posts | Total Blogs: {blogPosts.length}
+            {selectedCategory && ` in "${selectedCategory}"`}
+            {searchQuery && ` matching "${searchQuery}"`}
+            {totalPages > 1 && ` | Page ${currentPage} of ${totalPages}`}
           </p>
         </div>
 
@@ -124,13 +137,50 @@ const BlogPage = () => {
           )}
         </div>
 
-        {/* Pagination */}
+        {/* Pagination Controls */}
         {totalPages > 1 && (
-          <Pagination 
-            currentPage={currentPage} 
-            totalPages={totalPages} 
-            basePath={'/blogs'}
-          />
+          <div className="flex justify-center items-center space-x-2 mt-8">
+            {/* Previous Button */}
+            <button
+              onClick={() => handlePageChange(currentPage - 1)}
+              disabled={currentPage === 1}
+              className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
+                currentPage === 1
+                  ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                  : 'bg-white text-gray-700 hover:bg-purple-50 border border-gray-300 hover:border-purple-300'
+              }`}
+            >
+              ← Previous
+            </button>
+
+            {/* Page Numbers */}
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+              <button
+                key={page}
+                onClick={() => handlePageChange(page)}
+                className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
+                  page === currentPage
+                    ? 'bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-md'
+                    : 'bg-white text-gray-700 hover:bg-purple-50 border border-gray-300 hover:border-purple-300'
+                }`}
+              >
+                {page}
+              </button>
+            ))}
+
+            {/* Next Button */}
+            <button
+              onClick={() => handlePageChange(currentPage + 1)}
+              disabled={currentPage === totalPages}
+              className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
+                currentPage === totalPages
+                  ? 'bg-gray-200 text-gray-400 cursor-not-allowed'
+                  : 'bg-white text-gray-700 hover:bg-purple-50 border border-gray-300 hover:border-purple-300'
+              }`}
+            >
+              Next →
+            </button>
+          </div>
         )}
       </div>
       </main>

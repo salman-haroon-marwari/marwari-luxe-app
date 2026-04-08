@@ -1,7 +1,7 @@
 // SearchBar component for blog search functionality
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 
 interface SearchBarProps {
@@ -13,13 +13,21 @@ const SearchBar = ({ onSearch, initialValue = '' }: SearchBarProps) => {
   const [query, setQuery] = useState(initialValue);
   const router = useRouter();
 
+  // Update query when initialValue changes
+  useEffect(() => {
+    console.log('🔍 Initial value changed:', initialValue);
+    setQuery(initialValue);
+  }, [initialValue]);
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    console.log('🔍 Search submitted:', query);
     if (onSearch) {
+      console.log('🔍 Calling onSearch with:', query);
       onSearch(query);
     } else {
       // Default behavior: redirect to search results page
-      router.push(`/blog/search?q=${encodeURIComponent(query)}`);
+      router.push(`/blogs/search?q=${encodeURIComponent(query)}`);
     }
   };
 

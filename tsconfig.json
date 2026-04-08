@@ -35,6 +35,9 @@
     "src/data/old blogs.ts",
     "src/data/products-complete.ts",
     "src/data/products-final.ts",
-    "src/data/products-new.ts"
+    "src/data/products-new.ts",
+    "**/*.py",
+    "**/*.sh",
+    "fix-*.js"
   ]
 }

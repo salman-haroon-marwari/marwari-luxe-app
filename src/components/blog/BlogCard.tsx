@@ -9,6 +9,15 @@ interface BlogCardProps {
 }
 
 const BlogCard = ({ blog }: BlogCardProps) => {
+  // Category color mapping
+  const categoryColors: Record<string, string> = {
+    'Beauty & Cosmetics': 'bg-pink-100 text-pink-800',
+    'Health & Fitness': 'bg-blue-100 text-blue-800',
+    'Health & Wellness': 'bg-green-100 text-green-800',
+  };
+
+  const categoryColor = categoryColors[blog.category] || 'bg-gray-100 text-gray-800';
+
   return (
     <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
       <div className="relative h-48 w-full">
@@ -21,7 +30,7 @@ const BlogCard = ({ blog }: BlogCardProps) => {
       </div>
       <div className="p-6">
         <div className="flex items-center gap-2 mb-3">
-          <span className="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">
+          <span className={`${categoryColor} text-xs font-medium px-2.5 py-0.5 rounded`}>
             {blog.category}
           </span>
           <span className="text-gray-500 text-sm">{blog.readTime}</span>
