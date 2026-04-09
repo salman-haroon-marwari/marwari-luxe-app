@@ -36,6 +36,8 @@ export default function RootLayout({
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
         <meta name="google-site-verification" content="dzryDgptB67-84_p9NLWotI6TuhQYJC-xqTiEZsrPX0" />
         <meta name="google-adsense-account" content="ca-pub-3211943691118692" />
+        {/* Pinterest Domain Verification */}
+        <meta name="p:domain_verify" content="aab945e83f0913b86a2eb25bfc0f8ff8"/>
         {/* Google Tag Manager */}
         <script dangerouslySetInnerHTML={{
           __html: `
