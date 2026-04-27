@@ -134,6 +134,7 @@ export const blogPosts: BlogPost[] = [
  date: "2026-04-27",
  lastUpdated: "2026-04-27",
  readTime: "16 min read",
+ // Walking for weight loss - 30 day step challenge
  image: "https://res.cloudinary.com/dxg5ldzkv/image/upload/v1777323746/bloga_3_ylzthl.png",
  imageAlt: "Person walking outdoors with fitness tracker showing daily step count for weight loss",
  keyTakeaways: [
