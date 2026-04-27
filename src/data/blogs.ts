@@ -98,7 +98,7 @@ export const authorData: Author = {
  photo: "",
  bio: "Our dedicated team providing expert health, beauty, and wellness information.",
  fullBio: "The Marwari Luxe Team consists of experienced health and wellness professionals who are passionate about helping individuals achieve their wellness goals. Our team combines expertise in nutrition, fitness, skincare, and holistic health to deliver comprehensive, evidence-based content.",
- email: "team@marwariluxe.com",
+ email: "marwariluxe@gmail.com",
  social: {
  instagram: "https://instagram.com/marwariluxe",
  facebook: "https://facebook.com/marwariluxe",
